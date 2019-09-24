@@ -1,0 +1,596 @@
+<!--
+ ___ _            _ _    _ _    __
+/ __(_)_ __  _ __| (_)__(_) |_ /_/
+\__ \ | '  \| '_ \ | / _| |  _/ -_)
+|___/_|_|_|_| .__/_|_\__|_|\__\___|
+            |_| 
+-->
+![](https://docs.simplicite.io//logos/logo250.png)
+* * *
+
+`RH` module definition
+======================
+
+
+
+`RHCampagne` business object definition
+---------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhCpgAnnee`                                                 | int(11)                                  | yes*     | yes       |          | -                                                                                |
+| `rhCpgDateDebut`                                             | date                                     | yes      | yes       |          | -                                                                                |
+| `rhCpgDateFin`                                               | date                                     | yes      | yes       |          | -                                                                                |
+| `rhCpgDescription`                                           | html(50000)                              |          | yes       |          | -                                                                                |
+| `rhCpgNotice`                                                | document                                 |          | yes       |          | -                                                                                |
+
+### Custom actions
+
+No custom action
+
+`RHCollaborateur` business object definition
+--------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhColMatricule`                                             | regexp(20)                               | yes*     | yes       |          | -                                                                                |
+| `rhColCivilite`                                              | enum(7) using `RH_CIVILITE` list         | yes      | yes       |          | -                                                                                |
+| `rhColNom`                                                   | char(100)                                | yes      | yes       |          | -                                                                                |
+| `rhColPrenom`                                                | char(100)                                | yes      | yes       |          | -                                                                                |
+| `rhColUsrId` link to **`User`**                              | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `rhColUsrId.usr_login`_                                | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
+| `rhColPhoto`                                                 | image                                    |          | yes       |          | -                                                                                |
+| `rhColDateNaissance`                                         | date                                     | yes      | yes       |          | -                                                                                |
+| `rhColEmail`                                                 | email(50)                                |          | yes       |          | -                                                                                |
+| `rhColTelephone`                                             | phone(20)                                |          | yes       |          | -                                                                                |
+| `rhColMobile`                                                | phone(20)                                |          | yes       |          | -                                                                                |
+| `rhColFax`                                                   | phone(20)                                |          | yes       |          | -                                                                                |
+| `rhColAdresse`                                               | char(100)                                |          | yes       |          | -                                                                                |
+| `rhColComplement`                                            | char(100)                                |          | yes       |          | -                                                                                |
+| `rhColCodePostal`                                            | regexp(10)                               |          | yes       |          | -                                                                                |
+| `rhColVille`                                                 | char(50)                                 |          | yes       |          | -                                                                                |
+| `rhColStatut`                                                | enum(7) using `RH_COL_STATUT` list       | yes      | yes       |          | -                                                                                |
+| `rhColDateDebut`                                             | date                                     | yes      | yes       |          | -                                                                                |
+| `rhColDateFin`                                               | date                                     |          | yes       |          | -                                                                                |
+| `rhColSrvId` link to **`RHService`**                         | id                                       | yes      | yes       |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
+| `rhColDateDebutSrv`                                          | date                                     | yes      | yes       |          | -                                                                                |
+| `rhColTitre`                                                 | char(100)                                |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_CIVILITE`
+    - `MLLE` Code MLLE
+    - `MME` Code MME
+    - `M` Code M
+* `RH_COL_STATUT`
+    - `CDI` Code CDI
+    - `CDD` Code CDD
+    - `STG` Code STG
+    - `APP` Code APP
+
+### Custom actions
+
+No custom action
+
+`RHCollaborateurCompetence` business object definition
+------------------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhColCmpColId` link to **`RHCollaborateur`**                | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhColCmpColId.rhColMatricule`_                        | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhColCmpColId.rhColCivilite`_                         | _enum(7) using `RH_CIVILITE` list_       |          |           |          | -                                                                                |
+| _Ref. `rhColCmpColId.rhColNom`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhColCmpColId.rhColPrenom`_                           | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhColCmpColId.rhColSrvId`_                            | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `rhColCmpColId.rhColTitre`_                            | _char(100)_                              |          |           |          | -                                                                                |
+| `rhColCmpCmpId` link to **`RHCompetence`**                   | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhColCmpCmpId.rhCmpNom`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhColCmpCmpId.rhCmpType`_                             | _enum(7) using `RH_CMP_TYPE` list_       |          |           |          | -                                                                                |
+| `rhColCmpNiveau`                                             | int(11)                                  | yes      | yes       |          | -                                                                                |
+| `rhColCmpCommentaires`                                       | notepad(50000)                           |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_CIVILITE`
+    - `MLLE` Code MLLE
+    - `MME` Code MME
+    - `M` Code M
+* `RH_CMP_TYPE`
+    - `TEC` Code TEC
+    - `FON` Code FON
+    - `ENC` Code ENC
+    - `LNG` Code LNG
+    - `AUT` Code AUT
+
+### Custom actions
+
+No custom action
+
+`RHCollaborateurHistoric` business object definition
+----------------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `row_ref_id` link to **`RHCollaborateur`**                   | id                                       | yes*     |           |          | -                                                                                |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | -                                                                                |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | -                                                                                |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | -                                                                                |
+| `rhColSrvId` link to **`RHService`**                         | id                                       | yes      | yes       |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
+| `rhColDateDebutSrv`                                          | date                                     | yes      | yes       |          | -                                                                                |
+| `rhColTitre`                                                 | char(100)                                |          | yes       |          | -                                                                                |
+
+### Custom actions
+
+No custom action
+
+`RHCompetence` business object definition
+-----------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhCmpNom`                                                   | char(100)                                | yes*     | yes       |          | -                                                                                |
+| `rhCmpType`                                                  | enum(7) using `RH_CMP_TYPE` list         | yes      | yes       |          | -                                                                                |
+| `rhCmpDescription`                                           | html(50000)                              |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_CMP_TYPE`
+    - `TEC` Code TEC
+    - `FON` Code FON
+    - `ENC` Code ENC
+    - `LNG` Code LNG
+    - `AUT` Code AUT
+
+### Custom actions
+
+No custom action
+
+`RHDemandeFormation` business object definition
+-----------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhDfrColId` link to **`RHCollaborateur`**                   | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhDfrColId.rhColMatricule`_                           | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhDfrColId.rhColCivilite`_                            | _enum(7) using `RH_CIVILITE` list_       |          |           |          | -                                                                                |
+| _Ref. `rhDfrColId.rhColNom`_                                 | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhDfrColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhDfrColId.rhColSrvId`_                               | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhDfrColId.rhColTitre`_                               | _char(100)_                              |          |           |          | -                                                                                |
+| `rhDfrFrmId` link to **`RHFormation`**                       | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhDfrFrmId.rhFrmCode`_                                | _regexp(30)_                             |          |           |          | -                                                                                |
+| _Ref. `rhDfrFrmId.rhFrmType`_                                | _enum(7) using `RH_FRM_TYPE` list_       |          |           |          | -                                                                                |
+| _Ref. `rhDfrFrmId.rhFrmLibelle`_                             | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhDfrFrmId.rhFrmPeriode`_                             | _multi(20) using `RH_TRIMESTRE` list_    |          |           |          | -                                                                                |
+| `rhDfrEtat`                                                  | enum(7) using `RH_DFR_ETAT` list         | yes      | yes       |          | -                                                                                |
+| `rhDfrMotivation`                                            | html(50000)                              |          | yes       |          | -                                                                                |
+| `rhDfrPeriodeSouhaitee`                                      | enum(7) using `RH_TRIMESTRE` list        |          | yes       |          | -                                                                                |
+| `rhDfrDIF`                                                   | boolean                                  |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_CIVILITE`
+    - `MLLE` Code MLLE
+    - `MME` Code MME
+    - `M` Code M
+* `RH_FRM_TYPE`
+    - `AUV` Code AUV
+    - `MKT` Code MKT
+    - `BUR` Code BUR
+    - `INF` Code INF
+    - `WEB` Code WEB
+    - `GES` Code GES
+    - `CMP` Code CMP
+    - `REH` Code REH
+    - `DRT` Code DRT
+    - `AUT` Code AUT
+* `RH_TRIMESTRE`
+    - `T1` Code T1
+    - `T2` Code T2
+    - `T3` Code T3
+    - `T4` Code T4
+* `RH_DFR_ETAT`
+    - `D` Code D
+    - `A` Code A
+    - `R` Code R
+
+### Custom actions
+
+No custom action
+
+`RHDemandeFormationHistoric` business object definition
+-------------------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `row_ref_id` link to **`RHDemandeFormation`**                | id                                       | yes*     |           |          | -                                                                                |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | -                                                                                |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | -                                                                                |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | -                                                                                |
+| `rhDfrEtat`                                                  | enum(7) using `RH_DFR_ETAT` list         | yes      | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_DFR_ETAT`
+    - `D` Code D
+    - `A` Code A
+    - `R` Code R
+
+### Custom actions
+
+No custom action
+
+`RHEntretien` business object definition
+----------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhEntCpgId` link to **`RHCampagne`**                        | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhEntCpgId.rhCpgAnnee`_                               | _int(11)_                                |          |           |          | -                                                                                |
+| _Ref. `rhEntCpgId.rhCpgDateDebut`_                           | _date_                                   |          |           |          | -                                                                                |
+| _Ref. `rhEntCpgId.rhCpgDateFin`_                             | _date_                                   |          |           |          | -                                                                                |
+| `rhEntDate`                                                  | datetime                                 | yes      | yes       |          | -                                                                                |
+| `rhEntDuree`                                                 | int(11)                                  | yes      | yes       |          | -                                                                                |
+| `rhEntEtat`                                                  | enum(7) using `RH_ENT_ETAT` list         | yes      | yes       |          | -                                                                                |
+| `rhEntURLCode`                                               | char(50)                                 |          |           |          | -                                                                                |
+| `rhEntURL`                                                   | url(255)                                 |          |           |          | -                                                                                |
+| `rhEntColId` link to **`RHCollaborateur`**                   | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhEntColId.rhColMatricule`_                           | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColCivilite`_                            | _enum(7) using `RH_CIVILITE` list_       |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColNom`_                                 | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColSrvId`_                               | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColTitre`_                               | _char(100)_                              |          |           |          | -                                                                                |
+| `rhEntEvlId` link to **`RHCollaborateur`**                   | id                                       | yes      | yes       |          | -                                                                                |
+| _Ref. `rhEntEvlId.rhColMatricule`_                           | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhEntEvlId.rhColCivilite`_                            | _enum(7) using `RH_CIVILITE` list_       |          |           |          | -                                                                                |
+| _Ref. `rhEntEvlId.rhColNom`_                                 | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhEntEvlId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhEntEvlId.rhColUsrId`_                               | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `rhColUsrId.usr_login`_                                | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
+| `rhEntBilanEvaluateur`                                       | html(50000)                              |          | yes       |          | -                                                                                |
+| `rhEntBilanCollaborateur`                                    | html(50000)                              |          |           |          | -                                                                                |
+| `rhEntEvaluation`                                            | enum(7) using `RH_ENT_EVALUATION` list   |          | yes       |          | -                                                                                |
+| `rhEntSuivi`                                                 | boolean                                  |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_ENT_ETAT`
+    - `BR` Code BR
+    - `CP` Code CP
+    - `VC` Code VC
+    - `VE` Code VE
+* `RH_CIVILITE`
+    - `MLLE` Code MLLE
+    - `MME` Code MME
+    - `M` Code M
+* `RH_ENT_EVALUATION`
+    - `APP` Code APP
+    - `AP` Code AP
+    - `A` Code A
+    - `AM` Code AM
+    - `BP` Code BP
+    - `B` Code B
+    - `BM` Code BM
+    - `C` Code C
+    - `D` Code D
+
+### Custom actions
+
+No custom action
+
+`RHEntretienHistoric` business object definition
+------------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `row_ref_id` link to **`RHEntretien`**                       | id                                       | yes*     |           |          | -                                                                                |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | -                                                                                |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | -                                                                                |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | -                                                                                |
+| `rhEntEtat`                                                  | enum(7) using `RH_ENT_ETAT` list         | yes      | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_ENT_ETAT`
+    - `BR` Code BR
+    - `CP` Code CP
+    - `VC` Code VC
+    - `VE` Code VE
+
+### Custom actions
+
+No custom action
+
+`RHFormation` business object definition
+----------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhFrmCode`                                                  | regexp(30)                               | yes*     | yes       |          | -                                                                                |
+| `rhFrmType`                                                  | enum(7) using `RH_FRM_TYPE` list         | yes      | yes       |          | -                                                                                |
+| `rhFrmLibelle`                                               | char(100)                                | yes      | yes       |          | -                                                                                |
+| `rhFrmDisponible`                                            | boolean                                  | yes      | yes       |          | -                                                                                |
+| `rhFrmDescription`                                           | html(50000)                              |          | yes       |          | -                                                                                |
+| `rhFrmProgramme`                                             | document                                 |          | yes       |          | -                                                                                |
+| `rhFrmPeriode`                                               | multi(20) using `RH_TRIMESTRE` list      |          | yes       |          | -                                                                                |
+| `rhFrmCout`                                                  | float(11, 2)                             |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_FRM_TYPE`
+    - `AUV` Code AUV
+    - `MKT` Code MKT
+    - `BUR` Code BUR
+    - `INF` Code INF
+    - `WEB` Code WEB
+    - `GES` Code GES
+    - `CMP` Code CMP
+    - `REH` Code REH
+    - `DRT` Code DRT
+    - `AUT` Code AUT
+* `RH_TRIMESTRE`
+    - `T1` Code T1
+    - `T2` Code T2
+    - `T3` Code T3
+    - `T4` Code T4
+
+### Custom actions
+
+No custom action
+
+`RHFormationSuivie` business object definition
+----------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhFrsColId` link to **`RHCollaborateur`**                   | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhFrsColId.rhColMatricule`_                           | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhFrsColId.rhColCivilite`_                            | _enum(7) using `RH_CIVILITE` list_       |          |           |          | -                                                                                |
+| _Ref. `rhFrsColId.rhColNom`_                                 | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhFrsColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhFrsColId.rhColSrvId`_                               | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `rhFrsColId.rhColTitre`_                               | _char(100)_                              |          |           |          | -                                                                                |
+| `rhFrsFrmId` link to **`RHFormation`**                       | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhFrsFrmId.rhFrmCode`_                                | _regexp(30)_                             |          |           |          | -                                                                                |
+| _Ref. `rhFrsFrmId.rhFrmType`_                                | _enum(7) using `RH_FRM_TYPE` list_       |          |           |          | -                                                                                |
+| _Ref. `rhFrsFrmId.rhFrmLibelle`_                             | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhFrsFrmId.rhFrmPeriode`_                             | _multi(20) using `RH_TRIMESTRE` list_    |          |           |          | -                                                                                |
+| `rhFrsEvaluation`                                            | enum(7) using `RH_FRS_EVALUATION` list   | yes      | yes       |          | -                                                                                |
+| `rhFsrDate`                                                  | date                                     | yes      | yes       |          | -                                                                                |
+| `rhFrsCommentaires`                                          | html(50000)                              |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_CIVILITE`
+    - `MLLE` Code MLLE
+    - `MME` Code MME
+    - `M` Code M
+* `RH_FRM_TYPE`
+    - `AUV` Code AUV
+    - `MKT` Code MKT
+    - `BUR` Code BUR
+    - `INF` Code INF
+    - `WEB` Code WEB
+    - `GES` Code GES
+    - `CMP` Code CMP
+    - `REH` Code REH
+    - `DRT` Code DRT
+    - `AUT` Code AUT
+* `RH_TRIMESTRE`
+    - `T1` Code T1
+    - `T2` Code T2
+    - `T3` Code T3
+    - `T4` Code T4
+* `RH_FRS_EVALUATION`
+    - `1` Code 1
+    - `2` Code 2
+    - `3` Code 3
+
+### Custom actions
+
+No custom action
+
+`RHObjectifFutur` business object definition
+--------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhOfuEntId` link to **`RHEntretien`**                       | id                                       | yes*     |           |          | -                                                                                |
+| _Ref. `rhOfuEntId.rhEntCpgId`_                               | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `rhEntCpgId.rhCpgAnnee`_                               | _int(11)_                                |          |           |          | -                                                                                |
+| _Ref. `rhOfuEntId.rhEntEtat`_                                | _enum(7) using `RH_ENT_ETAT` list_       |          |           |          | -                                                                                |
+| _Ref. `rhOfuEntId.rhEntColId`_                               | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColMatricule`_                           | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColCivilite`_                            | _enum(7) using `RH_CIVILITE` list_       |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColNom`_                                 | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| `rhOfuNumero`                                                | int(11)                                  | yes*     |           |          | -                                                                                |
+| `rhOfuType`                                                  | enum(7) using `RH_OPA_OFU_TYPE` list     | yes      | yes       |          | -                                                                                |
+| `rhOfuObjectif`                                              | html(50000)                              |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_ENT_ETAT`
+    - `BR` Code BR
+    - `CP` Code CP
+    - `VC` Code VC
+    - `VE` Code VE
+* `RH_CIVILITE`
+    - `MLLE` Code MLLE
+    - `MME` Code MME
+    - `M` Code M
+* `RH_OPA_OFU_TYPE`
+    - `SFA` Code SFA
+    - `SET` Code SET
+    - `AUT` Code AUT
+
+### Custom actions
+
+No custom action
+
+`RHObjectifPasse` business object definition
+--------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhOpaEntId` link to **`RHEntretien`**                       | id                                       | yes*     |           |          | -                                                                                |
+| _Ref. `rhOpaEntId.rhEntCpgId`_                               | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `rhEntCpgId.rhCpgAnnee`_                               | _int(11)_                                |          |           |          | -                                                                                |
+| _Ref. `rhOpaEntId.rhEntEtat`_                                | _enum(7) using `RH_ENT_ETAT` list_       |          |           |          | -                                                                                |
+| _Ref. `rhOpaEntId.rhEntColId`_                               | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColMatricule`_                           | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColCivilite`_                            | _enum(7) using `RH_CIVILITE` list_       |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColNom`_                                 | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| `rhOpaNumero`                                                | int(11)                                  | yes*     |           |          | -                                                                                |
+| `rhOpaType`                                                  | enum(7) using `RH_OPA_OFU_TYPE` list     | yes      | yes       |          | -                                                                                |
+| `rhOpaObjectif`                                              | html(50000)                              |          | yes       |          | -                                                                                |
+| `rhOpaNiveauAtteinte`                                        | enum(7) using `RH_OPA_NIVEAUATTEINTE` list |          | yes       |          | -                                                                                |
+| `rhOpaCommentaires`                                          | html(50000)                              |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_ENT_ETAT`
+    - `BR` Code BR
+    - `CP` Code CP
+    - `VC` Code VC
+    - `VE` Code VE
+* `RH_CIVILITE`
+    - `MLLE` Code MLLE
+    - `MME` Code MME
+    - `M` Code M
+* `RH_OPA_OFU_TYPE`
+    - `SFA` Code SFA
+    - `SET` Code SET
+    - `AUT` Code AUT
+* `RH_OPA_NIVEAUATTEINTE`
+    - `1` Code 1
+    - `2` Code 2
+    - `3` Code 3
+    - `4` Code 4
+
+### Custom actions
+
+No custom action
+
+`RHObjectifService` business object definition
+----------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhOsrCpgId` link to **`RHCampagne`**                        | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhOsrCpgId.rhCpgAnnee`_                               | _int(11)_                                |          |           |          | -                                                                                |
+| _Ref. `rhOsrCpgId.rhCpgDateDebut`_                           | _date_                                   |          |           |          | -                                                                                |
+| _Ref. `rhOsrCpgId.rhCpgDateFin`_                             | _date_                                   |          |           |          | -                                                                                |
+| `rhOsrSrvId` link to **`RHService`**                         | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `rhOsrSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhOsrSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
+| `rhOsrNumero`                                                | int(11)                                  | yes*     |           |          | -                                                                                |
+| `rhOsrType`                                                  | enum(7) using `RH_OSR_TYPE` list         | yes      | yes       |          | -                                                                                |
+| `rhOsrObjectif`                                              | html(50000)                              |          | yes       |          | -                                                                                |
+| `rhOsrPieceJointe`                                           | document                                 |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `RH_OSR_TYPE`
+    - `QLT` Code QLT
+    - `QTT` Code QTT
+    - `AUT` Code AUT
+
+### Custom actions
+
+No custom action
+
+`RHService` business object definition
+--------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `rhSrvCode`                                                  | regexp(20)                               | yes*     | yes       |          | -                                                                                |
+| `rhSrvLibelle`                                               | char(50)                                 | yes      | yes       |          | -                                                                                |
+| `rhSrvLogo`                                                  | image                                    |          | yes       |          | -                                                                                |
+| `rhSrvDescription`                                           | html(50000)                              |          | yes       |          | -                                                                                |
+
+### Custom actions
+
+No custom action
+
+`RHEntretienCollab` external object definition
+----------------------------------------------
+
+
+
+

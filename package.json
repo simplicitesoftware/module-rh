@@ -1,0 +1,10 @@
+{
+    "date": "Tue Sep 24 15:20:28 CEST 2019",
+    "name": "RH",
+    "format": "xml",
+    "description": "",
+    "files": ["RH.xml"],
+    "repository": {},
+    "version": "4.0",
+    "dependencies": [{"Simplicite": "4.0"}]
+}
