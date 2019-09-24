@@ -87,6 +87,22 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	<name>Model</name>
 	<action>upsert</action>
 	<data>
+		<mod_name>Model-RH_DFR_ETAT</mod_name>
+		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
+		<mod_doc>files/Model/Model-RH_DFR_ETAT.svg</mod_doc>
+		<mod_json/>
+		<mod_image>files/Model/Model-RH_DFR_ETAT.png</mod_image>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<mod_name>Model-RH_ENT_ETAT</mod_name>
+		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
+		<mod_doc>files/Model/Model-RH_ENT_ETAT.svg</mod_doc>
+		<mod_json/>
+		<mod_image>files/Model/Model-RH_ENT_ETAT.png</mod_image>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
 		<mod_name>RH</mod_name>
 		<mod_template_id.mtp_name>ModelObject</mod_template_id.mtp_name>
 		<mod_doc>files/Model/RH.svg</mod_doc>
@@ -319,14 +335,14 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	<data>
 		<lov_name>RH_DFR_ETAT</lov_name>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_model_id.mod_name/>
-		<lov_model_id.mod_image/>
+		<lov_model_id.mod_name>Model-RH_DFR_ETAT</lov_model_id.mod_name>
+		<lov_model_id.mod_image>files/Model/Model-RH_DFR_ETAT.png</lov_model_id.mod_image>
 	</data>
 	<data>
 		<lov_name>RH_ENT_ETAT</lov_name>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_model_id.mod_name/>
-		<lov_model_id.mod_image/>
+		<lov_model_id.mod_name>Model-RH_ENT_ETAT</lov_model_id.mod_name>
+		<lov_model_id.mod_image>files/Model/Model-RH_ENT_ETAT.png</lov_model_id.mod_image>
 	</data>
 	<data>
 		<lov_name>RH_ENT_EVALUATION</lov_name>
@@ -378,7 +394,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_CIVILITE</lov_list_id.lov_name>
 		<lov_code>MLLE</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code MLLE</lov_label>
+		<lov_label>Mademoiselle</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -389,7 +405,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_CIVILITE</lov_list_id.lov_name>
 		<lov_code>MME</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code MME</lov_label>
+		<lov_label>Madame</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -400,7 +416,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_CIVILITE</lov_list_id.lov_name>
 		<lov_code>M</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code M</lov_label>
+		<lov_label>Monsieur</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -411,7 +427,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_CMP_TYPE</lov_list_id.lov_name>
 		<lov_code>TEC</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code TEC</lov_label>
+		<lov_label>Technique</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -422,7 +438,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_CMP_TYPE</lov_list_id.lov_name>
 		<lov_code>FON</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code FON</lov_label>
+		<lov_label>Fonctionelle</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -433,7 +449,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_CMP_TYPE</lov_list_id.lov_name>
 		<lov_code>ENC</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code ENC</lov_label>
+		<lov_label>Encadrement</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -444,7 +460,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_CMP_TYPE</lov_list_id.lov_name>
 		<lov_code>LNG</lov_code>
 		<lov_order_by>4</lov_order_by>
-		<lov_label>Code LNG</lov_label>
+		<lov_label>Langue</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -455,7 +471,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_CMP_TYPE</lov_list_id.lov_name>
 		<lov_code>AUT</lov_code>
 		<lov_order_by>99</lov_order_by>
-		<lov_label>Code AUT</lov_label>
+		<lov_label>Autre</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -466,7 +482,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_COL_STATUT</lov_list_id.lov_name>
 		<lov_code>CDI</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code CDI</lov_label>
+		<lov_label>Contrat à Durée Indéterminée</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -477,7 +493,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_COL_STATUT</lov_list_id.lov_name>
 		<lov_code>CDD</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code CDD</lov_label>
+		<lov_label>Contrat à Durée Déterminée</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -488,7 +504,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_COL_STATUT</lov_list_id.lov_name>
 		<lov_code>STG</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code STG</lov_label>
+		<lov_label>Stage</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -499,7 +515,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_COL_STATUT</lov_list_id.lov_name>
 		<lov_code>APP</lov_code>
 		<lov_order_by>4</lov_order_by>
-		<lov_label>Code APP</lov_label>
+		<lov_label>Apprenti</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -510,84 +526,84 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_DFR_ETAT</lov_list_id.lov_name>
 		<lov_code>D</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code D</lov_label>
+		<lov_label>Demandée</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color_bg>#F9CB9C</lov_color_bg>
+		<lov_icon>icon/color/btn_orange</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_DFR_ETAT</lov_list_id.lov_name>
 		<lov_code>A</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code A</lov_label>
+		<lov_label>Acceptée</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color_bg>#B6D7A8</lov_color_bg>
+		<lov_icon>icon/color/btn_green</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_DFR_ETAT</lov_list_id.lov_name>
 		<lov_code>R</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code R</lov_label>
+		<lov_label>Refusée</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color_bg>#EA9999</lov_color_bg>
+		<lov_icon>icon/color/btn_red</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_ETAT</lov_list_id.lov_name>
 		<lov_code>BR</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code BR</lov_label>
+		<lov_label>Brouillon</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color_bg>#A4C2F4</lov_color_bg>
+		<lov_icon>icon/color/btn_blue</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_ETAT</lov_list_id.lov_name>
 		<lov_code>CP</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code CP</lov_label>
+		<lov_label>Complet</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color_bg>#DD7E6B</lov_color_bg>
+		<lov_icon>icon/color/btn_red</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_ETAT</lov_list_id.lov_name>
 		<lov_code>VC</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code VC</lov_label>
+		<lov_label>Validé par le collaborateur</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color_bg>#F9CB9C</lov_color_bg>
+		<lov_icon>icon/color/btn_orange</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_ETAT</lov_list_id.lov_name>
 		<lov_code>VE</lov_code>
 		<lov_order_by>4</lov_order_by>
-		<lov_label>Code VE</lov_label>
+		<lov_label>Validé par l'évaluateur</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color_bg>#B6D7A8</lov_color_bg>
+		<lov_icon>icon/color/btn_green</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
 		<lov_code>APP</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code APP</lov_label>
+		<lov_label>A++</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -598,7 +614,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
 		<lov_code>AP</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code AP</lov_label>
+		<lov_label>A+</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -609,7 +625,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
 		<lov_code>A</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code A</lov_label>
+		<lov_label>A</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -620,7 +636,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
 		<lov_code>AM</lov_code>
 		<lov_order_by>4</lov_order_by>
-		<lov_label>Code AM</lov_label>
+		<lov_label>A-</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -631,7 +647,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
 		<lov_code>BP</lov_code>
 		<lov_order_by>5</lov_order_by>
-		<lov_label>Code BP</lov_label>
+		<lov_label>B+</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -642,7 +658,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
 		<lov_code>B</lov_code>
 		<lov_order_by>6</lov_order_by>
-		<lov_label>Code B</lov_label>
+		<lov_label>B</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -653,7 +669,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
 		<lov_code>BM</lov_code>
 		<lov_order_by>7</lov_order_by>
-		<lov_label>Code BM</lov_label>
+		<lov_label>B-</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -664,7 +680,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
 		<lov_code>C</lov_code>
 		<lov_order_by>8</lov_order_by>
-		<lov_label>Code C</lov_label>
+		<lov_label>C</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -675,7 +691,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
 		<lov_code>D</lov_code>
 		<lov_order_by>8</lov_order_by>
-		<lov_label>Code D</lov_label>
+		<lov_label>D</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -686,7 +702,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>AUV</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code AUV</lov_label>
+		<lov_label>Audiovisuel</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -697,7 +713,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>MKT</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code MKT</lov_label>
+		<lov_label>Marketing</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -708,7 +724,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>BUR</lov_code>
 		<lov_order_by>4</lov_order_by>
-		<lov_label>Code BUR</lov_label>
+		<lov_label>Bureatutique</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -719,7 +735,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>INF</lov_code>
 		<lov_order_by>5</lov_order_by>
-		<lov_label>Code INF</lov_label>
+		<lov_label>Informatique</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -730,7 +746,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>WEB</lov_code>
 		<lov_order_by>6</lov_order_by>
-		<lov_label>Code WEB</lov_label>
+		<lov_label>Internet</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -741,7 +757,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>GES</lov_code>
 		<lov_order_by>7</lov_order_by>
-		<lov_label>Code GES</lov_label>
+		<lov_label>Gestion</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -752,7 +768,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>CMP</lov_code>
 		<lov_order_by>8</lov_order_by>
-		<lov_label>Code CMP</lov_label>
+		<lov_label>Comptabilité</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -763,7 +779,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>REH</lov_code>
 		<lov_order_by>9</lov_order_by>
-		<lov_label>Code REH</lov_label>
+		<lov_label>Ressources Humaines</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -774,7 +790,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>DRT</lov_code>
 		<lov_order_by>10</lov_order_by>
-		<lov_label>Code DRT</lov_label>
+		<lov_label>Droit</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -785,7 +801,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
 		<lov_code>AUT</lov_code>
 		<lov_order_by>99</lov_order_by>
-		<lov_label>Code AUT</lov_label>
+		<lov_label>Autre</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -796,40 +812,40 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_FRS_EVALUATION</lov_list_id.lov_name>
 		<lov_code>1</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code 1</lov_label>
+		<lov_label>Très utile</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>icon/color/smiley2</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRS_EVALUATION</lov_list_id.lov_name>
 		<lov_code>2</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code 2</lov_label>
+		<lov_label>Moyennement utile</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>icon/color/smiley3</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRS_EVALUATION</lov_list_id.lov_name>
 		<lov_code>3</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code 3</lov_label>
+		<lov_label>Faiblement utile</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>icon/color/smiley4</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</lov_list_id.lov_name>
 		<lov_code>1</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code 1</lov_label>
+		<lov_label>Excellent</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -840,7 +856,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</lov_list_id.lov_name>
 		<lov_code>2</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code 2</lov_label>
+		<lov_label>Bon</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -851,7 +867,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</lov_list_id.lov_name>
 		<lov_code>3</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code 3</lov_label>
+		<lov_label>Moyen</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -862,7 +878,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</lov_list_id.lov_name>
 		<lov_code>4</lov_code>
 		<lov_order_by>4</lov_order_by>
-		<lov_label>Code 4</lov_label>
+		<lov_label>Insuffisant</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -873,7 +889,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_OPA_OFU_TYPE</lov_list_id.lov_name>
 		<lov_code>SFA</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code SFA</lov_label>
+		<lov_label>Savoir faire</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -884,7 +900,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_OPA_OFU_TYPE</lov_list_id.lov_name>
 		<lov_code>SET</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code SET</lov_label>
+		<lov_label>Savoir être</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -895,7 +911,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_OPA_OFU_TYPE</lov_list_id.lov_name>
 		<lov_code>AUT</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code AUT</lov_label>
+		<lov_label>Autre</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -906,7 +922,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_OSR_TYPE</lov_list_id.lov_name>
 		<lov_code>QLT</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code QLT</lov_label>
+		<lov_label>Qualitatif</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -917,7 +933,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_OSR_TYPE</lov_list_id.lov_name>
 		<lov_code>QTT</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code QTT</lov_label>
+		<lov_label>Quantitatif</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -928,7 +944,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_OSR_TYPE</lov_list_id.lov_name>
 		<lov_code>AUT</lov_code>
 		<lov_order_by>99</lov_order_by>
-		<lov_label>Code AUT</lov_label>
+		<lov_label>Autre</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -939,7 +955,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_TRIMESTRE</lov_list_id.lov_name>
 		<lov_code>T1</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code T1</lov_label>
+		<lov_label>Trimestre 1</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -950,7 +966,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_TRIMESTRE</lov_list_id.lov_name>
 		<lov_code>T2</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code T2</lov_label>
+		<lov_label>Trimestre 2</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -961,7 +977,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_TRIMESTRE</lov_list_id.lov_name>
 		<lov_code>T3</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code T3</lov_label>
+		<lov_label>Trimestre 3</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -972,7 +988,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<lov_list_id.lov_name>RH_TRIMESTRE</lov_list_id.lov_name>
 		<lov_code>T4</lov_code>
 		<lov_order_by>4</lov_order_by>
-		<lov_label>Code T4</lov_label>
+		<lov_label>Trimestre 4</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -4449,110 +4465,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_objlist/>
 		<fld_comment/>
 		<fld_classification/>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-</object>
-<object>
-	<name>FieldStyle</name>
-	<action>upsert</action>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>rhDfrEtat</sty_field>
-		<sty_value>A</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>greenbg</sty_style>
-		<sty_image>btn_green.gif</sty_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>rhDfrEtat</sty_field>
-		<sty_value>D</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>bluebg</sty_style>
-		<sty_image>btn_blue.gif</sty_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>rhDfrEtat</sty_field>
-		<sty_value>R</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>redbg</sty_style>
-		<sty_image>btn_red.gif</sty_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>rhEntEtat</sty_field>
-		<sty_value>BR</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>bluebg</sty_style>
-		<sty_image>btn_blue.gif</sty_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>rhEntEtat</sty_field>
-		<sty_value>CP</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>redbg</sty_style>
-		<sty_image>btn_red.gif</sty_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>rhEntEtat</sty_field>
-		<sty_value>VC</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>orangebg</sty_style>
-		<sty_image>btn_orange.gif</sty_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>rhEntEtat</sty_field>
-		<sty_value>VE</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>greenbg</sty_style>
-		<sty_image>btn_green.gif</sty_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>RHFormationSuivie</sty_object>
-		<sty_field>rhFrsEvaluation</sty_field>
-		<sty_value>1</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style/>
-		<sty_image>smiley2.gif</sty_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>RHFormationSuivie</sty_object>
-		<sty_field>rhFrsEvaluation</sty_field>
-		<sty_value>2</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style/>
-		<sty_image>smiley3.gif</sty_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>RHFormationSuivie</sty_object>
-		<sty_field>rhFrsEvaluation</sty_field>
-		<sty_value>3</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style/>
-		<sty_image>smiley4.gif</sty_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 </object>
@@ -8152,13 +8064,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
@@ -8185,9 +8097,9 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research>0</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
@@ -8210,13 +8122,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
@@ -8239,13 +8151,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
@@ -8268,13 +8180,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
@@ -8300,10 +8212,10 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>1</obf_fld_more>
-		<obf_fld_listmore>1</obf_fld_listmore>
-		<obf_fld_researchreq>3</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
@@ -8326,13 +8238,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
@@ -8355,13 +8267,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>3</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
@@ -8413,13 +8325,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-2</obf_area_id.ofa_name>
@@ -8442,13 +8354,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-2</obf_area_id.ofa_name>
@@ -8474,10 +8386,10 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-2</obf_area_id.ofa_name>
@@ -8500,13 +8412,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>2</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>3</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHDemandeFormation-2</obf_area_id.ofa_name>
@@ -10037,13 +9949,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
@@ -10070,9 +9982,9 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research>0</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
@@ -10095,13 +10007,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>2</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
@@ -10124,13 +10036,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
@@ -10153,13 +10065,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
@@ -10182,13 +10094,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
@@ -10214,10 +10126,10 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>1</obf_fld_more>
-		<obf_fld_listmore>1</obf_fld_listmore>
-		<obf_fld_researchreq>3</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
@@ -10240,13 +10152,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>3</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
@@ -10298,13 +10210,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-2</obf_area_id.ofa_name>
@@ -10327,13 +10239,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-2</obf_area_id.ofa_name>
@@ -10359,10 +10271,10 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-2</obf_area_id.ofa_name>
@@ -10385,13 +10297,13 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>2</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>1</obf_fld_research>
-		<obf_fld_more>0</obf_fld_more>
-		<obf_fld_listmore>0</obf_fld_listmore>
-		<obf_fld_researchreq>3</obf_fld_researchreq>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>RHFormationSuivie-2</obf_area_id.ofa_name>
@@ -13647,7 +13559,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<sta_state_id.lov_list_id.lov_name>RH_DFR_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>A</sta_state_id.lov_code>
 		<sta_state>A</sta_state>
-		<sta_label>State A</sta_label>
+		<sta_label>Acceptée</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13661,7 +13573,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<sta_state_id.lov_list_id.lov_name>RH_DFR_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>D</sta_state_id.lov_code>
 		<sta_state>D</sta_state>
-		<sta_label>State D</sta_label>
+		<sta_label>Demandée</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13675,7 +13587,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<sta_state_id.lov_list_id.lov_name>RH_DFR_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>R</sta_state_id.lov_code>
 		<sta_state>R</sta_state>
-		<sta_label>State R</sta_label>
+		<sta_label>Refusée</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13689,7 +13601,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<sta_state_id.lov_list_id.lov_name>RH_ENT_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>BR</sta_state_id.lov_code>
 		<sta_state>BR</sta_state>
-		<sta_label>State BR</sta_label>
+		<sta_label>Brouillon</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13703,7 +13615,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<sta_state_id.lov_list_id.lov_name>RH_ENT_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>CP</sta_state_id.lov_code>
 		<sta_state>CP</sta_state>
-		<sta_label>State CP</sta_label>
+		<sta_label>Complet</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13717,7 +13629,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<sta_state_id.lov_list_id.lov_name>RH_ENT_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>VC</sta_state_id.lov_code>
 		<sta_state>VC</sta_state>
-		<sta_label>State VC</sta_label>
+		<sta_label>Validé par le collaborateur</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13731,7 +13643,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<sta_state_id.lov_list_id.lov_name>RH_ENT_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>VE</sta_state_id.lov_code>
 		<sta_state>VE</sta_state>
-		<sta_label>State VE</sta_label>
+		<sta_label>Validé par l'évaluateur</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>

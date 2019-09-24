@@ -1,1 +1,5201 @@
-Unable to generate OpenAPI schema
+#  ___ _            _ _    _ _    __
+# / __(_)_ __  _ __| (_)__(_) |_ /_/
+# \__ \ | '  \| '_ \ | / _| |  _/ -_)
+# |___/_|_|_|_| .__/_|_\__|_|\__\___|
+#             |_| Module: RH 4.0
+paths:
+  /rest/RHDemandeFormationHistoric:
+    get:
+      summary: Search RHDemandeFormationHistoric business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformationhistoric-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHDemandeFormationHistoric'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        type: string
+        required: false
+      - in: query
+        name: row_idx
+        description: Search filter for Version
+        type: integer
+        required: false
+      - in: query
+        name: created_by_hist
+        description: Search filter for User
+        type: string
+        required: false
+      - in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: rhDfrEtat
+        description: Search filter for Etat
+        type: string
+        required: false
+        enum:
+        - D
+        - A
+        - R
+      tags:
+      - RHDemandeFormationHistoric
+  /rest/RHFormationSuivie:
+    get:
+      summary: Search RHFormationSuivie business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformationsuivie-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHFormationSuivie'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: rhFrsColId
+        description: Search filter for Collaborateur
+        type: string
+        required: false
+      - in: query
+        name: rhFrsColId__rhColMatricule
+        description: Search filter for rhFrsColId Matricule
+        type: string
+        required: false
+      - in: query
+        name: rhFrsColId__rhColCivilite
+        description: Search filter for rhFrsColId Civilité
+        type: string
+        required: false
+        enum:
+        - MLLE
+        - MME
+        - M
+      - in: query
+        name: rhFrsColId__rhColNom
+        description: Search filter for rhFrsColId Nom
+        type: string
+        required: false
+      - in: query
+        name: rhFrsColId__rhColPrenom
+        description: Search filter for rhFrsColId Prénom
+        type: string
+        required: false
+      - in: query
+        name: rhFrsColId__rhColSrvId
+        description: Search filter for rhFrsColId Service
+        type: string
+        required: false
+      - in: query
+        name: rhFrsColId__rhColSrvId__rhSrvCode
+        description: Search filter for rhFrsColId rhColSrvId Code
+        type: string
+        required: false
+      - in: query
+        name: rhFrsColId__rhColSrvId__rhSrvLibelle
+        description: Search filter for rhFrsColId rhColSrvId Libellé
+        type: string
+        required: false
+      - in: query
+        name: rhFrsColId__rhColTitre
+        description: Search filter for rhFrsColId Titre
+        type: string
+        required: false
+      - in: query
+        name: rhFrsFrmId
+        description: Search filter for Formation
+        type: string
+        required: false
+      - in: query
+        name: rhFrsFrmId__rhFrmCode
+        description: Search filter for rhFrsFrmId Code
+        type: string
+        required: false
+      - in: query
+        name: rhFrsFrmId__rhFrmType
+        description: Search filter for rhFrsFrmId Type
+        type: string
+        required: false
+        enum:
+        - AUV
+        - MKT
+        - BUR
+        - INF
+        - WEB
+        - GES
+        - CMP
+        - REH
+        - DRT
+        - AUT
+      - in: query
+        name: rhFrsFrmId__rhFrmLibelle
+        description: Search filter for rhFrsFrmId Libelle
+        type: string
+        required: false
+      - in: query
+        name: rhFrsFrmId__rhFrmPeriode
+        description: Search filter for rhFrsFrmId Période
+        type: string
+        required: false
+        enum:
+        - T1
+        - T2
+        - T3
+        - T4
+      - in: query
+        name: rhFsrDate
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: rhFrsEvaluation
+        description: Search filter for Evaluation
+        type: string
+        required: false
+        enum:
+        - '1'
+        - '2'
+        - '3'
+      - in: query
+        name: rhFrsCommentaires
+        description: Search filter for Commentaires
+        type: string
+        required: false
+      tags:
+      - RHFormationSuivie
+  /login:
+    get:
+      summary: Login (obtain bearer token)
+      security:
+      - basicAuth: []
+      produces:
+      - text/plain
+      - application/json
+      operationId: login
+      responses:
+        '200':
+          description: Successful login
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      parameters:
+      - in: query
+        name: _output
+        description: Optional output format
+        type: string
+        required: false
+        enum:
+        - json
+        - oauth2
+        - token
+      tags:
+      - session
+  /rest/RHObjectifService:
+    get:
+      summary: Search RHObjectifService business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifservice-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHObjectifService'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: rhOsrCpgId
+        description: Search filter for Campagne
+        type: string
+        required: false
+      - in: query
+        name: rhOsrCpgId__rhCpgAnnee
+        description: Search filter for rhOsrCpgId Année
+        type: integer
+        required: false
+      - in: query
+        name: rhOsrCpgId__rhCpgDateDebut
+        description: Search filter for rhOsrCpgId Date de début
+        type: string
+        required: false
+      - in: query
+        name: rhOsrCpgId__rhCpgDateFin
+        description: Search filter for rhOsrCpgId Date de fin
+        type: string
+        required: false
+      - in: query
+        name: rhOsrSrvId
+        description: Search filter for Service
+        type: string
+        required: false
+      - in: query
+        name: rhOsrSrvId__rhSrvCode
+        description: Search filter for rhOsrSrvId Code
+        type: string
+        required: false
+      - in: query
+        name: rhOsrSrvId__rhSrvLibelle
+        description: Search filter for rhOsrSrvId Libellé
+        type: string
+        required: false
+      - in: query
+        name: rhOsrNumero
+        description: Search filter for Numéro objectif
+        type: integer
+        required: false
+      - in: query
+        name: rhOsrType
+        description: Search filter for Type objectif
+        type: string
+        required: false
+        enum:
+        - QLT
+        - QTT
+        - AUT
+      - in: query
+        name: rhOsrObjectif
+        description: Search filter for Objectif
+        type: string
+        required: false
+      - in: query
+        name: rhOsrPieceJointe
+        description: Search filter for Pièce jointe
+        type: string
+        required: false
+      tags:
+      - RHObjectifService
+  /rest/RHCollaborateurHistoric/{row_id}:
+    post:
+      summary: Create a new RHCollaborateurHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurhistoric-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCollaborateurHistoric'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCollaborateurHistoric'
+        in: body
+        name: body
+      tags:
+      - RHCollaborateurHistoric
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHCollaborateurHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurhistoric-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCollaborateurHistoric'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHCollaborateurHistoric
+    delete:
+      summary: Delete a RHCollaborateurHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurhistoric-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHCollaborateurHistoric
+    put:
+      summary: Update a RHCollaborateurHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurhistoric-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCollaborateurHistoric'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCollaborateurHistoric'
+        in: body
+        name: body
+      tags:
+      - RHCollaborateurHistoric
+      consumes:
+      - application/json
+  /rest/RHEntretien:
+    get:
+      summary: Search RHEntretien business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretien-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHEntretien'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - RHEntretien-T1
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
+        required: false
+      - in: query
+        name: rhEntCpgId
+        description: Search filter for Campagne
+        type: string
+        required: false
+      - in: query
+        name: rhEntCpgId__rhCpgAnnee
+        description: Search filter for rhEntCpgId Année
+        type: integer
+        required: false
+      - in: query
+        name: rhEntCpgId__rhCpgDateDebut
+        description: Search filter for rhEntCpgId Date de début
+        type: string
+        required: false
+      - in: query
+        name: rhEntCpgId__rhCpgDateFin
+        description: Search filter for rhEntCpgId Date de fin
+        type: string
+        required: false
+      - in: query
+        name: rhEntDate
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: rhEntDuree
+        description: Search filter for Duree
+        type: integer
+        required: false
+      - in: query
+        name: rhEntEtat
+        description: Search filter for Etat
+        type: string
+        required: false
+        enum:
+        - BR
+        - CP
+        - VC
+        - VE
+      - in: query
+        name: rhEntURLCode
+        description: Search filter for Code d'accès collab
+        type: string
+        required: false
+      - in: query
+        name: rhEntURL
+        description: Search filter for URL d'accès collab.
+        type: string
+        required: false
+      - in: query
+        name: rhEntColId
+        description: Search filter for Collaborateur
+        type: string
+        required: false
+      - in: query
+        name: rhEntColId__rhColMatricule
+        description: Search filter for rhEntColId Matricule
+        type: string
+        required: false
+      - in: query
+        name: rhEntColId__rhColCivilite
+        description: Search filter for rhEntColId Civilité
+        type: string
+        required: false
+        enum:
+        - MLLE
+        - MME
+        - M
+      - in: query
+        name: rhEntColId__rhColNom
+        description: Search filter for rhEntColId Nom
+        type: string
+        required: false
+      - in: query
+        name: rhEntColId__rhColPrenom
+        description: Search filter for rhEntColId Prénom
+        type: string
+        required: false
+      - in: query
+        name: rhEntColId__rhColSrvId
+        description: Search filter for rhEntColId Service
+        type: string
+        required: false
+      - in: query
+        name: rhEntColId__rhColSrvId__rhSrvCode
+        description: Search filter for rhEntColId rhColSrvId Code
+        type: string
+        required: false
+      - in: query
+        name: rhEntColId__rhColSrvId__rhSrvLibelle
+        description: Search filter for rhEntColId rhColSrvId Libellé
+        type: string
+        required: false
+      - in: query
+        name: rhEntColId__rhColTitre
+        description: Search filter for rhEntColId Titre
+        type: string
+        required: false
+      - in: query
+        name: rhEntEvlId
+        description: Search filter for Evaluateur
+        type: string
+        required: false
+      - in: query
+        name: rhEntEvlId__rhColMatricule
+        description: Search filter for rhEntEvlId Matricule
+        type: string
+        required: false
+      - in: query
+        name: rhEntEvlId__rhColCivilite
+        description: Search filter for rhEntEvlId Civilité
+        type: string
+        required: false
+        enum:
+        - MLLE
+        - MME
+        - M
+      - in: query
+        name: rhEntEvlId__rhColNom
+        description: Search filter for rhEntEvlId Nom
+        type: string
+        required: false
+      - in: query
+        name: rhEntEvlId__rhColPrenom
+        description: Search filter for rhEntEvlId Prénom
+        type: string
+        required: false
+      - in: query
+        name: rhEntEvlId__rhColUsrId
+        description: Search filter for rhEntEvlId Compte utilisateur
+        type: string
+        required: false
+      - in: query
+        name: rhEntEvlId__rhColUsrId__usr_login
+        description: Search filter for Login
+        type: string
+        required: false
+      - in: query
+        name: rhEntBilanEvaluateur
+        description: Search filter for Conclusion de l'évaluateur
+        type: string
+        required: false
+      - in: query
+        name: rhEntBilanCollaborateur
+        description: Search filter for Conslusion du collaborateur
+        type: string
+        required: false
+      - in: query
+        name: rhEntSuivi
+        description: Search filter for Suivi spécifique
+        type: boolean
+        required: false
+      - in: query
+        name: rhEntEvaluation
+        description: Search filter for Evaluation globale
+        type: string
+        required: false
+        enum:
+        - APP
+        - AP
+        - A
+        - AM
+        - BP
+        - B
+        - BM
+        - C
+        - D
+      tags:
+      - RHEntretien
+  /rest/RHCompetence:
+    get:
+      summary: Search RHCompetence business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcompetence-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHCompetence'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: rhCmpNom
+        description: Search filter for Nom
+        type: string
+        required: false
+      - in: query
+        name: rhCmpType
+        description: Search filter for Type
+        type: string
+        required: false
+        enum:
+        - TEC
+        - FON
+        - ENC
+        - LNG
+        - AUT
+      - in: query
+        name: rhCmpDescription
+        description: Search filter for Description
+        type: string
+        required: false
+      tags:
+      - RHCompetence
+  /rest/RHDemandeFormation:
+    get:
+      summary: Search RHDemandeFormation business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformation-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHDemandeFormation'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - RHDemandeFormation-T1
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
+        required: false
+      - in: query
+        name: rhDfrColId
+        description: Search filter for Collaborateur
+        type: string
+        required: false
+      - in: query
+        name: rhDfrColId__rhColMatricule
+        description: Search filter for rhDfrColId Matricule
+        type: string
+        required: false
+      - in: query
+        name: rhDfrColId__rhColCivilite
+        description: Search filter for rhDfrColId Civilité
+        type: string
+        required: false
+        enum:
+        - MLLE
+        - MME
+        - M
+      - in: query
+        name: rhDfrColId__rhColNom
+        description: Search filter for rhDfrColId Nom
+        type: string
+        required: false
+      - in: query
+        name: rhDfrColId__rhColPrenom
+        description: Search filter for rhDfrColId Prénom
+        type: string
+        required: false
+      - in: query
+        name: rhDfrColId__rhColSrvId
+        description: Search filter for rhDfrColId Service
+        type: string
+        required: false
+      - in: query
+        name: rhDfrColId__rhColSrvId__rhSrvLibelle
+        description: Search filter for rhDfrColId rhColSrvId Libellé
+        type: string
+        required: false
+      - in: query
+        name: rhDfrColId__rhColSrvId__rhSrvCode
+        description: Search filter for rhDfrColId rhColSrvId Code
+        type: string
+        required: false
+      - in: query
+        name: rhDfrColId__rhColTitre
+        description: Search filter for rhDfrColId Titre
+        type: string
+        required: false
+      - in: query
+        name: rhDfrFrmId
+        description: Search filter for Formation
+        type: string
+        required: false
+      - in: query
+        name: rhDfrFrmId__rhFrmCode
+        description: Search filter for rhDfrFrmId Code
+        type: string
+        required: false
+      - in: query
+        name: rhDfrFrmId__rhFrmType
+        description: Search filter for rhDfrFrmId Type
+        type: string
+        required: false
+        enum:
+        - AUV
+        - MKT
+        - BUR
+        - INF
+        - WEB
+        - GES
+        - CMP
+        - REH
+        - DRT
+        - AUT
+      - in: query
+        name: rhDfrFrmId__rhFrmLibelle
+        description: Search filter for rhDfrFrmId Libelle
+        type: string
+        required: false
+      - in: query
+        name: rhDfrFrmId__rhFrmPeriode
+        description: Search filter for rhDfrFrmId Période
+        type: string
+        required: false
+        enum:
+        - T1
+        - T2
+        - T3
+        - T4
+      - in: query
+        name: rhDfrEtat
+        description: Search filter for Etat
+        type: string
+        required: false
+        enum:
+        - D
+        - A
+        - R
+      - in: query
+        name: rhDfrMotivation
+        description: Search filter for Motivation
+        type: string
+        required: false
+      - in: query
+        name: rhDfrPeriodeSouhaitee
+        description: Search filter for Période souhaitée
+        type: string
+        required: false
+        enum:
+        - T1
+        - T2
+        - T3
+        - T4
+      - in: query
+        name: rhDfrDIF
+        description: Search filter for DIF
+        type: boolean
+        required: false
+      tags:
+      - RHDemandeFormation
+  /rest/RHFormation/{row_id}:
+    post:
+      summary: Create a new RHFormationbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformation-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHFormation'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHFormation'
+        in: body
+        name: body
+      tags:
+      - RHFormation
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHFormation business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformation-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHFormation'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHFormation
+    delete:
+      summary: Delete a RHFormation business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformation-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHFormation
+    put:
+      summary: Update a RHFormationbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformation-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHFormation'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHFormation'
+        in: body
+        name: body
+      tags:
+      - RHFormation
+      consumes:
+      - application/json
+  /rest/RHObjectifPasse/{row_id}:
+    post:
+      summary: Create a new RHObjectifPassebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifpasse-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHObjectifPasse'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHObjectifPasse'
+        in: body
+        name: body
+      tags:
+      - RHObjectifPasse
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHObjectifPasse business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifpasse-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHObjectifPasse'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHObjectifPasse
+    delete:
+      summary: Delete a RHObjectifPasse business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifpasse-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHObjectifPasse
+    put:
+      summary: Update a RHObjectifPassebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifpasse-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHObjectifPasse'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHObjectifPasse'
+        in: body
+        name: body
+      tags:
+      - RHObjectifPasse
+      consumes:
+      - application/json
+  /rest/RHService/{row_id}:
+    post:
+      summary: Create a new RHServicebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhservice-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHService'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHService'
+        in: body
+        name: body
+      tags:
+      - RHService
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHService business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhservice-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHService'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHService
+    delete:
+      summary: Delete a RHService business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhservice-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHService
+    put:
+      summary: Update a RHServicebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhservice-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHService'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHService'
+        in: body
+        name: body
+      tags:
+      - RHService
+      consumes:
+      - application/json
+  /rest/RHDemandeFormationHistoric/{row_id}:
+    post:
+      summary: Create a new RHDemandeFormationHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformationhistoric-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHDemandeFormationHistoric'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHDemandeFormationHistoric'
+        in: body
+        name: body
+      tags:
+      - RHDemandeFormationHistoric
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHDemandeFormationHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformationhistoric-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHDemandeFormationHistoric'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHDemandeFormationHistoric
+    delete:
+      summary: Delete a RHDemandeFormationHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformationhistoric-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHDemandeFormationHistoric
+    put:
+      summary: Update a RHDemandeFormationHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformationhistoric-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHDemandeFormationHistoric'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHDemandeFormationHistoric'
+        in: body
+        name: body
+      tags:
+      - RHDemandeFormationHistoric
+      consumes:
+      - application/json
+  /rest/RHEntretien/{row_id}:
+    post:
+      summary: Create a new RHEntretienbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretien-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHEntretien'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHEntretien'
+        in: body
+        name: body
+      tags:
+      - RHEntretien
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHEntretien business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretien-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHEntretien'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHEntretien
+    delete:
+      summary: Delete a RHEntretien business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretien-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHEntretien
+    put:
+      summary: Update a RHEntretienbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretien-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHEntretien'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHEntretien'
+        in: body
+        name: body
+      tags:
+      - RHEntretien
+      consumes:
+      - application/json
+  /rest/RHCampagne:
+    get:
+      summary: Search RHCampagne business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcampagne-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHCampagne'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: rhCpgAnnee
+        description: Search filter for Année
+        type: integer
+        required: false
+      - in: query
+        name: rhCpgDateDebut
+        description: Search filter for Date de début
+        type: string
+        required: false
+      - in: query
+        name: rhCpgDateFin
+        description: Search filter for Date de fin
+        type: string
+        required: false
+      - in: query
+        name: rhCpgDescription
+        description: Search filter for Description
+        type: string
+        required: false
+      - in: query
+        name: rhCpgNotice
+        description: Search filter for Notice explicative
+        type: string
+        required: false
+      tags:
+      - RHCampagne
+  /rest/RHCollaborateurHistoric:
+    get:
+      summary: Search RHCollaborateurHistoric business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurhistoric-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHCollaborateurHistoric'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        type: string
+        required: false
+      - in: query
+        name: row_idx
+        description: Search filter for Version
+        type: integer
+        required: false
+      - in: query
+        name: created_by_hist
+        description: Search filter for User
+        type: string
+        required: false
+      - in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: rhColSrvId
+        description: Search filter for Service
+        type: string
+        required: false
+      - in: query
+        name: rhColSrvId__rhSrvCode
+        description: Search filter for rhColSrvId Code
+        type: string
+        required: false
+      - in: query
+        name: rhColDateDebutSrv
+        description: Search filter for Date début dans le service
+        type: string
+        required: false
+      - in: query
+        name: rhColTitre
+        description: Search filter for Titre
+        type: string
+        required: false
+      tags:
+      - RHCollaborateurHistoric
+  /rest/RHCollaborateur/{row_id}:
+    post:
+      summary: Create a new RHCollaborateurbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateur-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCollaborateur'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCollaborateur'
+        in: body
+        name: body
+      tags:
+      - RHCollaborateur
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHCollaborateur business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateur-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCollaborateur'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHCollaborateur
+    delete:
+      summary: Delete a RHCollaborateur business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateur-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHCollaborateur
+    put:
+      summary: Update a RHCollaborateurbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateur-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCollaborateur'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCollaborateur'
+        in: body
+        name: body
+      tags:
+      - RHCollaborateur
+      consumes:
+      - application/json
+  /rest/RHCollaborateurCompetence:
+    get:
+      summary: Search RHCollaborateurCompetence business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurcompetence-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHCollaborateurCompetence'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - RHCollaborateurCompetence-T1
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
+        required: false
+      - in: query
+        name: rhColCmpColId
+        description: Search filter for Collaborateur
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpColId__rhColMatricule
+        description: Search filter for rhColCmpColId Matricule
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpColId__rhColCivilite
+        description: Search filter for rhColCmpColId Civilité
+        type: string
+        required: false
+        enum:
+        - MLLE
+        - MME
+        - M
+      - in: query
+        name: rhColCmpColId__rhColNom
+        description: Search filter for rhColCmpColId Nom
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpColId__rhColPrenom
+        description: Search filter for rhColCmpColId Prénom
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpColId__rhColSrvId
+        description: Search filter for rhColCmpColId Service
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpColId__rhColSrvId__rhSrvCode
+        description: Search filter for rhColCmpColId rhColSrvId Code
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpColId__rhColSrvId__rhSrvLibelle
+        description: Search filter for rhColCmpColId rhColSrvId Libellé
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpColId__rhColTitre
+        description: Search filter for rhColCmpColId Titre
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpCmpId
+        description: Search filter for Compétence
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpCmpId__rhCmpNom
+        description: Search filter for rhColCmpCmpId Nom
+        type: string
+        required: false
+      - in: query
+        name: rhColCmpCmpId__rhCmpType
+        description: Search filter for rhColCmpCmpId Type
+        type: string
+        required: false
+        enum:
+        - TEC
+        - FON
+        - ENC
+        - LNG
+        - AUT
+      - in: query
+        name: rhColCmpNiveau
+        description: Search filter for Niveau
+        type: integer
+        required: false
+      - in: query
+        name: rhColCmpCommentaires
+        description: Search filter for Commentaires
+        type: string
+        required: false
+      tags:
+      - RHCollaborateurCompetence
+  /rest/RHEntretienHistoric/{row_id}:
+    post:
+      summary: Create a new RHEntretienHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretienhistoric-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHEntretienHistoric'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHEntretienHistoric'
+        in: body
+        name: body
+      tags:
+      - RHEntretienHistoric
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHEntretienHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretienhistoric-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHEntretienHistoric'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHEntretienHistoric
+    delete:
+      summary: Delete a RHEntretienHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretienhistoric-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHEntretienHistoric
+    put:
+      summary: Update a RHEntretienHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretienhistoric-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHEntretienHistoric'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHEntretienHistoric'
+        in: body
+        name: body
+      tags:
+      - RHEntretienHistoric
+      consumes:
+      - application/json
+  /rest/RHFormationSuivie/{row_id}:
+    post:
+      summary: Create a new RHFormationSuiviebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformationsuivie-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHFormationSuivie'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHFormationSuivie'
+        in: body
+        name: body
+      tags:
+      - RHFormationSuivie
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHFormationSuivie business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformationsuivie-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHFormationSuivie'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHFormationSuivie
+    delete:
+      summary: Delete a RHFormationSuivie business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformationsuivie-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHFormationSuivie
+    put:
+      summary: Update a RHFormationSuiviebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformationsuivie-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHFormationSuivie'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHFormationSuivie'
+        in: body
+        name: body
+      tags:
+      - RHFormationSuivie
+      consumes:
+      - application/json
+  /logout:
+    get:
+      summary: Logout (revoke bearer token)
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: logout
+      responses:
+        '200':
+          description: Successfull logout
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      tags:
+      - session
+  /rest/RHFormation:
+    get:
+      summary: Search RHFormation business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhformation-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHFormation'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: rhFrmCode
+        description: Search filter for Code
+        type: string
+        required: false
+      - in: query
+        name: rhFrmType
+        description: Search filter for Type
+        type: string
+        required: false
+        enum:
+        - AUV
+        - MKT
+        - BUR
+        - INF
+        - WEB
+        - GES
+        - CMP
+        - REH
+        - DRT
+        - AUT
+      - in: query
+        name: rhFrmLibelle
+        description: Search filter for Libelle
+        type: string
+        required: false
+      - in: query
+        name: rhFrmDisponible
+        description: Search filter for Disponible ?
+        type: boolean
+        required: false
+      - in: query
+        name: rhFrmDescription
+        description: Search filter for Description
+        type: string
+        required: false
+      - in: query
+        name: rhFrmProgramme
+        description: Search filter for Programme
+        type: string
+        required: false
+      - in: query
+        name: rhFrmPeriode
+        description: Search filter for Période
+        type: string
+        required: false
+        enum:
+        - T1
+        - T2
+        - T3
+        - T4
+      - in: query
+        name: rhFrmCout
+        description: Search filter for Coût par collaborateur
+        type: number
+        required: false
+      tags:
+      - RHFormation
+  /rest/RHEntretienHistoric:
+    get:
+      summary: Search RHEntretienHistoric business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretienhistoric-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHEntretienHistoric'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        type: string
+        required: false
+      - in: query
+        name: row_idx
+        description: Search filter for Version
+        type: integer
+        required: false
+      - in: query
+        name: created_by_hist
+        description: Search filter for User
+        type: string
+        required: false
+      - in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: rhEntEtat
+        description: Search filter for Etat
+        type: string
+        required: false
+        enum:
+        - BR
+        - CP
+        - VC
+        - VE
+      tags:
+      - RHEntretienHistoric
+  /rest/RHCollaborateurCompetence/{row_id}:
+    post:
+      summary: Create a new RHCollaborateurCompetencebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurcompetence-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCollaborateurCompetence'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCollaborateurCompetence'
+        in: body
+        name: body
+      tags:
+      - RHCollaborateurCompetence
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHCollaborateurCompetence business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurcompetence-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCollaborateurCompetence'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHCollaborateurCompetence
+    delete:
+      summary: Delete a RHCollaborateurCompetence business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurcompetence-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHCollaborateurCompetence
+    put:
+      summary: Update a RHCollaborateurCompetencebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateurcompetence-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCollaborateurCompetence'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCollaborateurCompetence'
+        in: body
+        name: body
+      tags:
+      - RHCollaborateurCompetence
+      consumes:
+      - application/json
+  /rest/RHObjectifPasse:
+    get:
+      summary: Search RHObjectifPasse business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifpasse-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHObjectifPasse'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: rhOpaEntId
+        description: Search filter for Entretien
+        type: string
+        required: false
+      - in: query
+        name: rhOpaEntId__rhEntCpgId
+        description: Search filter for rhOpaEntId Campagne
+        type: string
+        required: false
+      - in: query
+        name: rhOpaEntId__rhEntCpgId__rhCpgAnnee
+        description: Search filter for rhOpaEntId rhEntCpgId Année
+        type: integer
+        required: false
+      - in: query
+        name: rhOpaEntId__rhEntEtat
+        description: Search filter for rhOpaEntId Etat
+        type: string
+        required: false
+        enum:
+        - BR
+        - CP
+        - VC
+        - VE
+      - in: query
+        name: rhOpaEntId__rhEntColId
+        description: Search filter for rhOpaEntId Collaborateur
+        type: string
+        required: false
+      - in: query
+        name: rhOpaEntId__rhEntColId__rhColMatricule
+        description: Search filter for rhOpaEntId rhEntColId Matricule
+        type: string
+        required: false
+      - in: query
+        name: rhOpaEntId__rhEntColId__rhColCivilite
+        description: Search filter for rhOpaEntId rhEntColId Civilité
+        type: string
+        required: false
+        enum:
+        - MLLE
+        - MME
+        - M
+      - in: query
+        name: rhOpaEntId__rhEntColId__rhColNom
+        description: Search filter for rhOpaEntId rhEntColId Nom
+        type: string
+        required: false
+      - in: query
+        name: rhOpaEntId__rhEntColId__rhColPrenom
+        description: Search filter for rhOpaEntId rhEntColId Prénom
+        type: string
+        required: false
+      - in: query
+        name: rhOpaNumero
+        description: Search filter for Numéro
+        type: integer
+        required: false
+      - in: query
+        name: rhOpaType
+        description: Search filter for Type
+        type: string
+        required: false
+        enum:
+        - SFA
+        - SET
+        - AUT
+      - in: query
+        name: rhOpaObjectif
+        description: Search filter for Objectif
+        type: string
+        required: false
+      - in: query
+        name: rhOpaNiveauAtteinte
+        description: Search filter for Niveau d'atteinte
+        type: string
+        required: false
+        enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+      - in: query
+        name: rhOpaCommentaires
+        description: Search filter for Commentaires
+        type: string
+        required: false
+      tags:
+      - RHObjectifPasse
+  /:
+    get:
+      summary: Get user session information
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: info
+      responses:
+        '200':
+          description: Success in getting user session information
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      parameters:
+      - in: query
+        name: texts
+        description: Texts?
+        type: boolean
+        required: false
+      tags:
+      - session
+  /rest/RHObjectifService/{row_id}:
+    post:
+      summary: Create a new RHObjectifServicebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifservice-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHObjectifService'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHObjectifService'
+        in: body
+        name: body
+      tags:
+      - RHObjectifService
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHObjectifService business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifservice-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHObjectifService'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHObjectifService
+    delete:
+      summary: Delete a RHObjectifService business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifservice-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHObjectifService
+    put:
+      summary: Update a RHObjectifServicebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectifservice-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHObjectifService'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHObjectifService'
+        in: body
+        name: body
+      tags:
+      - RHObjectifService
+      consumes:
+      - application/json
+  /rest/RHService:
+    get:
+      summary: Search RHService business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhservice-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHService'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: rhSrvCode
+        description: Search filter for Code
+        type: string
+        required: false
+      - in: query
+        name: rhSrvLibelle
+        description: Search filter for Libellé
+        type: string
+        required: false
+      - in: query
+        name: rhSrvLogo
+        description: Search filter for Logo
+        type: string
+        required: false
+      - in: query
+        name: rhSrvDescription
+        description: Search filter for Description
+        type: string
+        required: false
+      tags:
+      - RHService
+  /rest/RHCompetence/{row_id}:
+    post:
+      summary: Create a new RHCompetencebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcompetence-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCompetence'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCompetence'
+        in: body
+        name: body
+      tags:
+      - RHCompetence
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHCompetence business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcompetence-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCompetence'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHCompetence
+    delete:
+      summary: Delete a RHCompetence business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcompetence-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHCompetence
+    put:
+      summary: Update a RHCompetencebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcompetence-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCompetence'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCompetence'
+        in: body
+        name: body
+      tags:
+      - RHCompetence
+      consumes:
+      - application/json
+  /rest/RHCampagne/{row_id}:
+    post:
+      summary: Create a new RHCampagnebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcampagne-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCampagne'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCampagne'
+        in: body
+        name: body
+      tags:
+      - RHCampagne
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHCampagne business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcampagne-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCampagne'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHCampagne
+    delete:
+      summary: Delete a RHCampagne business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcampagne-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHCampagne
+    put:
+      summary: Update a RHCampagnebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcampagne-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHCampagne'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHCampagne'
+        in: body
+        name: body
+      tags:
+      - RHCampagne
+      consumes:
+      - application/json
+  /rest/RHDemandeFormation/{row_id}:
+    post:
+      summary: Create a new RHDemandeFormationbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformation-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHDemandeFormation'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHDemandeFormation'
+        in: body
+        name: body
+      tags:
+      - RHDemandeFormation
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHDemandeFormation business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformation-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHDemandeFormation'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHDemandeFormation
+    delete:
+      summary: Delete a RHDemandeFormation business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformation-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHDemandeFormation
+    put:
+      summary: Update a RHDemandeFormationbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhdemandeformation-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHDemandeFormation'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHDemandeFormation'
+        in: body
+        name: body
+      tags:
+      - RHDemandeFormation
+      consumes:
+      - application/json
+  /rest/RHObjectifFutur:
+    get:
+      summary: Search RHObjectifFutur business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectiffutur-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHObjectifFutur'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: rhOfuEntId
+        description: Search filter for Entretien
+        type: string
+        required: false
+      - in: query
+        name: rhOfuEntId__rhEntCpgId
+        description: Search filter for rhOfuEntId Campagne
+        type: string
+        required: false
+      - in: query
+        name: rhOfuEntId__rhEntCpgId__rhCpgAnnee
+        description: Search filter for rhOfuEntId rhEntCpgId Année
+        type: integer
+        required: false
+      - in: query
+        name: rhOfuEntId__rhEntEtat
+        description: Search filter for rhOfuEntId Etat
+        type: string
+        required: false
+        enum:
+        - BR
+        - CP
+        - VC
+        - VE
+      - in: query
+        name: rhOfuEntId__rhEntColId
+        description: Search filter for rhOfuEntId Collaborateur
+        type: string
+        required: false
+      - in: query
+        name: rhOfuEntId__rhEntColId__rhColMatricule
+        description: Search filter for rhOfuEntId rhEntColId Matricule
+        type: string
+        required: false
+      - in: query
+        name: rhOfuEntId__rhEntColId__rhColCivilite
+        description: Search filter for rhOfuEntId rhEntColId Civilité
+        type: string
+        required: false
+        enum:
+        - MLLE
+        - MME
+        - M
+      - in: query
+        name: rhOfuEntId__rhEntColId__rhColNom
+        description: Search filter for rhOfuEntId rhEntColId Nom
+        type: string
+        required: false
+      - in: query
+        name: rhOfuEntId__rhEntColId__rhColPrenom
+        description: Search filter for rhOfuEntId rhEntColId Prénom
+        type: string
+        required: false
+      - in: query
+        name: rhOfuNumero
+        description: Search filter for Numéro
+        type: integer
+        required: false
+      - in: query
+        name: rhOfuType
+        description: Search filter for Type
+        type: string
+        required: false
+        enum:
+        - SFA
+        - SET
+        - AUT
+      - in: query
+        name: rhOfuObjectif
+        description: Search filter for Objectif
+        type: string
+        required: false
+      tags:
+      - RHObjectifFutur
+  /rest/RHObjectifFutur/{row_id}:
+    post:
+      summary: Create a new RHObjectifFuturbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectiffutur-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHObjectifFutur'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHObjectifFutur'
+        in: body
+        name: body
+      tags:
+      - RHObjectifFutur
+      consumes:
+      - application/json
+    get:
+      summary: Get a RHObjectifFutur business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectiffutur-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHObjectifFutur'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RHObjectifFutur
+    delete:
+      summary: Delete a RHObjectifFutur business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectiffutur-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHObjectifFutur
+    put:
+      summary: Update a RHObjectifFuturbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhobjectiffutur-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RHObjectifFutur'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RHObjectifFutur'
+        in: body
+        name: body
+      tags:
+      - RHObjectifFutur
+      consumes:
+      - application/json
+  /rest/RHCollaborateur:
+    get:
+      summary: Search RHCollaborateur business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhcollaborateur-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRHCollaborateur'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: rhColMatricule
+        description: Search filter for Matricule
+        type: string
+        required: false
+      - in: query
+        name: rhColCivilite
+        description: Search filter for Civilité
+        type: string
+        required: false
+        enum:
+        - MLLE
+        - MME
+        - M
+      - in: query
+        name: rhColNom
+        description: Search filter for Nom
+        type: string
+        required: false
+      - in: query
+        name: rhColPrenom
+        description: Search filter for Prénom
+        type: string
+        required: false
+      - in: query
+        name: rhColUsrId
+        description: Search filter for Compte utilisateur
+        type: string
+        required: false
+      - in: query
+        name: rhColUsrId__usr_login
+        description: Search filter for Login
+        type: string
+        required: false
+      - in: query
+        name: rhColPhoto
+        description: Search filter for Photo
+        type: string
+        required: false
+      - in: query
+        name: rhColDateNaissance
+        description: Search filter for Date de naissance
+        type: string
+        required: false
+      - in: query
+        name: rhColEmail
+        description: Search filter for E-mail
+        type: string
+        required: false
+      - in: query
+        name: rhColTelephone
+        description: Search filter for Téléphone
+        type: string
+        required: false
+      - in: query
+        name: rhColMobile
+        description: Search filter for Mobile
+        type: string
+        required: false
+      - in: query
+        name: rhColFax
+        description: Search filter for Fax
+        type: string
+        required: false
+      - in: query
+        name: rhColAdresse
+        description: Search filter for Adresse
+        type: string
+        required: false
+      - in: query
+        name: rhColComplement
+        description: Search filter for Complément
+        type: string
+        required: false
+      - in: query
+        name: rhColCodePostal
+        description: Search filter for Code postal
+        type: string
+        required: false
+      - in: query
+        name: rhColVille
+        description: Search filter for Ville
+        type: string
+        required: false
+      - in: query
+        name: rhColStatut
+        description: Search filter for Statut
+        type: string
+        required: false
+        enum:
+        - CDI
+        - CDD
+        - STG
+        - APP
+      - in: query
+        name: rhColDateDebut
+        description: Search filter for Date de début
+        type: string
+        required: false
+      - in: query
+        name: rhColDateFin
+        description: Search filter for Date de fin
+        type: string
+        required: false
+      - in: query
+        name: rhColSrvId
+        description: Search filter for Service
+        type: string
+        required: false
+      - in: query
+        name: rhColSrvId__rhSrvCode
+        description: Search filter for rhColSrvId Code
+        type: string
+        required: false
+      - in: query
+        name: rhColSrvId__rhSrvLibelle
+        description: Search filter for rhColSrvId Libellé
+        type: string
+        required: false
+      - in: query
+        name: rhColDateDebutSrv
+        description: Search filter for Date début dans le service
+        type: string
+        required: false
+      - in: query
+        name: rhColTitre
+        description: Search filter for Titre
+        type: string
+        required: false
+      tags:
+      - RHCollaborateur
+securityDefinitions:
+  basicAuth:
+    type: basic
+  bearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+definitions:
+  Error404:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 404
+  RHObjectifFutur:
+    type: object
+    properties:
+      rhOfuEntId__rhEntColId__rhColMatricule:
+        description: rhOfuEntId rhEntColId Matricule
+        type: string
+      rhOfuEntId__rhEntCpgId__rhCpgAnnee:
+        description: rhOfuEntId rhEntCpgId Année
+        type: integer
+      rhOfuObjectif:
+        description: Objectif
+        type: string
+      rhOfuEntId__rhEntColId:
+        description: rhOfuEntId Collaborateur
+        type: string
+      rhOfuEntId__rhEntColId__rhColPrenom:
+        description: rhOfuEntId rhEntColId Prénom
+        type: string
+      rhOfuType:
+        description: Type
+        type: string
+        enum:
+        - SFA
+        - SET
+        - AUT
+      rhOfuEntId__rhEntColId__rhColNom:
+        description: rhOfuEntId rhEntColId Nom
+        type: string
+      rhOfuEntId__rhEntColId__rhColCivilite:
+        description: rhOfuEntId rhEntColId Civilité
+        type: string
+        enum:
+        - MLLE
+        - MME
+        - M
+      row_id:
+        description: ID
+        type: string
+      rhOfuEntId__rhEntCpgId:
+        description: rhOfuEntId Campagne
+        type: string
+      rhOfuNumero:
+        description: Numéro
+        type: integer
+      rhOfuEntId:
+        description: Entretien
+        type: string
+      rhOfuEntId__rhEntEtat:
+        description: rhOfuEntId Etat
+        type: string
+        enum:
+        - BR
+        - CP
+        - VC
+        - VE
+  RHObjectifService:
+    type: object
+    properties:
+      rhOsrSrvId:
+        description: Service
+        type: string
+      rhOsrNumero:
+        description: Numéro objectif
+        type: integer
+      rhOsrPieceJointe:
+        description: Pièce jointe
+        type: object
+      rhOsrCpgId:
+        description: Campagne
+        type: string
+      rhOsrCpgId__rhCpgAnnee:
+        description: rhOsrCpgId Année
+        type: integer
+      rhOsrCpgId__rhCpgDateDebut:
+        description: rhOsrCpgId Date de début
+        type: string
+      rhOsrType:
+        description: Type objectif
+        type: string
+        enum:
+        - QLT
+        - QTT
+        - AUT
+      rhOsrObjectif:
+        description: Objectif
+        type: string
+      row_id:
+        description: ID
+        type: string
+      rhOsrSrvId__rhSrvLibelle:
+        description: rhOsrSrvId Libellé
+        type: string
+      rhOsrCpgId__rhCpgDateFin:
+        description: rhOsrCpgId Date de fin
+        type: string
+      rhOsrSrvId__rhSrvCode:
+        description: rhOsrSrvId Code
+        type: string
+  ArrayOfRHFormation:
+    type: array
+    items:
+      $ref: '#/definitions/RHFormation'
+  PublicationResult:
+    type: object
+    properties:
+      mime:
+        description: MIME type
+        type: string
+      content:
+        description: Content (plain text or base64 encoded)
+        type: string
+  ArrayOfRHCollaborateurHistoric:
+    type: array
+    items:
+      $ref: '#/definitions/RHCollaborateurHistoric'
+  RHFormationSuivie:
+    type: object
+    properties:
+      rhFrsColId__rhColPrenom:
+        description: rhFrsColId Prénom
+        type: string
+      rhFrsFrmId__rhFrmType:
+        description: rhFrsFrmId Type
+        type: string
+        enum:
+        - AUV
+        - MKT
+        - BUR
+        - INF
+        - WEB
+        - GES
+        - CMP
+        - REH
+        - DRT
+        - AUT
+      rhFrsColId__rhColTitre:
+        description: rhFrsColId Titre
+        type: string
+      rhFrsFrmId__rhFrmLibelle:
+        description: rhFrsFrmId Libelle
+        type: string
+      rhFrsColId__rhColNom:
+        description: rhFrsColId Nom
+        type: string
+      rhFrsFrmId__rhFrmPeriode:
+        description: rhFrsFrmId Période
+        type: array
+        items:
+          type: string
+          enum:
+          - T1
+          - T2
+          - T3
+          - T4
+      rhFrsColId__rhColCivilite:
+        description: rhFrsColId Civilité
+        type: string
+        enum:
+        - MLLE
+        - MME
+        - M
+      rhFrsColId__rhColMatricule:
+        description: rhFrsColId Matricule
+        type: string
+      rhFrsFrmId:
+        description: Formation
+        type: string
+      rhFrsColId__rhColSrvId__rhSrvLibelle:
+        description: rhFrsColId rhColSrvId Libellé
+        type: string
+      rhFrsColId:
+        description: Collaborateur
+        type: string
+      rhFsrDate:
+        description: Date
+        type: string
+      rhFrsColId__rhColSrvId__rhSrvCode:
+        description: rhFrsColId rhColSrvId Code
+        type: string
+      rhFrsEvaluation:
+        description: Evaluation
+        type: string
+        enum:
+        - '1'
+        - '2'
+        - '3'
+      row_id:
+        description: ID
+        type: string
+      rhFrsFrmId__rhFrmCode:
+        description: rhFrsFrmId Code
+        type: string
+      rhFrsColId__rhColSrvId:
+        description: rhFrsColId Service
+        type: string
+      rhFrsCommentaires:
+        description: Commentaires
+        type: string
+  RHFormation:
+    type: object
+    properties:
+      rhFrmDisponible:
+        description: Disponible ?
+        type: boolean
+      rhFrmProgramme:
+        description: Programme
+        type: object
+      rhFrmCout:
+        description: Coût par collaborateur
+        type: number
+      rhFrmLibelle:
+        description: Libelle
+        type: string
+      rhFrmCode:
+        description: Code
+        type: string
+      rhFrmDescription:
+        description: Description
+        type: string
+      row_id:
+        description: ID
+        type: string
+      rhFrmType:
+        description: Type
+        type: string
+        enum:
+        - AUV
+        - MKT
+        - BUR
+        - INF
+        - WEB
+        - GES
+        - CMP
+        - REH
+        - DRT
+        - AUT
+      rhFrmPeriode:
+        description: Période
+        type: array
+        items:
+          type: string
+          enum:
+          - T1
+          - T2
+          - T3
+          - T4
+  ArrayOfRHDemandeFormation:
+    type: array
+    items:
+      $ref: '#/definitions/RHDemandeFormation'
+  ArrayOfRHCollaborateurCompetence:
+    type: array
+    items:
+      $ref: '#/definitions/RHCollaborateurCompetence'
+  RHCollaborateur:
+    type: object
+    properties:
+      rhColPrenom:
+        description: Prénom
+        type: string
+      rhColUsrId__usr_login:
+        description: Login
+        type: string
+      rhColCodePostal:
+        description: Code postal
+        type: string
+      rhColDateNaissance:
+        description: Date de naissance
+        type: string
+      rhColPhoto:
+        description: Photo
+        type: object
+      rhColAdresse:
+        description: Adresse
+        type: string
+      rhColSrvId__rhSrvLibelle:
+        description: rhColSrvId Libellé
+        type: string
+      rhColDateFin:
+        description: Date de fin
+        type: string
+      rhColComplement:
+        description: Complément
+        type: string
+      rhColCivilite:
+        description: Civilité
+        type: string
+        enum:
+        - MLLE
+        - MME
+        - M
+      rhColEmail:
+        description: E-mail
+        type: string
+      rhColSrvId__rhSrvCode:
+        description: rhColSrvId Code
+        type: string
+      rhColFax:
+        description: Fax
+        type: string
+      rhColMatricule:
+        description: Matricule
+        type: string
+      rhColMobile:
+        description: Mobile
+        type: string
+      rhColDateDebutSrv:
+        description: Date début dans le service
+        type: string
+      rhColTitre:
+        description: Titre
+        type: string
+      rhColStatut:
+        description: Statut
+        type: string
+        enum:
+        - CDI
+        - CDD
+        - STG
+        - APP
+      rhColNom:
+        description: Nom
+        type: string
+      rhColDateDebut:
+        description: Date de début
+        type: string
+      rhColVille:
+        description: Ville
+        type: string
+      rhColUsrId:
+        description: Compte utilisateur
+        type: string
+      rhColTelephone:
+        description: Téléphone
+        type: string
+      row_id:
+        description: ID
+        type: string
+      rhColSrvId:
+        description: Service
+        type: string
+  ArrayOfRHCollaborateur:
+    type: array
+    items:
+      $ref: '#/definitions/RHCollaborateur'
+  RHEntretienHistoric:
+    type: object
+    properties:
+      row_idx:
+        description: Version
+        type: integer
+      created_dt_hist:
+        description: Date
+        type: string
+      row_id:
+        description: ID
+        type: string
+      rhEntEtat:
+        description: Etat
+        type: string
+        enum:
+        - BR
+        - CP
+        - VC
+        - VE
+      created_by_hist:
+        description: User
+        type: string
+      row_ref_id:
+        description: Reference
+        type: string
+  RHCollaborateurHistoric:
+    type: object
+    properties:
+      row_idx:
+        description: Version
+        type: integer
+      rhColDateDebutSrv:
+        description: Date début dans le service
+        type: string
+      rhColTitre:
+        description: Titre
+        type: string
+      created_dt_hist:
+        description: Date
+        type: string
+      row_id:
+        description: ID
+        type: string
+      rhColSrvId__rhSrvCode:
+        description: rhColSrvId Code
+        type: string
+      created_by_hist:
+        description: User
+        type: string
+      rhColSrvId:
+        description: Service
+        type: string
+      row_ref_id:
+        description: Reference
+        type: string
+  ArrayOfRHCampagne:
+    type: array
+    items:
+      $ref: '#/definitions/RHCampagne'
+  RHDemandeFormation:
+    type: object
+    properties:
+      rhDfrColId__rhColSrvId__rhSrvLibelle:
+        description: rhDfrColId rhColSrvId Libellé
+        type: string
+      rhDfrFrmId__rhFrmType:
+        description: rhDfrFrmId Type
+        type: string
+        enum:
+        - AUV
+        - MKT
+        - BUR
+        - INF
+        - WEB
+        - GES
+        - CMP
+        - REH
+        - DRT
+        - AUT
+      rhDfrFrmId:
+        description: Formation
+        type: string
+      rhDfrFrmId__rhFrmPeriode:
+        description: rhDfrFrmId Période
+        type: array
+        items:
+          type: string
+          enum:
+          - T1
+          - T2
+          - T3
+          - T4
+      rhDfrColId__rhColPrenom:
+        description: rhDfrColId Prénom
+        type: string
+      rhDfrColId__rhColMatricule:
+        description: rhDfrColId Matricule
+        type: string
+      rhDfrColId__rhColTitre:
+        description: rhDfrColId Titre
+        type: string
+      rhDfrFrmId__rhFrmCode:
+        description: rhDfrFrmId Code
+        type: string
+      rhDfrEtat:
+        description: Etat
+        type: string
+        enum:
+        - D
+        - A
+        - R
+      rhDfrDIF:
+        description: DIF
+        type: boolean
+      rhDfrMotivation:
+        description: Motivation
+        type: string
+      rhDfrColId__rhColSrvId:
+        description: rhDfrColId Service
+        type: string
+      rhDfrColId__rhColSrvId__rhSrvCode:
+        description: rhDfrColId rhColSrvId Code
+        type: string
+      rhDfrFrmId__rhFrmLibelle:
+        description: rhDfrFrmId Libelle
+        type: string
+      rhDfrColId:
+        description: Collaborateur
+        type: string
+      rhDfrColId__rhColCivilite:
+        description: rhDfrColId Civilité
+        type: string
+        enum:
+        - MLLE
+        - MME
+        - M
+      row_id:
+        description: ID
+        type: string
+      rhDfrColId__rhColNom:
+        description: rhDfrColId Nom
+        type: string
+      rhDfrPeriodeSouhaitee:
+        description: Période souhaitée
+        type: string
+        enum:
+        - T1
+        - T2
+        - T3
+        - T4
+  RHEntretien:
+    type: object
+    properties:
+      rhEntEvlId__rhColUsrId:
+        description: rhEntEvlId Compte utilisateur
+        type: string
+      rhEntEvlId__rhColNom:
+        description: rhEntEvlId Nom
+        type: string
+      rhEntURLCode:
+        description: Code d'accès collab
+        type: string
+      rhEntURL:
+        description: URL d'accès collab.
+        type: string
+      rhEntDuree:
+        description: Duree
+        type: integer
+      rhEntCpgId__rhCpgDateFin:
+        description: rhEntCpgId Date de fin
+        type: string
+      rhEntEvlId__rhColPrenom:
+        description: rhEntEvlId Prénom
+        type: string
+      rhEntColId:
+        description: Collaborateur
+        type: string
+      rhEntColId__rhColMatricule:
+        description: rhEntColId Matricule
+        type: string
+      rhEntEvlId__rhColMatricule:
+        description: rhEntEvlId Matricule
+        type: string
+      rhEntEvlId:
+        description: Evaluateur
+        type: string
+      rhEntBilanCollaborateur:
+        description: Conslusion du collaborateur
+        type: string
+      rhEntColId__rhColPrenom:
+        description: rhEntColId Prénom
+        type: string
+      rhEntColId__rhColSrvId__rhSrvLibelle:
+        description: rhEntColId rhColSrvId Libellé
+        type: string
+      rhEntDate:
+        description: Date
+        type: string
+      rhEntColId__rhColSrvId:
+        description: rhEntColId Service
+        type: string
+      rhEntCpgId__rhCpgDateDebut:
+        description: rhEntCpgId Date de début
+        type: string
+      rhEntColId__rhColSrvId__rhSrvCode:
+        description: rhEntColId rhColSrvId Code
+        type: string
+      rhEntBilanEvaluateur:
+        description: Conclusion de l'évaluateur
+        type: string
+      rhEntEvaluation:
+        description: Evaluation globale
+        type: string
+        enum:
+        - APP
+        - AP
+        - A
+        - AM
+        - BP
+        - B
+        - BM
+        - C
+        - D
+      rhEntCpgId__rhCpgAnnee:
+        description: rhEntCpgId Année
+        type: integer
+      rhEntColId__rhColNom:
+        description: rhEntColId Nom
+        type: string
+      rhEntEtat:
+        description: Etat
+        type: string
+        enum:
+        - BR
+        - CP
+        - VC
+        - VE
+      rhEntEvlId__rhColUsrId__usr_login:
+        description: Login
+        type: string
+      rhEntColId__rhColTitre:
+        description: rhEntColId Titre
+        type: string
+      rhEntCpgId:
+        description: Campagne
+        type: string
+      rhEntColId__rhColCivilite:
+        description: rhEntColId Civilité
+        type: string
+        enum:
+        - MLLE
+        - MME
+        - M
+      rhEntEvlId__rhColCivilite:
+        description: rhEntEvlId Civilité
+        type: string
+        enum:
+        - MLLE
+        - MME
+        - M
+      row_id:
+        description: ID
+        type: string
+      rhEntSuivi:
+        description: Suivi spécifique
+        type: boolean
+  Error400:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 400
+  Error401:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 401
+  Error500:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 500
+  ArrayOfRHDemandeFormationHistoric:
+    type: array
+    items:
+      $ref: '#/definitions/RHDemandeFormationHistoric'
+  ArrayOfRHService:
+    type: array
+    items:
+      $ref: '#/definitions/RHService'
+  Error403:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 403
+  ArrayOfRHObjectifFutur:
+    type: array
+    items:
+      $ref: '#/definitions/RHObjectifFutur'
+  ArrayOfRHObjectifService:
+    type: array
+    items:
+      $ref: '#/definitions/RHObjectifService'
+  RHService:
+    type: object
+    properties:
+      rhSrvDescription:
+        description: Description
+        type: string
+      rhSrvLibelle:
+        description: Libellé
+        type: string
+      rhSrvLogo:
+        description: Logo
+        type: object
+      row_id:
+        description: ID
+        type: string
+      rhSrvCode:
+        description: Code
+        type: string
+  RHCollaborateurCompetence:
+    type: object
+    properties:
+      rhColCmpColId__rhColNom:
+        description: rhColCmpColId Nom
+        type: string
+      rhColCmpCmpId__rhCmpType:
+        description: rhColCmpCmpId Type
+        type: string
+        enum:
+        - TEC
+        - FON
+        - ENC
+        - LNG
+        - AUT
+      rhColCmpNiveau:
+        description: Niveau
+        type: integer
+      rhColCmpColId__rhColSrvId:
+        description: rhColCmpColId Service
+        type: string
+      rhColCmpCmpId:
+        description: Compétence
+        type: string
+      rhColCmpColId__rhColSrvId__rhSrvLibelle:
+        description: rhColCmpColId rhColSrvId Libellé
+        type: string
+      rhColCmpCommentaires:
+        description: Commentaires
+        type: string
+      rhColCmpColId:
+        description: Collaborateur
+        type: string
+      rhColCmpColId__rhColCivilite:
+        description: rhColCmpColId Civilité
+        type: string
+        enum:
+        - MLLE
+        - MME
+        - M
+      rhColCmpColId__rhColSrvId__rhSrvCode:
+        description: rhColCmpColId rhColSrvId Code
+        type: string
+      rhColCmpCmpId__rhCmpNom:
+        description: rhColCmpCmpId Nom
+        type: string
+      rhColCmpColId__rhColMatricule:
+        description: rhColCmpColId Matricule
+        type: string
+      row_id:
+        description: ID
+        type: string
+      rhColCmpColId__rhColPrenom:
+        description: rhColCmpColId Prénom
+        type: string
+      rhColCmpColId__rhColTitre:
+        description: rhColCmpColId Titre
+        type: string
+  ArrayOfRHFormationSuivie:
+    type: array
+    items:
+      $ref: '#/definitions/RHFormationSuivie'
+  ArrayOfRHCompetence:
+    type: array
+    items:
+      $ref: '#/definitions/RHCompetence'
+  ActionResult:
+    type: object
+    properties:
+      result:
+        description: Action result
+        type: string
+  RHDemandeFormationHistoric:
+    type: object
+    properties:
+      row_idx:
+        description: Version
+        type: integer
+      created_dt_hist:
+        description: Date
+        type: string
+      row_id:
+        description: ID
+        type: string
+      rhDfrEtat:
+        description: Etat
+        type: string
+        enum:
+        - D
+        - A
+        - R
+      created_by_hist:
+        description: User
+        type: string
+      row_ref_id:
+        description: Reference
+        type: string
+  TreeviewData:
+    type: object
+    properties:
+      item:
+        description: Object item with lists of linked objects' items
+        type: object
+  RHObjectifPasse:
+    type: object
+    properties:
+      rhOpaObjectif:
+        description: Objectif
+        type: string
+      rhOpaEntId__rhEntColId:
+        description: rhOpaEntId Collaborateur
+        type: string
+      rhOpaEntId:
+        description: Entretien
+        type: string
+      rhOpaEntId__rhEntColId__rhColMatricule:
+        description: rhOpaEntId rhEntColId Matricule
+        type: string
+      rhOpaEntId__rhEntEtat:
+        description: rhOpaEntId Etat
+        type: string
+        enum:
+        - BR
+        - CP
+        - VC
+        - VE
+      rhOpaEntId__rhEntColId__rhColPrenom:
+        description: rhOpaEntId rhEntColId Prénom
+        type: string
+      rhOpaEntId__rhEntCpgId__rhCpgAnnee:
+        description: rhOpaEntId rhEntCpgId Année
+        type: integer
+      rhOpaNumero:
+        description: Numéro
+        type: integer
+      rhOpaEntId__rhEntColId__rhColCivilite:
+        description: rhOpaEntId rhEntColId Civilité
+        type: string
+        enum:
+        - MLLE
+        - MME
+        - M
+      rhOpaEntId__rhEntColId__rhColNom:
+        description: rhOpaEntId rhEntColId Nom
+        type: string
+      rhOpaEntId__rhEntCpgId:
+        description: rhOpaEntId Campagne
+        type: string
+      rhOpaType:
+        description: Type
+        type: string
+        enum:
+        - SFA
+        - SET
+        - AUT
+      rhOpaCommentaires:
+        description: Commentaires
+        type: string
+      row_id:
+        description: ID
+        type: string
+      rhOpaNiveauAtteinte:
+        description: Niveau d'atteinte
+        type: string
+        enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+  ArrayOfRHObjectifPasse:
+    type: array
+    items:
+      $ref: '#/definitions/RHObjectifPasse'
+  ArrayOfRHEntretien:
+    type: array
+    items:
+      $ref: '#/definitions/RHEntretien'
+  RHCampagne:
+    type: object
+    properties:
+      rhCpgNotice:
+        description: Notice explicative
+        type: object
+      rhCpgDescription:
+        description: Description
+        type: string
+      rhCpgAnnee:
+        description: Année
+        type: integer
+      row_id:
+        description: ID
+        type: string
+      rhCpgDateFin:
+        description: Date de fin
+        type: string
+      rhCpgDateDebut:
+        description: Date de début
+        type: string
+  RHCompetence:
+    type: object
+    properties:
+      rhCmpDescription:
+        description: Description
+        type: string
+      rhCmpNom:
+        description: Nom
+        type: string
+      row_id:
+        description: ID
+        type: string
+      rhCmpType:
+        description: Type
+        type: string
+        enum:
+        - TEC
+        - FON
+        - ENC
+        - LNG
+        - AUT
+  ArrayOfRHEntretienHistoric:
+    type: array
+    items:
+      $ref: '#/definitions/RHEntretienHistoric'
+swagger: '2.0'
+info:
+  license:
+    name: Simplicite license
+    url: http://www.simplicitesoftware.com
+  contact:
+    name: Simplicite Software
+    url: http://www.simplicitesoftware.com
+    email: contact@simplicitesoftware.com
+  description: API for module RH
+  title: RH
+  version: '4.0'
+tags:
+- name: RHCampagne
+  description: RHCampagne
+- name: RHCollaborateur
+  description: RHCollaborateur
+- name: RHCollaborateurCompetence
+  description: RHCollaborateurCompetence
+- name: RHCollaborateurHistoric
+  description: RHCollaborateurHistoric
+- name: RHCompetence
+  description: RHCompetence
+- name: RHDemandeFormation
+  description: RHDemandeFormation
+- name: RHDemandeFormationHistoric
+  description: RHDemandeFormationHistoric
+- name: RHEntretien
+  description: RHEntretien
+- name: RHEntretienHistoric
+  description: RHEntretienHistoric
+- name: RHFormation
+  description: RHFormation
+- name: RHFormationSuivie
+  description: RHFormationSuivie
+- name: RHObjectifFutur
+  description: RHObjectifFutur
+- name: RHObjectifPasse
+  description: RHObjectifPasse
+- name: RHObjectifService
+  description: RHObjectifService
+- name: RHService
+  description: RHService

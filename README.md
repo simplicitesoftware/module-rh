@@ -78,14 +78,14 @@ No custom action
 ### Lists
 
 * `RH_CIVILITE`
-    - `MLLE` Code MLLE
-    - `MME` Code MME
-    - `M` Code M
+    - `MLLE` Mademoiselle
+    - `MME` Madame
+    - `M` Monsieur
 * `RH_COL_STATUT`
-    - `CDI` Code CDI
-    - `CDD` Code CDD
-    - `STG` Code STG
-    - `APP` Code APP
+    - `CDI` Contrat à Durée Indéterminée
+    - `CDD` Contrat à Durée Déterminée
+    - `STG` Stage
+    - `APP` Apprenti
 
 ### Custom actions
 
@@ -118,15 +118,15 @@ No custom action
 ### Lists
 
 * `RH_CIVILITE`
-    - `MLLE` Code MLLE
-    - `MME` Code MME
-    - `M` Code M
+    - `MLLE` Mademoiselle
+    - `MME` Madame
+    - `M` Monsieur
 * `RH_CMP_TYPE`
-    - `TEC` Code TEC
-    - `FON` Code FON
-    - `ENC` Code ENC
-    - `LNG` Code LNG
-    - `AUT` Code AUT
+    - `TEC` Technique
+    - `FON` Fonctionelle
+    - `ENC` Encadrement
+    - `LNG` Langue
+    - `AUT` Autre
 
 ### Custom actions
 
@@ -170,11 +170,11 @@ No custom action
 ### Lists
 
 * `RH_CMP_TYPE`
-    - `TEC` Code TEC
-    - `FON` Code FON
-    - `ENC` Code ENC
-    - `LNG` Code LNG
-    - `AUT` Code AUT
+    - `TEC` Technique
+    - `FON` Fonctionelle
+    - `ENC` Encadrement
+    - `LNG` Langue
+    - `AUT` Autre
 
 ### Custom actions
 
@@ -211,29 +211,29 @@ No custom action
 ### Lists
 
 * `RH_CIVILITE`
-    - `MLLE` Code MLLE
-    - `MME` Code MME
-    - `M` Code M
+    - `MLLE` Mademoiselle
+    - `MME` Madame
+    - `M` Monsieur
 * `RH_FRM_TYPE`
-    - `AUV` Code AUV
-    - `MKT` Code MKT
-    - `BUR` Code BUR
-    - `INF` Code INF
-    - `WEB` Code WEB
-    - `GES` Code GES
-    - `CMP` Code CMP
-    - `REH` Code REH
-    - `DRT` Code DRT
-    - `AUT` Code AUT
+    - `AUV` Audiovisuel
+    - `MKT` Marketing
+    - `BUR` Bureatutique
+    - `INF` Informatique
+    - `WEB` Internet
+    - `GES` Gestion
+    - `CMP` Comptabilité
+    - `REH` Ressources Humaines
+    - `DRT` Droit
+    - `AUT` Autre
 * `RH_TRIMESTRE`
-    - `T1` Code T1
-    - `T2` Code T2
-    - `T3` Code T3
-    - `T4` Code T4
+    - `T1` Trimestre 1
+    - `T2` Trimestre 2
+    - `T3` Trimestre 3
+    - `T4` Trimestre 4
 * `RH_DFR_ETAT`
-    - `D` Code D
-    - `A` Code A
-    - `R` Code R
+    - `D` Demandée
+    - `A` Acceptée
+    - `R` Refusée
 
 ### Custom actions
 
@@ -257,9 +257,9 @@ No custom action
 ### Lists
 
 * `RH_DFR_ETAT`
-    - `D` Code D
-    - `A` Code A
-    - `R` Code R
+    - `D` Demandée
+    - `A` Acceptée
+    - `R` Refusée
 
 ### Custom actions
 
@@ -307,24 +307,24 @@ No custom action
 ### Lists
 
 * `RH_ENT_ETAT`
-    - `BR` Code BR
-    - `CP` Code CP
-    - `VC` Code VC
-    - `VE` Code VE
+    - `BR` Brouillon
+    - `CP` Complet
+    - `VC` Validé par le collaborateur
+    - `VE` Validé par l'évaluateur
 * `RH_CIVILITE`
-    - `MLLE` Code MLLE
-    - `MME` Code MME
-    - `M` Code M
+    - `MLLE` Mademoiselle
+    - `MME` Madame
+    - `M` Monsieur
 * `RH_ENT_EVALUATION`
-    - `APP` Code APP
-    - `AP` Code AP
-    - `A` Code A
-    - `AM` Code AM
-    - `BP` Code BP
-    - `B` Code B
-    - `BM` Code BM
-    - `C` Code C
-    - `D` Code D
+    - `APP` A++
+    - `AP` A+
+    - `A` A
+    - `AM` A-
+    - `BP` B+
+    - `B` B
+    - `BM` B-
+    - `C` C
+    - `D` D
 
 ### Custom actions
 
@@ -348,10 +348,10 @@ No custom action
 ### Lists
 
 * `RH_ENT_ETAT`
-    - `BR` Code BR
-    - `CP` Code CP
-    - `VC` Code VC
-    - `VE` Code VE
+    - `BR` Brouillon
+    - `CP` Complet
+    - `VC` Validé par le collaborateur
+    - `VE` Validé par l'évaluateur
 
 ### Custom actions
 
@@ -378,21 +378,21 @@ No custom action
 ### Lists
 
 * `RH_FRM_TYPE`
-    - `AUV` Code AUV
-    - `MKT` Code MKT
-    - `BUR` Code BUR
-    - `INF` Code INF
-    - `WEB` Code WEB
-    - `GES` Code GES
-    - `CMP` Code CMP
-    - `REH` Code REH
-    - `DRT` Code DRT
-    - `AUT` Code AUT
+    - `AUV` Audiovisuel
+    - `MKT` Marketing
+    - `BUR` Bureatutique
+    - `INF` Informatique
+    - `WEB` Internet
+    - `GES` Gestion
+    - `CMP` Comptabilité
+    - `REH` Ressources Humaines
+    - `DRT` Droit
+    - `AUT` Autre
 * `RH_TRIMESTRE`
-    - `T1` Code T1
-    - `T2` Code T2
-    - `T3` Code T3
-    - `T4` Code T4
+    - `T1` Trimestre 1
+    - `T2` Trimestre 2
+    - `T3` Trimestre 3
+    - `T4` Trimestre 4
 
 ### Custom actions
 
@@ -428,29 +428,29 @@ No custom action
 ### Lists
 
 * `RH_CIVILITE`
-    - `MLLE` Code MLLE
-    - `MME` Code MME
-    - `M` Code M
+    - `MLLE` Mademoiselle
+    - `MME` Madame
+    - `M` Monsieur
 * `RH_FRM_TYPE`
-    - `AUV` Code AUV
-    - `MKT` Code MKT
-    - `BUR` Code BUR
-    - `INF` Code INF
-    - `WEB` Code WEB
-    - `GES` Code GES
-    - `CMP` Code CMP
-    - `REH` Code REH
-    - `DRT` Code DRT
-    - `AUT` Code AUT
+    - `AUV` Audiovisuel
+    - `MKT` Marketing
+    - `BUR` Bureatutique
+    - `INF` Informatique
+    - `WEB` Internet
+    - `GES` Gestion
+    - `CMP` Comptabilité
+    - `REH` Ressources Humaines
+    - `DRT` Droit
+    - `AUT` Autre
 * `RH_TRIMESTRE`
-    - `T1` Code T1
-    - `T2` Code T2
-    - `T3` Code T3
-    - `T4` Code T4
+    - `T1` Trimestre 1
+    - `T2` Trimestre 2
+    - `T3` Trimestre 3
+    - `T4` Trimestre 4
 * `RH_FRS_EVALUATION`
-    - `1` Code 1
-    - `2` Code 2
-    - `3` Code 3
+    - `1` Très utile
+    - `2` Moyennement utile
+    - `3` Faiblement utile
 
 ### Custom actions
 
@@ -481,18 +481,18 @@ No custom action
 ### Lists
 
 * `RH_ENT_ETAT`
-    - `BR` Code BR
-    - `CP` Code CP
-    - `VC` Code VC
-    - `VE` Code VE
+    - `BR` Brouillon
+    - `CP` Complet
+    - `VC` Validé par le collaborateur
+    - `VE` Validé par l'évaluateur
 * `RH_CIVILITE`
-    - `MLLE` Code MLLE
-    - `MME` Code MME
-    - `M` Code M
+    - `MLLE` Mademoiselle
+    - `MME` Madame
+    - `M` Monsieur
 * `RH_OPA_OFU_TYPE`
-    - `SFA` Code SFA
-    - `SET` Code SET
-    - `AUT` Code AUT
+    - `SFA` Savoir faire
+    - `SET` Savoir être
+    - `AUT` Autre
 
 ### Custom actions
 
@@ -525,23 +525,23 @@ No custom action
 ### Lists
 
 * `RH_ENT_ETAT`
-    - `BR` Code BR
-    - `CP` Code CP
-    - `VC` Code VC
-    - `VE` Code VE
+    - `BR` Brouillon
+    - `CP` Complet
+    - `VC` Validé par le collaborateur
+    - `VE` Validé par l'évaluateur
 * `RH_CIVILITE`
-    - `MLLE` Code MLLE
-    - `MME` Code MME
-    - `M` Code M
+    - `MLLE` Mademoiselle
+    - `MME` Madame
+    - `M` Monsieur
 * `RH_OPA_OFU_TYPE`
-    - `SFA` Code SFA
-    - `SET` Code SET
-    - `AUT` Code AUT
+    - `SFA` Savoir faire
+    - `SET` Savoir être
+    - `AUT` Autre
 * `RH_OPA_NIVEAUATTEINTE`
-    - `1` Code 1
-    - `2` Code 2
-    - `3` Code 3
-    - `4` Code 4
+    - `1` Excellent
+    - `2` Bon
+    - `3` Moyen
+    - `4` Insuffisant
 
 ### Custom actions
 
@@ -571,9 +571,9 @@ No custom action
 ### Lists
 
 * `RH_OSR_TYPE`
-    - `QLT` Code QLT
-    - `QTT` Code QTT
-    - `AUT` Code AUT
+    - `QLT` Qualitatif
+    - `QTT` Quantitatif
+    - `AUT` Autre
 
 ### Custom actions
 
