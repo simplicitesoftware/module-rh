@@ -8,8 +8,17 @@
 		<mdl_version>4.0</mdl_version>
 		<mdl_prefix/>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/rh-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-09-24 15:20:28</mdl_lastupd>
-		<mdl_comment/>
+		<mdl_lastupd>2019-09-24 15:40:42</mdl_lastupd>
+		<mdl_comment><![CDATA[Module RH de gestion d'**entretiens**, de **compétences** et de **formations**.
+
+Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec les paramètres suivants:
+
+```json
+{
+	"type": "git",
+	"origin": { "uri": "https://github.com/simplicitesoftware/module-rh.git" }
+}
+```]]></mdl_comment>
 	</data>
 </object>
 <object>

@@ -11,7 +11,16 @@
 `RH` module definition
 ======================
 
+Module RH de gestion d'**entretiens**, de **compétences** et de **formations**.
 
+Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec les paramètres suivants:
+
+```json
+{
+	"type": "git",
+	"origin": { "uri": "https://github.com/simplicitesoftware/module-rh.git" }
+}
+```
 
 `RHCampagne` business object definition
 ---------------------------------------

@@ -1,8 +1,8 @@
 {
-    "date": "Tue Sep 24 15:20:28 CEST 2019",
+    "date": "Tue Sep 24 15:40:42 CEST 2019",
     "name": "RH",
     "format": "xml",
-    "description": "",
+    "description": "Module RH de gestion d'**entretiens**, de **compétences** et de **formations**.\n\nDisponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec les paramètres suivants:\n\n```json\n{\n\t\"type\": \"git\",\n\t\"origin\": { \"uri\": \"https://github.com/simplicitesoftware/module-rh.git\" }\n}\n```",
     "files": ["RH.xml"],
     "repository": {},
     "version": "4.0",
