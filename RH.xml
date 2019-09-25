@@ -13468,7 +13468,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<prt_grantable>0</prt_grantable>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<prt_lang>FRA</prt_lang>
-		<prt_translation>Reçu</prt_translation>
+		<prt_translation>Synthèse entretien</prt_translation>
 		<prt_filename/>
 		<prt_mimetype>pdf</prt_mimetype>
 		<prt_type>METH</prt_type>
@@ -14536,6 +14536,24 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<res_file>resources/ObjectExternal/RHEntretienCollab/JS.js</res_file>
 		<res_file_compiled>resources/ObjectExternal/RHEntretienCollab/JS.min.js</res_file_compiled>
 		<res_image/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>RHEntretien</obo_name>
+				</data>
+			</object>
+		</res_object>
+		<res_type>IMG</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>LOGO</res_code>
+		<res_cached>0</res_cached>
+		<res_file/>
+		<res_file_compiled/>
+		<res_image>resources/ObjectInternal/RHEntretien/LOGO.png</res_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 </object>

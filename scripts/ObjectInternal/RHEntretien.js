@@ -11,17 +11,23 @@ RHEntretien.publication = function() {
 	var g = this.getGrant();
 	var bos = new java.io.ByteArrayOutputStream();
 	var pdf = PDFTool.open(bos);
-
-	pdf.add(PDFTool.getImageFromResource(g, "LOGO"));
-	pdf.add(new Paragraph("Entretien Annuel: " + this.getField("entColId.colCivilite").getDisplayValue() + " " + this.getField("entColId.colNom").getValue() + " " + this.getField("entColId.colPrenom").getValue(), PDFTool.TITLE1));
-
-	var f = this.getField("rhEntEtat");
-	pdf.add(new Paragraph(f.getDisplay() + ": " + f.getDisplayValue(), PDFTool.TITLE2));
-	f = this.getField("rhEntDate");
-	pdf.add(new Paragraph(f.getDisplay() + ": " + g.toFormattedDate(f.getValue())));
-
-	// TODO : à completer...
 	
+	try {
+		pdf.add(PDFTool.getImageFromResource(this, "LOGO"));
+		pdf.add(new Paragraph("Entretien Annuel: " +
+			this.getField("rhEntColId.rhColCivilite").getDisplayValue() +
+			" " + this.getField("rhEntColId.rhColNom").getValue() +
+			" " + this.getField("rhEntColId.rhColPrenom").getValue(), PDFTool.TITLE1));
+	
+		var f = this.getField("rhEntEtat");
+		pdf.add(new Paragraph(f.getDisplay() + ": " + f.getDisplayValue(), PDFTool.TITLE2));
+		f = this.getField("rhEntDate");
+		pdf.add(new Paragraph(f.getDisplay() + ": " + g.toFormattedDate(f.getValue())));
+		// TODO : à completer...
+	} catch (e) {
+		pdf.add(new Paragraph(e.message));
+	}
+		
 	PDFTool.close(pdf);
 	return bos.toByteArray();
 };
