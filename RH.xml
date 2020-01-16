@@ -60,9 +60,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	<action>upsert</action>
 	<data>
 		<viw_name>RH_AdminHome</viw_name>
-		<viw_template><![CDATA[<table><tr><td class="area">[AREA:1:=]</td><td class="area">[AREA:2:=]</td></tr></table>
-<div class="area">[AREA:3:=]</div>]]></viw_template>
-		<viw_ui/>
+		<viw_ui><![CDATA[<div class="row"><div class="col-sm-6"><div class="area" data-area="1"></div></div><div class="col-sm-6"><div class="area" data-area="2"></div></div></div>]]></viw_ui>
 		<viw_order>1</viw_order>
 		<viw_icon>rh</viw_icon>
 		<viw_disp_id.dis_code/>
@@ -72,9 +70,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<viw_name>RH_EvalHome</viw_name>
-		<viw_template><![CDATA[<div class="area">[AREA:1:=]</div>
-<div class="area">[AREA:2:=]</div>]]></viw_template>
-		<viw_ui/>
+		<viw_ui><![CDATA[<div class="area" data-area="1"></div>]]></viw_ui>
 		<viw_order>1</viw_order>
 		<viw_icon>rh</viw_icon>
 		<viw_disp_id.dis_code/>
@@ -146,6 +142,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<usr_logout>2018-05-15 23:30:30</usr_logout>
 		<usr_last_logon/>
 		<usr_dateformat/>
+		<usr_uuid>a5ce05f5-0599-41f2-a396-bfbebcb1b735</usr_uuid>
 	</data>
 </object>
 <object>
@@ -186,11 +183,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<prf_profile_id.grp_name>RH_ADMIN</prf_profile_id.grp_name>
-		<prf_group_id.grp_name>CHAT_USER</prf_group_id.grp_name>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prf_profile_id.grp_name>RH_ADMIN</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>SOCIAL_USER</prf_group_id.grp_name>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -202,11 +194,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	<data>
 		<prf_profile_id.grp_name>RH_ADMIN</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>WEB_USER</prf_group_id.grp_name>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prf_profile_id.grp_name>RH_EVAL</prf_profile_id.grp_name>
-		<prf_group_id.grp_name>CHAT_USER</prf_group_id.grp_name>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -224,25 +211,9 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	<name>Responsability</name>
 	<action>upsert</action>
 	<data>
-		<rsp_login_id.usr_login>adminrh</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>RH_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2018-05-15</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
 		<rsp_login_id.usr_login>designer</rsp_login_id.usr_login>
 		<rsp_group_id.grp_name>RH_ADMIN</rsp_group_id.grp_name>
 		<rsp_start_dt>2018-05-15</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>RH_COLLAB</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
 		<rsp_end_dt/>
 		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1456,6 +1427,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1492,6 +1464,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1528,6 +1501,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_CMP_TYPE</fld_enumlist>
@@ -1564,6 +1538,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1600,6 +1575,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_CIVILITE</fld_enumlist>
@@ -1636,6 +1612,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1672,6 +1649,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1708,6 +1686,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1744,6 +1723,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1780,6 +1760,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_enumlist/>
@@ -1816,6 +1797,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1852,6 +1834,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1888,6 +1871,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1924,6 +1908,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1960,6 +1945,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -1996,6 +1982,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>12</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2032,6 +2019,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2068,6 +2056,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_enumlist/>
@@ -2104,6 +2093,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2140,6 +2130,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2176,6 +2167,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2212,6 +2204,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2248,6 +2241,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2284,6 +2278,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_COL_STATUT</fld_enumlist>
@@ -2320,6 +2315,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2356,6 +2352,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2392,6 +2389,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2428,6 +2426,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2464,6 +2463,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2500,6 +2500,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2536,6 +2537,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2572,6 +2574,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2608,6 +2611,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2644,6 +2648,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2680,6 +2685,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2716,6 +2722,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_DFR_ETAT</fld_enumlist>
@@ -2752,6 +2759,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2788,6 +2796,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2824,6 +2833,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_TRIMESTRE</fld_enumlist>
@@ -2860,6 +2870,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2896,6 +2907,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2932,6 +2944,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2968,6 +2981,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3004,6 +3018,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>5</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3040,6 +3055,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3076,6 +3092,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_ENT_ETAT</fld_enumlist>
@@ -3112,6 +3129,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_ENT_EVALUATION</fld_enumlist>
@@ -3148,6 +3166,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3184,6 +3203,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3220,6 +3240,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>10</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3256,6 +3277,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>1</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3292,6 +3314,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_enumlist/>
@@ -3328,6 +3351,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3364,6 +3388,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3400,6 +3425,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3436,6 +3462,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3472,6 +3499,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>14</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_TRIMESTRE</fld_enumlist>
@@ -3508,6 +3536,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3544,6 +3573,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_FRM_TYPE</fld_enumlist>
@@ -3580,6 +3610,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3616,6 +3647,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3652,6 +3684,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_FRS_EVALUATION</fld_enumlist>
@@ -3688,6 +3721,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3724,6 +3758,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3760,6 +3795,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3796,6 +3832,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3832,6 +3869,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3868,6 +3906,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_OPA_OFU_TYPE</fld_enumlist>
@@ -3904,6 +3943,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3940,6 +3980,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3976,6 +4017,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_OPA_NIVEAUATTEINTE</fld_enumlist>
@@ -4012,6 +4054,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4048,6 +4091,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4084,6 +4128,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_OPA_OFU_TYPE</fld_enumlist>
@@ -4120,6 +4165,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4156,6 +4202,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4192,6 +4239,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4228,6 +4276,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4264,6 +4313,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4300,6 +4350,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>RH_OSR_TYPE</fld_enumlist>
@@ -4336,6 +4387,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_enumlist/>
@@ -4372,6 +4424,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4408,6 +4461,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4444,6 +4498,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_tray/>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4473,13 +4528,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	<action>upsert</action>
 	<data>
 		<tpl_name>RHCampagne</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1:=]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div class="area" data-area="1"></div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
@@ -4487,16 +4535,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHCollaborateur</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-    <tbody>
-        <tr>
-            <td class="area">[AREA:1]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:2,3,4]</td>
-        </tr>
-    </tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="area" data-area="2,3,4"></div>
@@ -4507,19 +4545,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHCollaborateurCompetence</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-    <tbody>
-        <tr>
-            <td class="area">[AREA:1]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:2]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:3]</td>
-        </tr>
-    </tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="area" data-area="2"></div>
@@ -4531,13 +4556,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHCompetence</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1:=]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div class="area" data-area="1"></div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
@@ -4545,19 +4563,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHDemandeFormation</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-    <tbody>
-        <tr>
-            <td class="area">[AREA:1]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:2]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:3]</td>
-        </tr>
-    </tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-6">
@@ -4575,16 +4580,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHEntretien</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-    <tbody>
-        <tr>
-            <td class="area">[AREA:1]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:2,3,4]</td>
-        </tr>
-    </tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="area" data-area="2"></div>
@@ -4605,19 +4600,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHFormation</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-    <tbody>
-        <tr>
-            <td class="area">[AREA:1]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:2]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:3]</td>
-        </tr>
-    </tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="row">
@@ -4635,19 +4617,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHFormationSuivie</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-    <tbody>
-        <tr>
-            <td class="area">[AREA:1]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:2]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:3]</td>
-        </tr>
-    </tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-6">
@@ -4665,16 +4634,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHObjectifFutur</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1]</td>
-		</tr>
-		<tr>
-			<td class="area">[AREA:2]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="area" data-area="2"></div>
@@ -4685,16 +4644,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHObjectifPasse</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1]</td>
-		</tr>
-		<tr>
-			<td class="area">[AREA:2]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="area" data-area="2"></div>
@@ -4705,19 +4654,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHObjectifService</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-    <tbody>
-        <tr>
-            <td class="area">[AREA:1]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:2]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:3]</td>
-        </tr>
-    </tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="area" data-area="2"></div>
@@ -4729,19 +4665,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	</data>
 	<data>
 		<tpl_name>RHService</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-    <tbody>
-        <tr>
-            <td class="area">[AREA:1]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:2]</td>
-        </tr>
-        <tr>
-            <td class="area">[AREA:3]</td>
-        </tr>
-    </tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="row">
@@ -4765,7 +4688,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHCampagne-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-4">
@@ -4788,7 +4710,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHCollaborateur-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-6">
@@ -4818,7 +4739,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHCollaborateur-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhColEmail"></div>
   <div class="row">
@@ -4850,7 +4770,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHCollaborateur-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhColStatut"></div>
   <div class="row">
@@ -4869,7 +4788,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHCollaborateur-4</ofa_name>
 		<ofa_position>4</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhColSrvId"></div>
   <div class="row">
@@ -4890,7 +4808,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHCollaborateurCompetence-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhColCmpColId"></div>
   <div class="row">
@@ -4921,7 +4838,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHCollaborateurCompetence-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhColCmpCmpId"></div>
   <div class="row">
@@ -4940,7 +4856,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHCollaborateurCompetence-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhColCmpNiveau"></div>
   <div class="field" data-field="rhColCmpCommentaires"></div>
@@ -4952,7 +4867,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHCompetence-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-6">
@@ -4971,7 +4885,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHDemandeFormation-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhDfrColId"></div>
   <div class="row">
@@ -5002,7 +4915,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHDemandeFormation-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhDfrFrmId"></div>
   <div class="row">
@@ -5023,7 +4935,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHDemandeFormation-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-5">
@@ -5045,7 +4956,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHEntretien-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhEntCpgId"></div>
   <div class="row">
@@ -5067,7 +4977,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHEntretien-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-4">
@@ -5096,7 +5005,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHEntretien-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhEntColId"></div>
   <div class="row">
@@ -5127,7 +5035,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHEntretien-4</ofa_name>
 		<ofa_position>4</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhEntEvlId"></div>
   <div class="row">
@@ -5150,7 +5057,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHEntretien-5</ofa_name>
 		<ofa_position>5</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhEntBilanEvaluateur"></div>
   <div class="field" data-field="rhEntBilanCollaborateur"></div>
@@ -5170,7 +5076,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHFormation-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-5">
@@ -5196,7 +5101,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHFormation-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div class="field" data-field="rhFrmDescription"></div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -5205,7 +5109,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHFormation-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhFrmProgramme"></div>
   <div class="field" data-field="rhFrmPeriode"></div>
@@ -5218,7 +5121,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHFormationSuivie-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhFrsColId"></div>
   <div class="row">
@@ -5249,7 +5151,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHFormationSuivie-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhFrsFrmId"></div>
   <div class="row">
@@ -5270,7 +5171,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHFormationSuivie-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-5">
@@ -5289,7 +5189,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHObjectifFutur-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhOfuEntId"></div>
   <div class="row">
@@ -5320,7 +5219,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHObjectifFutur-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-5">
@@ -5339,7 +5237,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHObjectifPasse-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhOpaEntId"></div>
   <div class="row">
@@ -5370,7 +5267,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHObjectifPasse-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-5">
@@ -5391,7 +5287,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHObjectifService-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhOsrCpgId"></div>
   <div class="row">
@@ -5413,7 +5308,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHObjectifService-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="rhOsrSrvId"></div>
   <div class="row">
@@ -5432,7 +5326,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHObjectifService-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-5">
@@ -5452,7 +5345,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHService-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div class="row">
   <div class="col-sm-5">
     <div class="field" data-field="rhSrvCode"></div>
@@ -5468,7 +5360,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHService-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div class="field" data-field="rhSrvLogo"></div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -5477,7 +5368,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<ofa_name>RHService-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div class="field" data-field="rhSrvDescription"></div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -14141,7 +14031,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<rch_user_id.usr_login>designer</rch_user_id.usr_login>
 		<rch_name>RHEntretien-S1</rch_name>
 		<rch_public>1</rch_public>
-		<rch_request><![CDATA[ALL_search.jsp?object=RHEntretien]]></rch_request>
+		<rch_request><![CDATA[{"order__rhEntCpgId__rhCpgAnnee":-1,"group__rhEntCpgId__rhCpgAnnee":1,"order__rhEntColId__rhColMatricule":1,"order__rhEntEvlId__rhColMatricule":1}]]></rch_request>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 </object>
@@ -14261,7 +14151,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<vwi_show>RHEntretien</vwi_show>
 		<vwi_url><![CDATA[&zgraph=bar&zcontrol=no&zwidth=500&zheight=400&zstotal=no]]></vwi_url>
 		<vwi_image/>
-		<vwi_graph_id.gph_name/>
 		<vwi_crosstab_id.ctb_name>RHEntretien-T1</vwi_crosstab_id.ctb_name>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
@@ -14280,27 +14169,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<vwi_show>RHDemandeFormation</vwi_show>
 		<vwi_url><![CDATA[&zgraph=pie&zcontrol=no&zwidth=500&zheight=400&zstotal=no]]></vwi_url>
 		<vwi_image/>
-		<vwi_graph_id.gph_name/>
 		<vwi_crosstab_id.ctb_name>RHDemandeFormation-T1</vwi_crosstab_id.ctb_name>
-		<vwi_printtmpl_id.prt_name/>
-		<vwi_printtmpl_id.prt_lang/>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<vwi_view_id.viw_name>RH_AdminHome</vwi_view_id.viw_name>
-		<vwi_position>3</vwi_position>
-		<vwi_type>E</vwi_type>
-		<vwi_title>0</vwi_title>
-		<vwi_research_id.rch_name/>
-		<vwi_research_id.rch_object_id.obo_name/>
-		<vwi_research_id.rch_user_id.usr_login/>
-		<vwi_search_spec/>
-		<vwi_lov_code/>
-		<vwi_show/>
-		<vwi_url><![CDATA[ALL_extobject.jsp?extobject=SocialPosts]]></vwi_url>
-		<vwi_image/>
-		<vwi_graph_id.gph_name/>
-		<vwi_crosstab_id.ctb_name/>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -14318,26 +14187,6 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<vwi_show>RHEntretien</vwi_show>
 		<vwi_url/>
 		<vwi_image/>
-		<vwi_graph_id.gph_name/>
-		<vwi_crosstab_id.ctb_name/>
-		<vwi_printtmpl_id.prt_name/>
-		<vwi_printtmpl_id.prt_lang/>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<vwi_view_id.viw_name>RH_EvalHome</vwi_view_id.viw_name>
-		<vwi_position>2</vwi_position>
-		<vwi_type>E</vwi_type>
-		<vwi_title>0</vwi_title>
-		<vwi_research_id.rch_name/>
-		<vwi_research_id.rch_object_id.obo_name/>
-		<vwi_research_id.rch_user_id.usr_login/>
-		<vwi_search_spec/>
-		<vwi_lov_code/>
-		<vwi_show/>
-		<vwi_url><![CDATA[ALL_extobject.jsp?extobject=SocialPosts]]></vwi_url>
-		<vwi_image/>
-		<vwi_graph_id.gph_name/>
 		<vwi_crosstab_id.ctb_name/>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
@@ -14639,6 +14488,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14650,6 +14500,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14661,6 +14512,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14672,6 +14524,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14683,6 +14536,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14694,6 +14548,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14705,6 +14560,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14716,6 +14572,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14727,6 +14584,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14738,6 +14596,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14749,6 +14608,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14760,6 +14620,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14771,6 +14632,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14782,6 +14644,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14793,6 +14656,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14804,6 +14668,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14815,6 +14680,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14826,6 +14692,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14837,6 +14704,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14848,6 +14716,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14859,6 +14728,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14870,6 +14740,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14881,6 +14752,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14892,6 +14764,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14903,6 +14776,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14914,6 +14788,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14925,6 +14800,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14936,6 +14812,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14947,6 +14824,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14958,6 +14836,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14969,6 +14848,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14980,6 +14860,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14991,6 +14872,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15002,6 +14884,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15013,6 +14896,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15024,6 +14908,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15035,6 +14920,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15046,6 +14932,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15057,6 +14944,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15068,6 +14956,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15079,6 +14968,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15090,6 +14980,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15101,6 +14992,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15112,6 +15004,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15123,6 +15016,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15134,6 +15028,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15145,6 +15040,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15156,6 +15052,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15167,6 +15064,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15178,6 +15076,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15189,6 +15088,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15200,6 +15100,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15211,6 +15112,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15222,6 +15124,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15233,6 +15136,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15244,6 +15148,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15255,6 +15160,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15266,6 +15172,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15277,6 +15184,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15288,6 +15196,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15299,6 +15208,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15310,6 +15220,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15321,6 +15232,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15332,6 +15244,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15343,6 +15256,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15354,6 +15268,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15365,6 +15280,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15376,6 +15292,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15387,6 +15304,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15398,6 +15316,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15409,6 +15328,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15420,6 +15340,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15431,6 +15352,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15442,6 +15364,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15453,6 +15376,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15464,6 +15388,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15475,6 +15400,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15486,6 +15412,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15497,6 +15424,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15508,6 +15436,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15519,6 +15448,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15530,6 +15460,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15541,6 +15472,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -15552,6 +15484,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 </object>
 <object>
@@ -16346,7 +16279,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	<data>
 		<tsl_typeView>V</tsl_typeView>
 		<tsl_id.viw_name>RH_AdminHome</tsl_id.viw_name>
-		<tsl_lang>FRA</tsl_lang>
+		<tsl_lang>ANY</tsl_lang>
 		<tsl_value>Gestion RH</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -16354,7 +16287,7 @@ Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec le
 	<data>
 		<tsl_typeView>V</tsl_typeView>
 		<tsl_id.viw_name>RH_EvalHome</tsl_id.viw_name>
-		<tsl_lang>FRA</tsl_lang>
+		<tsl_lang>ANY</tsl_lang>
 		<tsl_value>Mes entretiens</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>

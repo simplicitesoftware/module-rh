@@ -11,7 +11,7 @@ RHEntretien.publication = function() {
 	var g = this.getGrant();
 	var bos = new java.io.ByteArrayOutputStream();
 	var pdf = PDFTool.open(bos);
-	
+
 	try {
 		pdf.add(PDFTool.getImageFromResource(this, "LOGO"));
 		pdf.add(new Paragraph("Entretien Annuel: " +
@@ -27,7 +27,7 @@ RHEntretien.publication = function() {
 	} catch (e) {
 		pdf.add(new Paragraph(e.message));
 	}
-		
+
 	PDFTool.close(pdf);
 	return bos.toByteArray();
 };
