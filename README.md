@@ -11,16 +11,35 @@
 `RH` module definition
 ======================
 
-Module RH de gestion d'**entretiens**, de **compétences** et de **formations**.
+### Introduction
 
-Disponible sur [GitHub](https://github.com/simplicitesoftware/module-rh) avec les paramètres suivants:
+**Human resources** module for managing:
+
+- Employees
+- interviews
+- Competencies
+- Trainings
+
+**Note**: This module is only available in French
+
+### Import
+
+To import this module:
+
+- Create a module named `RH`
+- Set the settings as:
 
 ```json
 {
 	"type": "git",
-	"origin": { "uri": "https://github.com/simplicitesoftware/module-rh.git" }
+	"origin": {
+		"uri": "https://github.com/simplicitesoftware/module-rh.git"
+	}
 }
 ```
+
+- Click on the _Import module_ button
+
 
 `RHCampagne` business object definition
 ---------------------------------------
