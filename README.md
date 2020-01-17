@@ -38,7 +38,14 @@ To import this module:
 }
 ```
 
-- Click on the _Import module_ button
+- Click on the _Import module_ button.
+
+### Load data
+
+Some sample data is provided as a module's dataset.
+
+Open this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.
+
 
 
 `RHCampagne` business object definition

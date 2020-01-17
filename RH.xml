@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-rh.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-01-17 18:30:48</mdl_lastupd>
+		<mdl_lastupd>2020-01-17 23:40:53</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 **Human resources** module for managing:
@@ -41,7 +41,14 @@ To import this module:
 }
 ```
 
-- Click on the _Import module_ button
+- Click on the _Import module_ button.
+
+### Load data
+
+Some sample data is provided as a module's dataset.
+
+Open this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.
+
 ]]></mdl_comment>
 	</data>
 </object>
