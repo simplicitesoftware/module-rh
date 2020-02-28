@@ -1,5 +1,5 @@
 {
-    "date": "Fri Jan 17 23:40:53 CET 2020",
+    "date": "Fri Feb 28 22:17:23 CET 2020",
     "name": "RH",
     "format": "xml",
     "description": "### Introduction\n\n**Human resources** module for managing:\n\n- Employees\n- interviews\n- Competencies\n- Trainings\n\n**Note**: This module is only available in French\n\n### Import\n\nTo import this module:\n\n- Create a module named `RH`\n- Set the settings as:\n\n```json\n{\n\t\"type\": \"git\",\n\t\"origin\": {\n\t\t\"uri\": \"https://github.com/simplicitesoftware/module-rh.git\"\n\t}\n}\n```\n\n- Click on the _Import module_ button.\n\n### Load data\n\nSome sample data is provided as a module's dataset.\n\nOpen this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.\n\n",

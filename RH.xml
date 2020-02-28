@@ -6,14 +6,14 @@
 	<data>
 		<mdl_name>RH</mdl_name>
 		<mdl_version>4.0</mdl_version>
-		<mdl_prefix/>
+		<mdl_prefix>rh</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
 		"uri": "https://github.com/simplicitesoftware/module-rh.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-01-17 23:40:53</mdl_lastupd>
+		<mdl_lastupd>2020-02-28 22:17:23</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 **Human resources** module for managing:
@@ -5543,8 +5543,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>cpg</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHCollaborateur</obo_name>
@@ -5603,8 +5605,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>col</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHCollaborateurCompetence</obo_name>
@@ -5663,8 +5667,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>colcmp</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHCollaborateurHistoric</obo_name>
@@ -5725,6 +5731,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_dashboard>1</obo_dashboard>
 		<obo_prefix/>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHCompetence</obo_name>
@@ -5783,8 +5791,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>cmp</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHDemandeFormation</obo_name>
@@ -5843,8 +5853,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>dfr</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHDemandeFormationHistoric</obo_name>
@@ -5905,6 +5917,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_dashboard>1</obo_dashboard>
 		<obo_prefix/>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHEntretien</obo_name>
@@ -5963,8 +5977,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>ent</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHEntretienHistoric</obo_name>
@@ -6025,6 +6041,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_dashboard>1</obo_dashboard>
 		<obo_prefix/>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHFormation</obo_name>
@@ -6083,8 +6101,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>frm</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHFormationSuivie</obo_name>
@@ -6143,8 +6163,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>frs</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHObjectifFutur</obo_name>
@@ -6203,8 +6225,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>ofu</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHObjectifPasse</obo_name>
@@ -6263,8 +6287,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>opa</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHObjectifService</obo_name>
@@ -6323,8 +6349,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>osr</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>RHService</obo_name>
@@ -6383,8 +6411,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>srv</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 </object>
 <object>
