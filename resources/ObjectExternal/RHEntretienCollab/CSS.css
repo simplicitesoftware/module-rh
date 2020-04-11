@@ -2,7 +2,7 @@ body {
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-color: white;
-	font-family: Helvetica, Arial;
+	font-family: Helvetica, Arial, sans-serif;
 }
 p, ul, ol, li, td, th {
 	font-size: 12px;
@@ -15,7 +15,7 @@ li {
 	margin-top: 5px;
 }
 h1, h2, h3 {
-	font-family: Helvetica, Arial;
+	font-family: Helvetica, Arial, sans-serif;
 	margin: 10px 0px;
 	font-weight: bold;
 }
@@ -57,7 +57,6 @@ table.list {
 	width: 100%;
 }
 table.list th, table.list td, p.text, p.info, button {
-	padding: 5px;
 	border: none 0px;
 	padding: 10px;
 	border-radius: 5px;

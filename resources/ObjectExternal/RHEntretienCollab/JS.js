@@ -1,6 +1,7 @@
-RHEntretienCollab = (function($) {
+var RHEntretienCollab = typeof RHEntretienCollab !== 'undefined' ? RHEntretienCollab : (function($) {
 	var $s;
 	var ent, opa, ofu;
+
 	function init() {
 		$s = new Simplicite.Ajax(ROOT, "uipublic");
 		$s.setDebugHandlerActive(true);

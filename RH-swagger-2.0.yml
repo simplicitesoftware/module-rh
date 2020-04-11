@@ -4319,6 +4319,7 @@ definitions:
       rhOsrCpgId__rhCpgDateDebut:
         description: rhOsrCpgId Date de début
         type: string
+        example: yyyy-MM-dd
       rhOsrType:
         description: Type objectif
         type: string
@@ -4338,6 +4339,7 @@ definitions:
       rhOsrCpgId__rhCpgDateFin:
         description: rhOsrCpgId Date de fin
         type: string
+        example: yyyy-MM-dd
       rhOsrSrvId__rhSrvCode:
         description: rhOsrSrvId Code
         type: string
@@ -4419,6 +4421,7 @@ definitions:
       rhFsrDate:
         description: Date
         type: string
+        example: yyyy-MM-dd
       rhFrsColId__rhColSrvId__rhSrvCode:
         description: rhFrsColId rhColSrvId Code
         type: string
@@ -4512,6 +4515,7 @@ definitions:
       rhColDateNaissance:
         description: Date de naissance
         type: string
+        example: yyyy-MM-dd
       rhColPhoto:
         description: Photo
         type: object
@@ -4524,6 +4528,7 @@ definitions:
       rhColDateFin:
         description: Date de fin
         type: string
+        example: yyyy-MM-dd
       rhColComplement:
         description: Complément
         type: string
@@ -4552,6 +4557,7 @@ definitions:
       rhColDateDebutSrv:
         description: Date début dans le service
         type: string
+        example: yyyy-MM-dd
       rhColTitre:
         description: Titre
         type: string
@@ -4569,6 +4575,7 @@ definitions:
       rhColDateDebut:
         description: Date de début
         type: string
+        example: yyyy-MM-dd
       rhColVille:
         description: Ville
         type: string
@@ -4597,6 +4604,7 @@ definitions:
       created_dt_hist:
         description: Date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
@@ -4623,12 +4631,14 @@ definitions:
       rhColDateDebutSrv:
         description: Date début dans le service
         type: string
+        example: yyyy-MM-dd
       rhColTitre:
         description: Titre
         type: string
       created_dt_hist:
         description: Date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
@@ -4760,6 +4770,7 @@ definitions:
       rhEntCpgId__rhCpgDateFin:
         description: rhEntCpgId Date de fin
         type: string
+        example: yyyy-MM-dd
       rhEntEvlId__rhColPrenom:
         description: rhEntEvlId Prénom
         type: string
@@ -4787,12 +4798,14 @@ definitions:
       rhEntDate:
         description: Date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       rhEntColId__rhColSrvId:
         description: rhEntColId Service
         type: string
       rhEntCpgId__rhCpgDateDebut:
         description: rhEntCpgId Date de début
         type: string
+        example: yyyy-MM-dd
       rhEntColId__rhColSrvId__rhSrvCode:
         description: rhEntColId rhColSrvId Code
         type: string
@@ -5014,6 +5027,7 @@ definitions:
       created_dt_hist:
         description: Date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
@@ -5128,9 +5142,11 @@ definitions:
       rhCpgDateFin:
         description: Date de fin
         type: string
+        example: yyyy-MM-dd
       rhCpgDateDebut:
         description: Date de début
         type: string
+        example: yyyy-MM-dd
   RHCompetence:
     type: object
     properties:
