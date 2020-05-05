@@ -14,7 +14,9 @@
 	}
 }]]></mdl_url>
 		<mdl_lastupd>2020-02-28 22:17:23</mdl_lastupd>
-		<mdl_comment><![CDATA[### Introduction
+		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-RH&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-RH)
+
+### Introduction
 
 **Human resources** module for managing:
 
