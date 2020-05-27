@@ -22,7 +22,7 @@ var RHEntretienCollab = typeof RHEntretienCollab !== 'undefined' ? RHEntretienCo
 						var item = ent.list[0];
 						console.log("ID entretien = " + item.row_id);
 						a.append($("<p/>").append("<b>" + ent.getValueForCode(ci, item.rhEntColId__rhColCivilite) + " " + item.rhEntColId__rhColPrenom + " " + item.rhEntColId__rhColNom + "</b> (" + item.rhEntColId__rhColMatricule + ")"));
-						a.append($("<p/>").append(item.rhEntColId__rhColSrvId__rhSrvLibelle + " (" + item.rhEntColId__rhColSrvId__rhSrvCode + ")"));
+						a.append($("<p/>").append(item.rhEntColId__rhColSrvId__rhSrvLibelle + " (matricule : " + item.rhEntColId__rhColSrvId__rhSrvCode + ")"));
 						a.append($("<p/>").append("<i>" + item.rhEntColId__rhColTitre + "</i>"));
 						e.append($("<h3/>").append("Vos objectifs passés"));
 						e.append($("<div/>", { id: "objpasse" }));
@@ -65,7 +65,7 @@ var RHEntretienCollab = typeof RHEntretienCollab !== 'undefined' ? RHEntretienCo
 							var d = $("<div/>", { id: "conclusion" });
 							e.append(d);
 							d.append($("<textarea/>", { id: "bilan", style: "width: 100%; height: 100px;" }).val(item.rhEntBilanCollaborateur)).append("<br/>");
-							$("#bilan").cleditor();
+							tinymce.init({ selector: '#bilan', language: 'fr', toolbar: 'bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent', menubar: false, statusbar: false, branding: false, paste_data_images: true, paste_as_text: true, browser_spellcheck: true });
 							d.append($("<div/>", { id: "valider" }).append($("<button/>").text("Valider").click(function() {
 								item.rhEntEtat = "VC";
 								item.rhEntBilanCollaborateur = $("#bilan").val();

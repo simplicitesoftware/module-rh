@@ -2,16 +2,13 @@ RHEntretienCollab.display = function(params) {
 	this.setDecoration(false);
 	
 	var wp = new JQueryWebPage(params.getRoot(), "Entretien Annuel");
+	wp.setLanguage("fr");
 	wp.appendAjax();
 	wp.appendHTMLEditor();
 	wp.appendCSSInclude(HTMLPage.getResourceCSSURL(this, "CSS"));
 	wp.appendJSInclude(HTMLPage.getResourceJSURL(this, "JS"));
 
 	wp.setFavicon(HTMLPage.getResourceIconURL(this, "FAVICON"));
-
-	wp.appendLayout2CSS(900, 0, 0, 0, 0, 0, 0);
-	wp.appendLayout2TabletCSS(900, 100, 0, 0, "");
-	wp.appendLayout2MobileCSS(480, false, false, "");
 
 	var code = params.getParameter("code");
 	wp.appendJS("var CODE = \"" + code + "\", YEAR = " + Tool.getCurrentYear() + ", ROOT = \"" + wp.getRoot() + "\", APPLICATION = \"" + Globals.getApplicationName() + "\";");

@@ -63,28 +63,29 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<thm_logo_invert>0</thm_logo_invert>
 		<thm_logo2_id>files/Theme/RH/logo2.png</thm_logo2_id>
 		<thm_favicon_id>files/Theme/RH/favicon.png</thm_favicon_id>
-		<thm_color1/>
-		<thm_color2/>
-		<thm_text2/>
+		<thm_color1>#ffffff</thm_color1>
+		<thm_color2>#ffffff</thm_color2>
+		<thm_text2>#202020</thm_text2>
 		<thm_color3/>
 		<thm_text3/>
 		<thm_base>light</thm_base>
 		<thm_css_doc>files/Theme/RH/RH_gen.css</thm_css_doc>
 		<thm_addon/>
-		<thm_searchbox/>
+		<thm_searchbox>#f7F7F7</thm_searchbox>
 		<thm_active/>
 		<thm_font/>
 		<thm_iconset/>
-		<thm_menu_dom_c/>
-		<thm_menu_dom_t/>
-		<thm_menu_dact_c/>
-		<thm_menu_dact_t/>
-		<thm_menu_sub_c/>
-		<thm_menu_sub_t/>
-		<thm_menu_sact_c/>
-		<thm_menu_sact_t/>
-		<thm_menu_sta_c/>
-		<thm_menu_sta_t/>
+		<thm_menu_dom_c>#ffffff</thm_menu_dom_c>
+		<thm_menu_dom_t>#202020</thm_menu_dom_t>
+		<thm_menu_dact_c>#ffffff</thm_menu_dact_c>
+		<thm_menu_dact_t>#303030</thm_menu_dact_t>
+		<thm_menu_sub_c>#ffffff</thm_menu_sub_c>
+		<thm_menu_sub_t>#303030</thm_menu_sub_t>
+		<thm_menu_sact_c>#ffffff</thm_menu_sact_c>
+		<thm_menu_sact_t>#404040</thm_menu_sact_t>
+		<thm_menu_sta_c>#ffffff</thm_menu_sta_c>
+		<thm_menu_sta_t>#505050</thm_menu_sta_t>
+		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 </object>
@@ -110,6 +111,23 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<viw_scope/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<viw_theme_id.thm_name>RH</viw_theme_id.thm_name>
+	</data>
+</object>
+<object>
+	<name>ModelTemplate</name>
+	<action>upsert</action>
+	<data>
+		<mtp_name>RHModel</mtp_name>
+		<mtp_type>M</mtp_type>
+		<mtp_class/>
+		<mtp_script_id>files/ModelTemplate/RHModel.js</mtp_script_id>
+		<mtp_use_grid>0</mtp_use_grid>
+		<mtp_use_title>0</mtp_use_title>
+		<mtp_use_note>0</mtp_use_note>
+		<mtp_use_bkg>0</mtp_use_bkg>
+		<mtp_use_ctn>0</mtp_use_ctn>
+		<mtp_use_tree>0</mtp_use_tree>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -144,17 +162,17 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<name>User</name>
 	<action>upsert</action>
 	<data>
-		<usr_login>adminrh</usr_login>
-		<usr_lang>FRA</usr_lang>
 		<usr_image_id>files/User/adminrh.png</usr_image_id>
+		<usr_login>adminrh</usr_login>
 		<usr_timezone/>
 		<usr_minrows>20</usr_minrows>
 		<usr_maxrows>50</usr_maxrows>
-		<usr_active>1</usr_active>
 		<usr_title>MR</usr_title>
-		<usr_last_name>Administrateur</usr_last_name>
 		<usr_first_name/>
+		<usr_last_name>Administrateur</usr_last_name>
+		<usr_lang>FRA</usr_lang>
 		<usr_email/>
+		<usr_active>1</usr_active>
 		<usr_home_id.viw_name>RH_AdminHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
@@ -167,11 +185,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_country/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<usr_menu>1</usr_menu>
-		<usr_menu_defhidden>0</usr_menu_defhidden>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_extra>1</usr_extra>
-		<usr_subhead>1</usr_subhead>
 		<usr_logout>2018-05-15 23:30:30</usr_logout>
 		<usr_last_logon/>
 		<usr_dateformat/>
@@ -1479,7 +1494,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -1516,7 +1530,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -1553,7 +1566,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_CMP_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>RH_CMP_TYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>3</fld_size>
@@ -1590,7 +1602,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -1627,7 +1638,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_CIVILITE</fld_enumlist>
 		<fld_list_id.lov_name>RH_CIVILITE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -1664,7 +1674,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -1701,7 +1710,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -1738,7 +1746,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -1775,7 +1782,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -1812,7 +1818,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -1849,7 +1854,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -1886,7 +1890,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -1923,7 +1926,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -1960,7 +1962,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -1997,7 +1998,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -2034,7 +2034,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>12</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50</fld_size>
@@ -2071,7 +2070,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -2108,7 +2106,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -2145,7 +2142,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -2182,7 +2178,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -2219,7 +2214,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2256,7 +2250,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -2293,7 +2286,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2330,7 +2322,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_COL_STATUT</fld_enumlist>
 		<fld_list_id.lov_name>RH_COL_STATUT</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>3</fld_size>
@@ -2367,7 +2358,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -2404,7 +2394,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -2441,7 +2430,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2478,7 +2466,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50</fld_size>
@@ -2515,7 +2502,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2552,7 +2538,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -2589,7 +2574,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -2626,7 +2610,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -2663,7 +2646,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2700,7 +2682,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2737,7 +2718,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>1</fld_size>
@@ -2774,7 +2754,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_DFR_ETAT</fld_enumlist>
 		<fld_list_id.lov_name>RH_DFR_ETAT</fld_list_id.lov_name>
 		<fld_copy>0</fld_copy>
 		<fld_size>1</fld_size>
@@ -2811,7 +2790,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2848,7 +2826,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>50000</fld_size>
@@ -2885,7 +2862,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_TRIMESTRE</fld_enumlist>
 		<fld_list_id.lov_name>RH_TRIMESTRE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>2</fld_size>
@@ -2922,7 +2898,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>50000</fld_size>
@@ -2959,7 +2934,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>50000</fld_size>
@@ -2996,7 +2970,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3033,7 +3006,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3070,7 +3042,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>5</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>19</fld_size>
@@ -3107,7 +3078,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3144,7 +3114,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_ENT_ETAT</fld_enumlist>
 		<fld_list_id.lov_name>RH_ENT_ETAT</fld_list_id.lov_name>
 		<fld_copy>0</fld_copy>
 		<fld_size>2</fld_size>
@@ -3181,7 +3150,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_ENT_EVALUATION</fld_enumlist>
 		<fld_list_id.lov_name>RH_ENT_EVALUATION</fld_list_id.lov_name>
 		<fld_copy>0</fld_copy>
 		<fld_size>3</fld_size>
@@ -3218,7 +3186,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3255,7 +3222,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>1</fld_size>
@@ -3292,7 +3258,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>10</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>255</fld_size>
@@ -3329,7 +3294,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50</fld_size>
@@ -3366,7 +3330,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>30</fld_size>
@@ -3403,7 +3366,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3440,7 +3402,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -3477,7 +3438,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>1</fld_size>
@@ -3514,7 +3474,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -3551,7 +3510,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>14</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_TRIMESTRE</fld_enumlist>
 		<fld_list_id.lov_name>RH_TRIMESTRE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -3588,7 +3546,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3625,7 +3582,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_FRM_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>RH_FRM_TYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>3</fld_size>
@@ -3662,7 +3618,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3699,7 +3654,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>50000</fld_size>
@@ -3736,7 +3690,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_FRS_EVALUATION</fld_enumlist>
 		<fld_list_id.lov_name>RH_FRS_EVALUATION</fld_list_id.lov_name>
 		<fld_copy>0</fld_copy>
 		<fld_size>3</fld_size>
@@ -3773,7 +3726,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3810,7 +3762,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -3847,7 +3798,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3884,7 +3834,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>11</fld_size>
@@ -3921,7 +3870,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -3958,7 +3906,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_OPA_OFU_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>RH_OPA_OFU_TYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>30</fld_size>
@@ -3995,7 +3942,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>50000</fld_size>
@@ -4032,7 +3978,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -4069,7 +4014,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_OPA_NIVEAUATTEINTE</fld_enumlist>
 		<fld_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</fld_list_id.lov_name>
 		<fld_copy>0</fld_copy>
 		<fld_size>1</fld_size>
@@ -4106,7 +4050,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>11</fld_size>
@@ -4143,7 +4086,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -4180,7 +4122,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_OPA_OFU_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>RH_OPA_OFU_TYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>30</fld_size>
@@ -4217,7 +4158,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -4254,7 +4194,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -4291,7 +4230,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -4328,7 +4266,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -4365,7 +4302,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -4402,7 +4338,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>RH_OSR_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>RH_OSR_TYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>3</fld_size>
@@ -4439,7 +4374,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -4476,7 +4410,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -4513,7 +4446,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50</fld_size>
@@ -4550,7 +4482,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_tray/>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -14518,6 +14449,68 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_file/>
 		<res_file_compiled/>
 		<res_image>resources/ObjectInternal/RHEntretien/LOGO.png</res_image>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>ModelTemplateObject</name>
+	<action>upsert</action>
+	<data>
+		<mto_name>RHCollaborateur</mto_name>
+		<mto_template_id.mtp_name>RHModel</mto_template_id.mtp_name>
+		<mto_object_id.obo_name>RHCollaborateur</mto_object_id.obo_name>
+		<mto_type>O</mto_type>
+		<mto_show_field>1</mto_show_field>
+		<mto_color>#A61C00</mto_color>
+		<mto_radius>5</mto_radius>
+		<mto_shadow>1</mto_shadow>
+		<mto_cps_field>0</mto_cps_field>
+		<mto_cps_cont>0</mto_cps_cont>
+		<mto_resizable>0</mto_resizable>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<mto_name>RHService</mto_name>
+		<mto_template_id.mtp_name>RHModel</mto_template_id.mtp_name>
+		<mto_object_id.obo_name>RHService</mto_object_id.obo_name>
+		<mto_type>O</mto_type>
+		<mto_show_field>1</mto_show_field>
+		<mto_color>#6AA84F</mto_color>
+		<mto_radius>5</mto_radius>
+		<mto_shadow>1</mto_shadow>
+		<mto_cps_field>0</mto_cps_field>
+		<mto_cps_cont>0</mto_cps_cont>
+		<mto_resizable>0</mto_resizable>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>ModelTemplateLink</name>
+	<action>upsert</action>
+	<data>
+		<mtl_template_id.mtp_name>RHModel</mtl_template_id.mtp_name>
+		<mtl_name>RHServiceCollaborateur</mtl_name>
+		<mtl_type>0</mtl_type>
+		<mtl_cc_type>1</mtl_cc_type>
+		<mtl_fromobj_id.obo_name>RHService</mtl_fromobj_id.obo_name>
+		<mtl_fromfield_id.fld_name>row_id</mtl_fromfield_id.fld_name>
+		<mtl_toobj_id.obo_name>RHCollaborateur</mtl_toobj_id.obo_name>
+		<mtl_tofield_id.fld_name>rhColSrvId</mtl_tofield_id.fld_name>
+		<mtl_link_id.obo_name/>
+		<mtl_linkfrom_id.fld_name/>
+		<mtl_linkto_id.fld_name/>
+		<mtl_showlabel>0</mtl_showlabel>
+		<mtl_cc_label>1</mtl_cc_label>
+		<mtl_curved>0</mtl_curved>
+		<mtl_cc_curved>1</mtl_cc_curved>
+		<mtl_bridge>0</mtl_bridge>
+		<mtl_cc_bridge>1</mtl_cc_bridge>
+		<mtl_render>0</mtl_render>
+		<mtl_cc_render>1</mtl_cc_render>
+		<mtl_thickness>1.2</mtl_thickness>
+		<mtl_cc_thick>1</mtl_cc_thick>
+		<mtl_color>#274E13</mtl_color>
+		<mtl_cc_color>1</mtl_cc_color>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 </object>
