@@ -5485,7 +5485,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_name>RHCollaborateur</obo_name>
 		<obo_dbtable>rh_collaborateur</obo_dbtable>
 		<obo_class/>
-		<obo_script_id/>
+		<obo_script_id>scripts/ObjectInternal/RHCollaborateur.js</obo_script_id>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>0</obo_nosearch>
 		<obo_comment/>
@@ -5733,7 +5733,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_name>RHDemandeFormation</obo_name>
 		<obo_dbtable>rh_demande_formation</obo_dbtable>
 		<obo_class/>
-		<obo_script_id/>
+		<obo_script_id>scripts/ObjectInternal/RHDemandeFormation.js</obo_script_id>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>0</obo_nosearch>
 		<obo_comment/>

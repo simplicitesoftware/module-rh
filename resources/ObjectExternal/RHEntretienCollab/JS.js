@@ -68,7 +68,7 @@ var RHEntretienCollab = typeof RHEntretienCollab !== 'undefined' ? RHEntretienCo
 							tinymce.init({ selector: '#bilan', language: 'fr', toolbar: 'bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent', menubar: false, statusbar: false, branding: false, paste_data_images: true, paste_as_text: true, browser_spellcheck: true });
 							d.append($("<div/>", { id: "valider" }).append($("<button/>").text("Valider").click(function() {
 								item.rhEntEtat = "VC";
-								item.rhEntBilanCollaborateur = $("#bilan").val();
+								item.rhEntBilanCollaborateur = tinymce.get("bilan").getContent();
 								ent.update(function() {
 									$("#conclusion").empty().append($("<p/>").addClass("text").append(item.rhEntBilanCollaborateur).append("&nbsp;"));
 									$("#valider").empty();

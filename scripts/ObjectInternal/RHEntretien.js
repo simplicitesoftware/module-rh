@@ -1,3 +1,12 @@
+RHEntretien.getUserKeyLabel = function(row) {
+	var label = "Entretien ";
+	if (row)
+		label += row[this.getFieldIndex("rhEntCpgId.rhCpgAnnee")] + " de " + row[this.getFieldIndex("rhEntColId.rhColPrenom")] + " " + row[this.getFieldIndex("rhEntColId.rhColNom")] + " (" + row[this.getFieldIndex("rhEntColId.rhColMatricule")] + ")";
+	else
+		label += this.getFieldValue("rhEntCpgId.rhCpgAnnee") + " de " +  this.getFieldValue("rhEntColId.rhColPrenom") + " " + this.getFieldValue("rhEntColId.rhColNom") + " (" + this.getFieldValue("rhEntColId.rhColMatricule") + ")";
+	return label;
+};
+
 RHEntretien.preCreate = function() {
 	var c = Tool.randomString(50);
 	this.getField("rhEntURLCode").setValue(c);
