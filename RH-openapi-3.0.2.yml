@@ -302,6 +302,10 @@ components:
           description: Date de fin
           type: string
           example: yyyy-MM-dd
+        rhColCoords:
+          description: Coordonnées
+          type: string
+          example: latitude;longitude
         rhColComplement:
           description: Complément
           type: string
@@ -5916,6 +5920,12 @@ paths:
         in: query
         name: rhColVille
         description: Search filter for Ville
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: rhColCoords
+        description: Search filter for Coordonnées
         required: false
       - schema:
           type: string

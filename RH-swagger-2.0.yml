@@ -4178,6 +4178,11 @@ paths:
         type: string
         required: false
       - in: query
+        name: rhColCoords
+        description: Search filter for Coordonnées
+        type: string
+        required: false
+      - in: query
         name: rhColStatut
         description: Search filter for Statut
         type: string
@@ -4529,6 +4534,10 @@ definitions:
         description: Date de fin
         type: string
         example: yyyy-MM-dd
+      rhColCoords:
+        description: Coordonnées
+        type: string
+        example: latitude;longitude
       rhColComplement:
         description: Complément
         type: string
