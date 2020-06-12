@@ -23,7 +23,7 @@ components:
           description: rhOfuEntId rhEntColId Matricule
           type: string
         rhOfuEntId__rhEntCpgId__rhCpgAnnee:
-          description: rhOfuEntId rhEntCpgId Année
+          description: rhOfuEntId rhEntCpgId Year
           type: integer
         rhOfuObjectif:
           description: Objectif
@@ -87,10 +87,10 @@ components:
           description: Campagne
           type: string
         rhOsrCpgId__rhCpgAnnee:
-          description: rhOsrCpgId Année
+          description: rhOsrCpgId Year
           type: integer
         rhOsrCpgId__rhCpgDateDebut:
-          description: rhOsrCpgId Date de début
+          description: rhOsrCpgId Start date
           type: string
           example: yyyy-MM-dd
         rhOsrType:
@@ -107,10 +107,10 @@ components:
           description: Unique technical row ID
           type: string
         rhOsrSrvId__rhSrvLibelle:
-          description: rhOsrSrvId Libellé
+          description: rhOsrSrvId Label
           type: string
         rhOsrCpgId__rhCpgDateFin:
-          description: rhOsrCpgId Date de fin
+          description: rhOsrCpgId End date
           type: string
           example: yyyy-MM-dd
         rhOsrSrvId__rhSrvCode:
@@ -186,7 +186,7 @@ components:
           description: Formation
           type: string
         rhFrsColId__rhColSrvId__rhSrvLibelle:
-          description: rhFrsColId rhColSrvId Libellé
+          description: rhFrsColId rhColSrvId Label
           type: string
         rhFrsColId:
           description: Collaborateur
@@ -296,7 +296,7 @@ components:
           description: Adresse
           type: string
         rhColSrvId__rhSrvLibelle:
-          description: rhColSrvId Libellé
+          description: rhColSrvId Label
           type: string
         rhColDateFin:
           description: Date de fin
@@ -439,7 +439,7 @@ components:
       type: object
       properties:
         rhDfrColId__rhColSrvId__rhSrvLibelle:
-          description: rhDfrColId rhColSrvId Libellé
+          description: rhDfrColId rhColSrvId Label
           type: string
         rhDfrFrmId__rhFrmType:
           description: rhDfrFrmId Type
@@ -545,7 +545,7 @@ components:
           description: Duree
           type: integer
         rhEntCpgId__rhCpgDateFin:
-          description: rhEntCpgId Date de fin
+          description: rhEntCpgId End date
           type: string
           example: yyyy-MM-dd
         rhEntEvlId__rhColPrenom:
@@ -570,7 +570,7 @@ components:
           description: rhEntColId Prénom
           type: string
         rhEntColId__rhColSrvId__rhSrvLibelle:
-          description: rhEntColId rhColSrvId Libellé
+          description: rhEntColId rhColSrvId Label
           type: string
         rhEntDate:
           description: Date
@@ -580,7 +580,7 @@ components:
           description: rhEntColId Service
           type: string
         rhEntCpgId__rhCpgDateDebut:
-          description: rhEntCpgId Date de début
+          description: rhEntCpgId Start date
           type: string
           example: yyyy-MM-dd
         rhEntColId__rhColSrvId__rhSrvCode:
@@ -603,7 +603,7 @@ components:
           - C
           - D
         rhEntCpgId__rhCpgAnnee:
-          description: rhEntCpgId Année
+          description: rhEntCpgId Year
           type: integer
         rhEntColId__rhColNom:
           description: rhEntColId Nom
@@ -712,7 +712,7 @@ components:
           description: Description
           type: string
         rhSrvLibelle:
-          description: Libellé
+          description: Label
           type: string
         rhSrvLogo:
           description: Logo
@@ -748,7 +748,7 @@ components:
           description: Compétence
           type: string
         rhColCmpColId__rhColSrvId__rhSrvLibelle:
-          description: rhColCmpColId rhColSrvId Libellé
+          description: rhColCmpColId rhColSrvId Label
           type: string
         rhColCmpCommentaires:
           description: Commentaires
@@ -854,7 +854,7 @@ components:
           description: rhOpaEntId rhEntColId Prénom
           type: string
         rhOpaEntId__rhEntCpgId__rhCpgAnnee:
-          description: rhOpaEntId rhEntCpgId Année
+          description: rhOpaEntId rhEntCpgId Year
           type: integer
         rhOpaNumero:
           description: Numéro
@@ -905,23 +905,23 @@ components:
       type: object
       properties:
         rhCpgNotice:
-          description: Notice explicative
+          description: Explainatory note
           type: object
         rhCpgDescription:
           description: Description
           type: string
         rhCpgAnnee:
-          description: Année
+          description: Year
           type: integer
         row_id:
           description: Unique technical row ID
           type: string
         rhCpgDateFin:
-          description: Date de fin
+          description: End date
           type: string
           example: yyyy-MM-dd
         rhCpgDateDebut:
-          description: Date de début
+          description: Start date
           type: string
           example: yyyy-MM-dd
     RHCompetence:
@@ -1143,7 +1143,7 @@ paths:
           type: string
         in: query
         name: rhFrsColId__rhColSrvId__rhSrvLibelle
-        description: Search filter for rhFrsColId rhColSrvId Libellé
+        description: Search filter for rhFrsColId rhColSrvId Label
         required: false
       - schema:
           type: string
@@ -1308,19 +1308,19 @@ paths:
           type: integer
         in: query
         name: rhOsrCpgId__rhCpgAnnee
-        description: Search filter for rhOsrCpgId Année
+        description: Search filter for rhOsrCpgId Year
         required: false
       - schema:
           type: string
         in: query
         name: rhOsrCpgId__rhCpgDateDebut
-        description: Search filter for rhOsrCpgId Date de début
+        description: Search filter for rhOsrCpgId Start date
         required: false
       - schema:
           type: string
         in: query
         name: rhOsrCpgId__rhCpgDateFin
-        description: Search filter for rhOsrCpgId Date de fin
+        description: Search filter for rhOsrCpgId End date
         required: false
       - schema:
           type: string
@@ -1338,7 +1338,7 @@ paths:
           type: string
         in: query
         name: rhOsrSrvId__rhSrvLibelle
-        description: Search filter for rhOsrSrvId Libellé
+        description: Search filter for rhOsrSrvId Label
         required: false
       - schema:
           type: integer
@@ -1640,19 +1640,19 @@ paths:
           type: integer
         in: query
         name: rhEntCpgId__rhCpgAnnee
-        description: Search filter for rhEntCpgId Année
+        description: Search filter for rhEntCpgId Year
         required: false
       - schema:
           type: string
         in: query
         name: rhEntCpgId__rhCpgDateDebut
-        description: Search filter for rhEntCpgId Date de début
+        description: Search filter for rhEntCpgId Start date
         required: false
       - schema:
           type: string
         in: query
         name: rhEntCpgId__rhCpgDateFin
-        description: Search filter for rhEntCpgId Date de fin
+        description: Search filter for rhEntCpgId End date
         required: false
       - schema:
           type: string
@@ -1739,7 +1739,7 @@ paths:
           type: string
         in: query
         name: rhEntColId__rhColSrvId__rhSrvLibelle
-        description: Search filter for rhEntColId rhColSrvId Libellé
+        description: Search filter for rhEntColId rhColSrvId Label
         required: false
       - schema:
           type: string
@@ -2016,7 +2016,7 @@ paths:
           type: string
         in: query
         name: rhDfrColId__rhColSrvId__rhSrvLibelle
-        description: Search filter for rhDfrColId rhColSrvId Libellé
+        description: Search filter for rhDfrColId rhColSrvId Label
         required: false
       - schema:
           type: string
@@ -3135,19 +3135,19 @@ paths:
           type: integer
         in: query
         name: rhCpgAnnee
-        description: Search filter for Année
+        description: Search filter for Year
         required: false
       - schema:
           type: string
         in: query
         name: rhCpgDateDebut
-        description: Search filter for Date de début
+        description: Search filter for Start date
         required: false
       - schema:
           type: string
         in: query
         name: rhCpgDateFin
-        description: Search filter for Date de fin
+        description: Search filter for End date
         required: false
       - schema:
           type: string
@@ -3159,7 +3159,7 @@ paths:
           type: string
         in: query
         name: rhCpgNotice
-        description: Search filter for Notice explicative
+        description: Search filter for Explainatory note
         required: false
       tags:
       - RHCampagne
@@ -3564,7 +3564,7 @@ paths:
           type: string
         in: query
         name: rhColCmpColId__rhColSrvId__rhSrvLibelle
-        description: Search filter for rhColCmpColId rhColSrvId Libellé
+        description: Search filter for rhColCmpColId rhColSrvId Label
         required: false
       - schema:
           type: string
@@ -4470,7 +4470,7 @@ paths:
           type: integer
         in: query
         name: rhOpaEntId__rhEntCpgId__rhCpgAnnee
-        description: Search filter for rhOpaEntId rhEntCpgId Année
+        description: Search filter for rhOpaEntId rhEntCpgId Year
         required: false
       - schema:
           type: string
@@ -4840,7 +4840,7 @@ paths:
           type: string
         in: query
         name: rhSrvLibelle
-        description: Search filter for Libellé
+        description: Search filter for Label
         required: false
       - schema:
           type: string
@@ -5503,7 +5503,7 @@ paths:
           type: integer
         in: query
         name: rhOfuEntId__rhEntCpgId__rhCpgAnnee
-        description: Search filter for rhOfuEntId rhEntCpgId Année
+        description: Search filter for rhOfuEntId rhEntCpgId Year
         required: false
       - schema:
           type: string
@@ -5966,7 +5966,7 @@ paths:
           type: string
         in: query
         name: rhColSrvId__rhSrvLibelle
-        description: Search filter for rhColSrvId Libellé
+        description: Search filter for rhColSrvId Label
         required: false
       - schema:
           type: string
@@ -5995,32 +5995,32 @@ info:
   version: '4.0'
 tags:
 - name: RHCampagne
-  description: RHCampagne
+  description: Campaign
 - name: RHCollaborateur
-  description: RHCollaborateur
+  description: Employee
 - name: RHCollaborateurCompetence
-  description: RHCollaborateurCompetence
+  description: Employee skill
 - name: RHCollaborateurHistoric
-  description: RHCollaborateurHistoric
+  description: Employee (hist.)
 - name: RHCompetence
-  description: RHCompetence
+  description: Skill
 - name: RHDemandeFormation
-  description: RHDemandeFormation
+  description: Training request
 - name: RHDemandeFormationHistoric
-  description: RHDemandeFormationHistoric
+  description: Training request (hist.)
 - name: RHEntretien
-  description: RHEntretien
+  description: Interview
 - name: RHEntretienHistoric
-  description: RHEntretienHistoric
+  description: Interview (hist.)
 - name: RHFormation
-  description: RHFormation
+  description: Training
 - name: RHFormationSuivie
-  description: RHFormationSuivie
+  description: Attended training
 - name: RHObjectifFutur
-  description: RHObjectifFutur
+  description: Future objective
 - name: RHObjectifPasse
-  description: RHObjectifPasse
+  description: Past objective
 - name: RHObjectifService
-  description: RHObjectifService
+  description: Departement objective
 - name: RHService
-  description: RHService
+  description: Department

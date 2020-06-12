@@ -561,7 +561,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_list_id.lov_name>RH_DFR_ETAT</lov_list_id.lov_name>
 		<lov_code>D</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Demandée</lov_label>
+		<lov_label>Requested</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg>#F9CB9C</lov_color_bg>
@@ -572,7 +572,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_list_id.lov_name>RH_DFR_ETAT</lov_list_id.lov_name>
 		<lov_code>A</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Acceptée</lov_label>
+		<lov_label>Accepted</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg>#B6D7A8</lov_color_bg>
@@ -583,7 +583,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_list_id.lov_name>RH_DFR_ETAT</lov_list_id.lov_name>
 		<lov_code>R</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Refusée</lov_label>
+		<lov_label>Refused</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg>#EA9999</lov_color_bg>
@@ -594,7 +594,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_list_id.lov_name>RH_ENT_ETAT</lov_list_id.lov_name>
 		<lov_code>BR</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Brouillon</lov_label>
+		<lov_label>Draft</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg>#A4C2F4</lov_color_bg>
@@ -605,7 +605,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_list_id.lov_name>RH_ENT_ETAT</lov_list_id.lov_name>
 		<lov_code>CP</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Complet</lov_label>
+		<lov_label>Completed</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg>#DD7E6B</lov_color_bg>
@@ -616,7 +616,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_list_id.lov_name>RH_ENT_ETAT</lov_list_id.lov_name>
 		<lov_code>VC</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Validé par le collaborateur</lov_label>
+		<lov_label>Validated by employee</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg>#F9CB9C</lov_color_bg>
@@ -627,7 +627,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_list_id.lov_name>RH_ENT_ETAT</lov_list_id.lov_name>
 		<lov_code>VE</lov_code>
 		<lov_order_by>4</lov_order_by>
-		<lov_label>Validé par l'évaluateur</lov_label>
+		<lov_label>Validated by evaluator</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg>#B6D7A8</lov_color_bg>
@@ -1134,6 +1134,30 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>D</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Requested]]></lov_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>A</lov_code_id.lov_code>
+		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Accepted]]></lov_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>R</lov_code_id.lov_code>
+		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Refused]]></lov_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>D</lov_code_id.lov_code>
+		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Demandée]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1152,6 +1176,38 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Refusée]]></lov_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>BR</lov_code_id.lov_code>
+		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Draft]]></lov_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>CP</lov_code_id.lov_code>
+		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Completed]]></lov_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>VC</lov_code_id.lov_code>
+		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Validated by the employee]]></lov_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>VE</lov_code_id.lov_code>
+		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Validated by the evaluator]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13530,7 +13586,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sta_state_id.lov_list_id.lov_name>RH_DFR_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>A</sta_state_id.lov_code>
 		<sta_state>A</sta_state>
-		<sta_label>Acceptée</sta_label>
+		<sta_label>Accepted</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13544,7 +13600,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sta_state_id.lov_list_id.lov_name>RH_DFR_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>D</sta_state_id.lov_code>
 		<sta_state>D</sta_state>
-		<sta_label>Demandée</sta_label>
+		<sta_label>Requested</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13558,7 +13614,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sta_state_id.lov_list_id.lov_name>RH_DFR_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>R</sta_state_id.lov_code>
 		<sta_state>R</sta_state>
-		<sta_label>Refusée</sta_label>
+		<sta_label>Refused</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13572,7 +13628,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sta_state_id.lov_list_id.lov_name>RH_ENT_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>BR</sta_state_id.lov_code>
 		<sta_state>BR</sta_state>
-		<sta_label>Brouillon</sta_label>
+		<sta_label>Draft</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13586,7 +13642,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sta_state_id.lov_list_id.lov_name>RH_ENT_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>CP</sta_state_id.lov_code>
 		<sta_state>CP</sta_state>
-		<sta_label>Complet</sta_label>
+		<sta_label>Completed</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13600,7 +13656,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sta_state_id.lov_list_id.lov_name>RH_ENT_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>VC</sta_state_id.lov_code>
 		<sta_state>VC</sta_state>
-		<sta_label>Validé par le collaborateur</sta_label>
+		<sta_label>Validated by emplyee</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -13614,7 +13670,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sta_state_id.lov_list_id.lov_name>RH_ENT_ETAT</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>VE</sta_state_id.lov_code>
 		<sta_state>VE</sta_state>
-		<sta_label>Validé par l'évaluateur</sta_label>
+		<sta_label>Validated by evaluator</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -14689,6 +14745,114 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 <object>
 	<name>TranslateField</name>
 	<action>upsert</action>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>rhCpgNotice</tsl_id.fld_name>
+		<tsl_lang>ANY</tsl_lang>
+		<tsl_value>Explainatory note</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>rhCpgAnnee</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Year</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>rhCpgDateDebut</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Start date</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>rhCpgDateFin</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>End date</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>rhCpgDescription</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Description</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>rhSrvCode</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Code</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>rhSrvDescription</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Description</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>rhSrvLibelle</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Label</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>rhSrvLogo</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Logo</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>rhCmpDescription</tsl_id.fld_name>
@@ -15951,6 +16115,38 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obd_name>RH</tsl_id.obd_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>HR</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obd_name>RHEntretiens</tsl_id.obd_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Interviews</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obd_name>RHFormations</tsl_id.obd_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Trainings</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obd_name>RHReferentiels</tsl_id.obd_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Ref. data</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obd_name>RH</tsl_id.obd_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>RH</tsl_value>
 		<tsl_help/>
@@ -15984,6 +16180,126 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 <object>
 	<name>TranslateObject</name>
 	<action>upsert</action>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHCampagne</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Campaign</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHCollaborateur</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Employee</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHCollaborateurCompetence</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Employee skill</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHCollaborateurHistoric</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Employee (hist.)</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHCompetence</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Skill</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHDemandeFormation</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Training request</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHDemandeFormationHistoric</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Training request (hist.)</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHEntretien</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Interview</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHEntretienHistoric</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Interview (hist.)</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHFormation</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Training</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHFormationSuivie</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Attended training</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHObjectifFutur</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Future objective</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHObjectifPasse</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Past objective</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHObjectifService</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Departement objective</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>RHService</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Department</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHCampagne</tsl_id.obo_name>
@@ -16499,6 +16815,22 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 <object>
 	<name>TranslateView</name>
 	<action>upsert</action>
+	<data>
+		<tsl_typeView>V</tsl_typeView>
+		<tsl_id.viw_name>RHAdminHome</tsl_id.viw_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>HR management</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeView>V</tsl_typeView>
+		<tsl_id.viw_name>RHEvalHome</tsl_id.viw_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>My interviews</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
 	<data>
 		<tsl_typeView>V</tsl_typeView>
 		<tsl_id.viw_name>RHAdminHome</tsl_id.viw_name>

@@ -240,9 +240,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
     - `T3` Trimestre 3
     - `T4` Trimestre 4
 * `RH_DFR_ETAT`
-    - `D` Demandée
-    - `A` Acceptée
-    - `R` Refusée
+    - `D` Requested
+    - `A` Accepted
+    - `R` Refused
 
 `RHDemandeFormationHistoric` business object definition
 -------------------------------------------------------
@@ -262,9 +262,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 ### Lists
 
 * `RH_DFR_ETAT`
-    - `D` Demandée
-    - `A` Acceptée
-    - `R` Refusée
+    - `D` Requested
+    - `A` Accepted
+    - `R` Refused
 
 `RHEntretien` business object definition
 ----------------------------------------
@@ -308,10 +308,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 ### Lists
 
 * `RH_ENT_ETAT`
-    - `BR` Brouillon
-    - `CP` Complet
-    - `VC` Validé par le collaborateur
-    - `VE` Validé par l'évaluateur
+    - `BR` Draft
+    - `CP` Completed
+    - `VC` Validated by employee
+    - `VE` Validated by evaluator
 * `RH_CIVILITE`
     - `MLLE` Mademoiselle
     - `MME` Madame
@@ -345,10 +345,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 ### Lists
 
 * `RH_ENT_ETAT`
-    - `BR` Brouillon
-    - `CP` Complet
-    - `VC` Validé par le collaborateur
-    - `VE` Validé par l'évaluateur
+    - `BR` Draft
+    - `CP` Completed
+    - `VC` Validated by employee
+    - `VE` Validated by evaluator
 
 `RHFormation` business object definition
 ----------------------------------------
@@ -466,10 +466,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 ### Lists
 
 * `RH_ENT_ETAT`
-    - `BR` Brouillon
-    - `CP` Complet
-    - `VC` Validé par le collaborateur
-    - `VE` Validé par l'évaluateur
+    - `BR` Draft
+    - `CP` Completed
+    - `VC` Validated by employee
+    - `VE` Validated by evaluator
 * `RH_CIVILITE`
     - `MLLE` Mademoiselle
     - `MME` Madame
@@ -506,10 +506,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 ### Lists
 
 * `RH_ENT_ETAT`
-    - `BR` Brouillon
-    - `CP` Complet
-    - `VC` Validé par le collaborateur
-    - `VE` Validé par l'évaluateur
+    - `BR` Draft
+    - `CP` Completed
+    - `VC` Validated by employee
+    - `VE` Validated by evaluator
 * `RH_CIVILITE`
     - `MLLE` Mademoiselle
     - `MME` Madame
