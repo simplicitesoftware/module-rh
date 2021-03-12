@@ -1,4 +1,4 @@
-var RHEntretienCollab = typeof RHEntretienCollab !== 'undefined' ? RHEntretienCollab : (function($) {
+var RHEntretienCollab = RHEntretienCollab || (function($) {
 	var $s;
 	var ent, opa, ofu;
 

@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: RH 4.0
+#             |_| Module: RH 5
 components:
   schemas:
     Error404:
@@ -20,19 +20,19 @@ components:
       type: object
       properties:
         rhOfuEntId__rhEntColId__rhColMatricule:
-          description: rhOfuEntId rhEntColId Matricule
+          description: Interview Employee Matricule
           type: string
         rhOfuEntId__rhEntCpgId__rhCpgAnnee:
-          description: rhOfuEntId rhEntCpgId Year
+          description: Interview Campaign Year
           type: integer
         rhOfuObjectif:
           description: Objectif
           type: string
         rhOfuEntId__rhEntColId:
-          description: rhOfuEntId Collaborateur
+          description: Interview Employee
           type: string
         rhOfuEntId__rhEntColId__rhColPrenom:
-          description: rhOfuEntId rhEntColId Prénom
+          description: Interview Employee Prénom
           type: string
         rhOfuType:
           description: Type
@@ -42,10 +42,10 @@ components:
           - SET
           - AUT
         rhOfuEntId__rhEntColId__rhColNom:
-          description: rhOfuEntId rhEntColId Nom
+          description: Interview Employee Nom
           type: string
         rhOfuEntId__rhEntColId__rhColCivilite:
-          description: rhOfuEntId rhEntColId Civilité
+          description: Interview Employee Civilité
           type: string
           enum:
           - MLLE
@@ -55,16 +55,16 @@ components:
           description: Unique technical row ID
           type: string
         rhOfuEntId__rhEntCpgId:
-          description: rhOfuEntId Campagne
+          description: Interview Campaign
           type: string
         rhOfuNumero:
           description: Numéro
           type: integer
         rhOfuEntId:
-          description: Entretien
+          description: Interview
           type: string
         rhOfuEntId__rhEntEtat:
-          description: rhOfuEntId Etat
+          description: Interview Etat
           type: string
           enum:
           - BR
@@ -75,7 +75,7 @@ components:
       type: object
       properties:
         rhOsrSrvId:
-          description: Service
+          description: Department
           type: string
         rhOsrNumero:
           description: Numéro objectif
@@ -84,13 +84,13 @@ components:
           description: Pièce jointe
           type: object
         rhOsrCpgId:
-          description: Campagne
+          description: Campaign
           type: string
         rhOsrCpgId__rhCpgAnnee:
-          description: rhOsrCpgId Year
+          description: Campaign Year
           type: integer
         rhOsrCpgId__rhCpgDateDebut:
-          description: rhOsrCpgId Start date
+          description: Campaign Start date
           type: string
           example: yyyy-MM-dd
         rhOsrType:
@@ -107,14 +107,14 @@ components:
           description: Unique technical row ID
           type: string
         rhOsrSrvId__rhSrvLibelle:
-          description: rhOsrSrvId Label
+          description: Department Label
           type: string
         rhOsrCpgId__rhCpgDateFin:
-          description: rhOsrCpgId End date
+          description: Campaign End date
           type: string
           example: yyyy-MM-dd
         rhOsrSrvId__rhSrvCode:
-          description: rhOsrSrvId Code
+          description: Department Code
           type: string
     ArrayOfRHFormation:
       type: array
@@ -137,10 +137,10 @@ components:
       type: object
       properties:
         rhFrsColId__rhColPrenom:
-          description: rhFrsColId Prénom
+          description: Employee Prénom
           type: string
         rhFrsFrmId__rhFrmType:
-          description: rhFrsFrmId Type
+          description: Training Type
           type: string
           enum:
           - AUV
@@ -154,16 +154,16 @@ components:
           - DRT
           - AUT
         rhFrsColId__rhColTitre:
-          description: rhFrsColId Titre
+          description: Employee Titre
           type: string
         rhFrsFrmId__rhFrmLibelle:
-          description: rhFrsFrmId Libelle
+          description: Training Libelle
           type: string
         rhFrsColId__rhColNom:
-          description: rhFrsColId Nom
+          description: Employee Nom
           type: string
         rhFrsFrmId__rhFrmPeriode:
-          description: rhFrsFrmId Période
+          description: Training Période
           type: array
           items:
             type: string
@@ -173,30 +173,30 @@ components:
             - T3
             - T4
         rhFrsColId__rhColCivilite:
-          description: rhFrsColId Civilité
+          description: Employee Civilité
           type: string
           enum:
           - MLLE
           - MME
           - M
         rhFrsColId__rhColMatricule:
-          description: rhFrsColId Matricule
+          description: Employee Matricule
           type: string
         rhFrsFrmId:
-          description: Formation
+          description: Training
           type: string
         rhFrsColId__rhColSrvId__rhSrvLibelle:
-          description: rhFrsColId rhColSrvId Label
+          description: Employee Department Label
           type: string
         rhFrsColId:
-          description: Collaborateur
+          description: Employee
           type: string
         rhFsrDate:
           description: Date
           type: string
           example: yyyy-MM-dd
         rhFrsColId__rhColSrvId__rhSrvCode:
-          description: rhFrsColId rhColSrvId Code
+          description: Employee Department Code
           type: string
         rhFrsEvaluation:
           description: Evaluation
@@ -209,10 +209,10 @@ components:
           description: Unique technical row ID
           type: string
         rhFrsFrmId__rhFrmCode:
-          description: rhFrsFrmId Code
+          description: Training Code
           type: string
         rhFrsColId__rhColSrvId:
-          description: rhFrsColId Service
+          description: Employee Department
           type: string
         rhFrsCommentaires:
           description: Commentaires
@@ -296,7 +296,7 @@ components:
           description: Adresse
           type: string
         rhColSrvId__rhSrvLibelle:
-          description: rhColSrvId Label
+          description: Department Label
           type: string
         rhColDateFin:
           description: Date de fin
@@ -320,7 +320,7 @@ components:
           description: E-mail
           type: string
         rhColSrvId__rhSrvCode:
-          description: rhColSrvId Code
+          description: Department Code
           type: string
         rhColFax:
           description: Fax
@@ -366,7 +366,7 @@ components:
           description: Unique technical row ID
           type: string
         rhColSrvId:
-          description: Service
+          description: Department
           type: string
     ArrayOfRHCollaborateur:
       type: array
@@ -376,10 +376,10 @@ components:
       type: object
       properties:
         row_idx:
-          description: Version
+          description: History record index
           type: integer
         created_dt_hist:
-          description: Date
+          description: Created date
           type: string
           example: yyyy-MM-dd HH:mm:ss
         row_id:
@@ -394,16 +394,16 @@ components:
           - VC
           - VE
         created_by_hist:
-          description: User
+          description: Created by
           type: string
         row_ref_id:
-          description: Reference
+          description: Record row ID
           type: string
     RHCollaborateurHistoric:
       type: object
       properties:
         row_idx:
-          description: Version
+          description: History record index
           type: integer
         rhColDateDebutSrv:
           description: Date début dans le service
@@ -413,23 +413,23 @@ components:
           description: Titre
           type: string
         created_dt_hist:
-          description: Date
+          description: Created date
           type: string
           example: yyyy-MM-dd HH:mm:ss
         row_id:
           description: Unique technical row ID
           type: string
         rhColSrvId__rhSrvCode:
-          description: rhColSrvId Code
+          description: Department Code
           type: string
         created_by_hist:
-          description: User
+          description: Created by
           type: string
         rhColSrvId:
-          description: Service
+          description: Department
           type: string
         row_ref_id:
-          description: Reference
+          description: Record row ID
           type: string
     ArrayOfRHCampagne:
       type: array
@@ -439,10 +439,10 @@ components:
       type: object
       properties:
         rhDfrColId__rhColSrvId__rhSrvLibelle:
-          description: rhDfrColId rhColSrvId Label
+          description: Employee Department Label
           type: string
         rhDfrFrmId__rhFrmType:
-          description: rhDfrFrmId Type
+          description: Training Type
           type: string
           enum:
           - AUV
@@ -456,10 +456,10 @@ components:
           - DRT
           - AUT
         rhDfrFrmId:
-          description: Formation
+          description: Training
           type: string
         rhDfrFrmId__rhFrmPeriode:
-          description: rhDfrFrmId Période
+          description: Training Période
           type: array
           items:
             type: string
@@ -469,16 +469,16 @@ components:
             - T3
             - T4
         rhDfrColId__rhColPrenom:
-          description: rhDfrColId Prénom
+          description: Employee Prénom
           type: string
         rhDfrColId__rhColMatricule:
-          description: rhDfrColId Matricule
+          description: Employee Matricule
           type: string
         rhDfrColId__rhColTitre:
-          description: rhDfrColId Titre
+          description: Employee Titre
           type: string
         rhDfrFrmId__rhFrmCode:
-          description: rhDfrFrmId Code
+          description: Training Code
           type: string
         rhDfrEtat:
           description: Etat
@@ -494,19 +494,19 @@ components:
           description: Motivation
           type: string
         rhDfrColId__rhColSrvId:
-          description: rhDfrColId Service
+          description: Employee Department
           type: string
         rhDfrColId__rhColSrvId__rhSrvCode:
-          description: rhDfrColId rhColSrvId Code
+          description: Employee Department Code
           type: string
         rhDfrFrmId__rhFrmLibelle:
-          description: rhDfrFrmId Libelle
+          description: Training Libelle
           type: string
         rhDfrColId:
-          description: Collaborateur
+          description: Employee
           type: string
         rhDfrColId__rhColCivilite:
-          description: rhDfrColId Civilité
+          description: Employee Civilité
           type: string
           enum:
           - MLLE
@@ -516,7 +516,7 @@ components:
           description: Unique technical row ID
           type: string
         rhDfrColId__rhColNom:
-          description: rhDfrColId Nom
+          description: Employee Nom
           type: string
         rhDfrPeriodeSouhaitee:
           description: Période souhaitée
@@ -530,10 +530,10 @@ components:
       type: object
       properties:
         rhEntEvlId__rhColUsrId:
-          description: rhEntEvlId Compte utilisateur
+          description: Evaluator Compte utilisateur
           type: string
         rhEntEvlId__rhColNom:
-          description: rhEntEvlId Nom
+          description: Evaluator Nom
           type: string
         rhEntURLCode:
           description: Code d'accès collab
@@ -545,46 +545,46 @@ components:
           description: Duree
           type: integer
         rhEntCpgId__rhCpgDateFin:
-          description: rhEntCpgId End date
+          description: Campaign End date
           type: string
           example: yyyy-MM-dd
         rhEntEvlId__rhColPrenom:
-          description: rhEntEvlId Prénom
+          description: Evaluator Prénom
           type: string
         rhEntColId:
-          description: Collaborateur
+          description: Employee
           type: string
         rhEntColId__rhColMatricule:
-          description: rhEntColId Matricule
+          description: Employee Matricule
           type: string
         rhEntEvlId__rhColMatricule:
-          description: rhEntEvlId Matricule
+          description: Evaluator Matricule
           type: string
         rhEntEvlId:
-          description: Evaluateur
+          description: Evaluator
           type: string
         rhEntBilanCollaborateur:
           description: Conslusion du collaborateur
           type: string
         rhEntColId__rhColPrenom:
-          description: rhEntColId Prénom
+          description: Employee Prénom
           type: string
         rhEntColId__rhColSrvId__rhSrvLibelle:
-          description: rhEntColId rhColSrvId Label
+          description: Employee Department Label
           type: string
         rhEntDate:
           description: Date
           type: string
           example: yyyy-MM-dd HH:mm:ss
         rhEntColId__rhColSrvId:
-          description: rhEntColId Service
+          description: Employee Department
           type: string
         rhEntCpgId__rhCpgDateDebut:
-          description: rhEntCpgId Start date
+          description: Campaign Start date
           type: string
           example: yyyy-MM-dd
         rhEntColId__rhColSrvId__rhSrvCode:
-          description: rhEntColId rhColSrvId Code
+          description: Employee Department Code
           type: string
         rhEntBilanEvaluateur:
           description: Conclusion de l'évaluateur
@@ -603,10 +603,10 @@ components:
           - C
           - D
         rhEntCpgId__rhCpgAnnee:
-          description: rhEntCpgId Year
+          description: Campaign Year
           type: integer
         rhEntColId__rhColNom:
-          description: rhEntColId Nom
+          description: Employee Nom
           type: string
         rhEntEtat:
           description: Etat
@@ -620,20 +620,20 @@ components:
           description: Login
           type: string
         rhEntColId__rhColTitre:
-          description: rhEntColId Titre
+          description: Employee Titre
           type: string
         rhEntCpgId:
-          description: Campagne
+          description: Campaign
           type: string
         rhEntColId__rhColCivilite:
-          description: rhEntColId Civilité
+          description: Employee Civilité
           type: string
           enum:
           - MLLE
           - MME
           - M
         rhEntEvlId__rhColCivilite:
-          description: rhEntEvlId Civilité
+          description: Evaluator Civilité
           type: string
           enum:
           - MLLE
@@ -727,10 +727,10 @@ components:
       type: object
       properties:
         rhColCmpColId__rhColNom:
-          description: rhColCmpColId Nom
+          description: Employee Nom
           type: string
         rhColCmpCmpId__rhCmpType:
-          description: rhColCmpCmpId Type
+          description: Skill Type
           type: string
           enum:
           - TEC
@@ -742,44 +742,44 @@ components:
           description: Niveau
           type: integer
         rhColCmpColId__rhColSrvId:
-          description: rhColCmpColId Service
+          description: Employee Department
           type: string
         rhColCmpCmpId:
-          description: Compétence
+          description: Skill
           type: string
         rhColCmpColId__rhColSrvId__rhSrvLibelle:
-          description: rhColCmpColId rhColSrvId Label
+          description: Employee Department Label
           type: string
         rhColCmpCommentaires:
           description: Commentaires
           type: string
         rhColCmpColId:
-          description: Collaborateur
+          description: Employee
           type: string
         rhColCmpColId__rhColCivilite:
-          description: rhColCmpColId Civilité
+          description: Employee Civilité
           type: string
           enum:
           - MLLE
           - MME
           - M
         rhColCmpColId__rhColSrvId__rhSrvCode:
-          description: rhColCmpColId rhColSrvId Code
+          description: Employee Department Code
           type: string
         rhColCmpCmpId__rhCmpNom:
-          description: rhColCmpCmpId Nom
+          description: Skill Nom
           type: string
         rhColCmpColId__rhColMatricule:
-          description: rhColCmpColId Matricule
+          description: Employee Matricule
           type: string
         row_id:
           description: Unique technical row ID
           type: string
         rhColCmpColId__rhColPrenom:
-          description: rhColCmpColId Prénom
+          description: Employee Prénom
           type: string
         rhColCmpColId__rhColTitre:
-          description: rhColCmpColId Titre
+          description: Employee Titre
           type: string
     ArrayOfRHFormationSuivie:
       type: array
@@ -799,10 +799,10 @@ components:
       type: object
       properties:
         row_idx:
-          description: Version
+          description: History record index
           type: integer
         created_dt_hist:
-          description: Date
+          description: Created date
           type: string
           example: yyyy-MM-dd HH:mm:ss
         row_id:
@@ -816,10 +816,10 @@ components:
           - A
           - R
         created_by_hist:
-          description: User
+          description: Created by
           type: string
         row_ref_id:
-          description: Reference
+          description: Record row ID
           type: string
     TreeviewData:
       type: object
@@ -834,16 +834,16 @@ components:
           description: Objectif
           type: string
         rhOpaEntId__rhEntColId:
-          description: rhOpaEntId Collaborateur
+          description: Interview Employee
           type: string
         rhOpaEntId:
-          description: Entretien
+          description: Interview
           type: string
         rhOpaEntId__rhEntColId__rhColMatricule:
-          description: rhOpaEntId rhEntColId Matricule
+          description: Interview Employee Matricule
           type: string
         rhOpaEntId__rhEntEtat:
-          description: rhOpaEntId Etat
+          description: Interview Etat
           type: string
           enum:
           - BR
@@ -851,26 +851,26 @@ components:
           - VC
           - VE
         rhOpaEntId__rhEntColId__rhColPrenom:
-          description: rhOpaEntId rhEntColId Prénom
+          description: Interview Employee Prénom
           type: string
         rhOpaEntId__rhEntCpgId__rhCpgAnnee:
-          description: rhOpaEntId rhEntCpgId Year
+          description: Interview Campaign Year
           type: integer
         rhOpaNumero:
           description: Numéro
           type: integer
         rhOpaEntId__rhEntColId__rhColCivilite:
-          description: rhOpaEntId rhEntColId Civilité
+          description: Interview Employee Civilité
           type: string
           enum:
           - MLLE
           - MME
           - M
         rhOpaEntId__rhEntColId__rhColNom:
-          description: rhOpaEntId rhEntColId Nom
+          description: Interview Employee Nom
           type: string
         rhOpaEntId__rhEntCpgId:
-          description: rhOpaEntId Campagne
+          description: Interview Campaign
           type: string
         rhOpaType:
           description: Type
@@ -1009,25 +1009,25 @@ paths:
           type: string
         in: query
         name: row_ref_id
-        description: Search filter for Reference
+        description: Search filter for Record row ID
         required: false
       - schema:
           type: integer
         in: query
         name: row_idx
-        description: Search filter for Version
+        description: Search filter for History record index
         required: false
       - schema:
           type: string
         in: query
         name: created_by_hist
-        description: Search filter for User
+        description: Search filter for Created by
         required: false
       - schema:
           type: string
         in: query
         name: created_dt_hist
-        description: Search filter for Date
+        description: Search filter for Created date
         required: false
       - schema:
           type: string
@@ -1097,13 +1097,13 @@ paths:
           type: string
         in: query
         name: rhFrsColId
-        description: Search filter for Collaborateur
+        description: Search filter for Employee
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsColId__rhColMatricule
-        description: Search filter for rhFrsColId Matricule
+        description: Search filter for Employee Matricule
         required: false
       - schema:
           type: string
@@ -1113,55 +1113,55 @@ paths:
           - M
         in: query
         name: rhFrsColId__rhColCivilite
-        description: Search filter for rhFrsColId Civilité
+        description: Search filter for Employee Civilité
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsColId__rhColNom
-        description: Search filter for rhFrsColId Nom
+        description: Search filter for Employee Nom
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsColId__rhColPrenom
-        description: Search filter for rhFrsColId Prénom
+        description: Search filter for Employee Prénom
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsColId__rhColSrvId
-        description: Search filter for rhFrsColId Service
+        description: Search filter for Employee Department
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsColId__rhColSrvId__rhSrvCode
-        description: Search filter for rhFrsColId rhColSrvId Code
+        description: Search filter for Employee Department Code
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsColId__rhColSrvId__rhSrvLibelle
-        description: Search filter for rhFrsColId rhColSrvId Label
+        description: Search filter for Employee Department Label
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsColId__rhColTitre
-        description: Search filter for rhFrsColId Titre
+        description: Search filter for Employee Titre
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsFrmId
-        description: Search filter for Formation
+        description: Search filter for Training
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsFrmId__rhFrmCode
-        description: Search filter for rhFrsFrmId Code
+        description: Search filter for Training Code
         required: false
       - schema:
           type: string
@@ -1178,13 +1178,13 @@ paths:
           - AUT
         in: query
         name: rhFrsFrmId__rhFrmType
-        description: Search filter for rhFrsFrmId Type
+        description: Search filter for Training Type
         required: false
       - schema:
           type: string
         in: query
         name: rhFrsFrmId__rhFrmLibelle
-        description: Search filter for rhFrsFrmId Libelle
+        description: Search filter for Training Libelle
         required: false
       - schema:
           type: string
@@ -1195,7 +1195,7 @@ paths:
           - T4
         in: query
         name: rhFrsFrmId__rhFrmPeriode
-        description: Search filter for rhFrsFrmId Période
+        description: Search filter for Training Période
         required: false
       - schema:
           type: string
@@ -1302,43 +1302,43 @@ paths:
           type: string
         in: query
         name: rhOsrCpgId
-        description: Search filter for Campagne
+        description: Search filter for Campaign
         required: false
       - schema:
           type: integer
         in: query
         name: rhOsrCpgId__rhCpgAnnee
-        description: Search filter for rhOsrCpgId Year
+        description: Search filter for Campaign Year
         required: false
       - schema:
           type: string
         in: query
         name: rhOsrCpgId__rhCpgDateDebut
-        description: Search filter for rhOsrCpgId Start date
+        description: Search filter for Campaign Start date
         required: false
       - schema:
           type: string
         in: query
         name: rhOsrCpgId__rhCpgDateFin
-        description: Search filter for rhOsrCpgId End date
+        description: Search filter for Campaign End date
         required: false
       - schema:
           type: string
         in: query
         name: rhOsrSrvId
-        description: Search filter for Service
+        description: Search filter for Department
         required: false
       - schema:
           type: string
         in: query
         name: rhOsrSrvId__rhSrvCode
-        description: Search filter for rhOsrSrvId Code
+        description: Search filter for Department Code
         required: false
       - schema:
           type: string
         in: query
         name: rhOsrSrvId__rhSrvLibelle
-        description: Search filter for rhOsrSrvId Label
+        description: Search filter for Department Label
         required: false
       - schema:
           type: integer
@@ -1634,25 +1634,25 @@ paths:
           type: string
         in: query
         name: rhEntCpgId
-        description: Search filter for Campagne
+        description: Search filter for Campaign
         required: false
       - schema:
           type: integer
         in: query
         name: rhEntCpgId__rhCpgAnnee
-        description: Search filter for rhEntCpgId Year
+        description: Search filter for Campaign Year
         required: false
       - schema:
           type: string
         in: query
         name: rhEntCpgId__rhCpgDateDebut
-        description: Search filter for rhEntCpgId Start date
+        description: Search filter for Campaign Start date
         required: false
       - schema:
           type: string
         in: query
         name: rhEntCpgId__rhCpgDateFin
-        description: Search filter for rhEntCpgId End date
+        description: Search filter for Campaign End date
         required: false
       - schema:
           type: string
@@ -1693,13 +1693,13 @@ paths:
           type: string
         in: query
         name: rhEntColId
-        description: Search filter for Collaborateur
+        description: Search filter for Employee
         required: false
       - schema:
           type: string
         in: query
         name: rhEntColId__rhColMatricule
-        description: Search filter for rhEntColId Matricule
+        description: Search filter for Employee Matricule
         required: false
       - schema:
           type: string
@@ -1709,55 +1709,55 @@ paths:
           - M
         in: query
         name: rhEntColId__rhColCivilite
-        description: Search filter for rhEntColId Civilité
+        description: Search filter for Employee Civilité
         required: false
       - schema:
           type: string
         in: query
         name: rhEntColId__rhColNom
-        description: Search filter for rhEntColId Nom
+        description: Search filter for Employee Nom
         required: false
       - schema:
           type: string
         in: query
         name: rhEntColId__rhColPrenom
-        description: Search filter for rhEntColId Prénom
+        description: Search filter for Employee Prénom
         required: false
       - schema:
           type: string
         in: query
         name: rhEntColId__rhColSrvId
-        description: Search filter for rhEntColId Service
+        description: Search filter for Employee Department
         required: false
       - schema:
           type: string
         in: query
         name: rhEntColId__rhColSrvId__rhSrvCode
-        description: Search filter for rhEntColId rhColSrvId Code
+        description: Search filter for Employee Department Code
         required: false
       - schema:
           type: string
         in: query
         name: rhEntColId__rhColSrvId__rhSrvLibelle
-        description: Search filter for rhEntColId rhColSrvId Label
+        description: Search filter for Employee Department Label
         required: false
       - schema:
           type: string
         in: query
         name: rhEntColId__rhColTitre
-        description: Search filter for rhEntColId Titre
+        description: Search filter for Employee Titre
         required: false
       - schema:
           type: string
         in: query
         name: rhEntEvlId
-        description: Search filter for Evaluateur
+        description: Search filter for Evaluator
         required: false
       - schema:
           type: string
         in: query
         name: rhEntEvlId__rhColMatricule
-        description: Search filter for rhEntEvlId Matricule
+        description: Search filter for Evaluator Matricule
         required: false
       - schema:
           type: string
@@ -1767,25 +1767,25 @@ paths:
           - M
         in: query
         name: rhEntEvlId__rhColCivilite
-        description: Search filter for rhEntEvlId Civilité
+        description: Search filter for Evaluator Civilité
         required: false
       - schema:
           type: string
         in: query
         name: rhEntEvlId__rhColNom
-        description: Search filter for rhEntEvlId Nom
+        description: Search filter for Evaluator Nom
         required: false
       - schema:
           type: string
         in: query
         name: rhEntEvlId__rhColPrenom
-        description: Search filter for rhEntEvlId Prénom
+        description: Search filter for Evaluator Prénom
         required: false
       - schema:
           type: string
         in: query
         name: rhEntEvlId__rhColUsrId
-        description: Search filter for rhEntEvlId Compte utilisateur
+        description: Search filter for Evaluator Compte utilisateur
         required: false
       - schema:
           type: string
@@ -1976,13 +1976,13 @@ paths:
           type: string
         in: query
         name: rhDfrColId
-        description: Search filter for Collaborateur
+        description: Search filter for Employee
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrColId__rhColMatricule
-        description: Search filter for rhDfrColId Matricule
+        description: Search filter for Employee Matricule
         required: false
       - schema:
           type: string
@@ -1992,55 +1992,55 @@ paths:
           - M
         in: query
         name: rhDfrColId__rhColCivilite
-        description: Search filter for rhDfrColId Civilité
+        description: Search filter for Employee Civilité
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrColId__rhColNom
-        description: Search filter for rhDfrColId Nom
+        description: Search filter for Employee Nom
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrColId__rhColPrenom
-        description: Search filter for rhDfrColId Prénom
+        description: Search filter for Employee Prénom
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrColId__rhColSrvId
-        description: Search filter for rhDfrColId Service
+        description: Search filter for Employee Department
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrColId__rhColSrvId__rhSrvLibelle
-        description: Search filter for rhDfrColId rhColSrvId Label
+        description: Search filter for Employee Department Label
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrColId__rhColSrvId__rhSrvCode
-        description: Search filter for rhDfrColId rhColSrvId Code
+        description: Search filter for Employee Department Code
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrColId__rhColTitre
-        description: Search filter for rhDfrColId Titre
+        description: Search filter for Employee Titre
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrFrmId
-        description: Search filter for Formation
+        description: Search filter for Training
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrFrmId__rhFrmCode
-        description: Search filter for rhDfrFrmId Code
+        description: Search filter for Training Code
         required: false
       - schema:
           type: string
@@ -2057,13 +2057,13 @@ paths:
           - AUT
         in: query
         name: rhDfrFrmId__rhFrmType
-        description: Search filter for rhDfrFrmId Type
+        description: Search filter for Training Type
         required: false
       - schema:
           type: string
         in: query
         name: rhDfrFrmId__rhFrmLibelle
-        description: Search filter for rhDfrFrmId Libelle
+        description: Search filter for Training Libelle
         required: false
       - schema:
           type: string
@@ -2074,7 +2074,7 @@ paths:
           - T4
         in: query
         name: rhDfrFrmId__rhFrmPeriode
-        description: Search filter for rhDfrFrmId Période
+        description: Search filter for Training Période
         required: false
       - schema:
           type: string
@@ -3213,37 +3213,37 @@ paths:
           type: string
         in: query
         name: row_ref_id
-        description: Search filter for Reference
+        description: Search filter for Record row ID
         required: false
       - schema:
           type: integer
         in: query
         name: row_idx
-        description: Search filter for Version
+        description: Search filter for History record index
         required: false
       - schema:
           type: string
         in: query
         name: created_by_hist
-        description: Search filter for User
+        description: Search filter for Created by
         required: false
       - schema:
           type: string
         in: query
         name: created_dt_hist
-        description: Search filter for Date
+        description: Search filter for Created date
         required: false
       - schema:
           type: string
         in: query
         name: rhColSrvId
-        description: Search filter for Service
+        description: Search filter for Department
         required: false
       - schema:
           type: string
         in: query
         name: rhColSrvId__rhSrvCode
-        description: Search filter for rhColSrvId Code
+        description: Search filter for Department Code
         required: false
       - schema:
           type: string
@@ -3518,13 +3518,13 @@ paths:
           type: string
         in: query
         name: rhColCmpColId
-        description: Search filter for Collaborateur
+        description: Search filter for Employee
         required: false
       - schema:
           type: string
         in: query
         name: rhColCmpColId__rhColMatricule
-        description: Search filter for rhColCmpColId Matricule
+        description: Search filter for Employee Matricule
         required: false
       - schema:
           type: string
@@ -3534,55 +3534,55 @@ paths:
           - M
         in: query
         name: rhColCmpColId__rhColCivilite
-        description: Search filter for rhColCmpColId Civilité
+        description: Search filter for Employee Civilité
         required: false
       - schema:
           type: string
         in: query
         name: rhColCmpColId__rhColNom
-        description: Search filter for rhColCmpColId Nom
+        description: Search filter for Employee Nom
         required: false
       - schema:
           type: string
         in: query
         name: rhColCmpColId__rhColPrenom
-        description: Search filter for rhColCmpColId Prénom
+        description: Search filter for Employee Prénom
         required: false
       - schema:
           type: string
         in: query
         name: rhColCmpColId__rhColSrvId
-        description: Search filter for rhColCmpColId Service
+        description: Search filter for Employee Department
         required: false
       - schema:
           type: string
         in: query
         name: rhColCmpColId__rhColSrvId__rhSrvCode
-        description: Search filter for rhColCmpColId rhColSrvId Code
+        description: Search filter for Employee Department Code
         required: false
       - schema:
           type: string
         in: query
         name: rhColCmpColId__rhColSrvId__rhSrvLibelle
-        description: Search filter for rhColCmpColId rhColSrvId Label
+        description: Search filter for Employee Department Label
         required: false
       - schema:
           type: string
         in: query
         name: rhColCmpColId__rhColTitre
-        description: Search filter for rhColCmpColId Titre
+        description: Search filter for Employee Titre
         required: false
       - schema:
           type: string
         in: query
         name: rhColCmpCmpId
-        description: Search filter for Compétence
+        description: Search filter for Skill
         required: false
       - schema:
           type: string
         in: query
         name: rhColCmpCmpId__rhCmpNom
-        description: Search filter for rhColCmpCmpId Nom
+        description: Search filter for Skill Nom
         required: false
       - schema:
           type: string
@@ -3594,7 +3594,7 @@ paths:
           - AUT
         in: query
         name: rhColCmpCmpId__rhCmpType
-        description: Search filter for rhColCmpCmpId Type
+        description: Search filter for Skill Type
         required: false
       - schema:
           type: integer
@@ -4180,25 +4180,25 @@ paths:
           type: string
         in: query
         name: row_ref_id
-        description: Search filter for Reference
+        description: Search filter for Record row ID
         required: false
       - schema:
           type: integer
         in: query
         name: row_idx
-        description: Search filter for Version
+        description: Search filter for History record index
         required: false
       - schema:
           type: string
         in: query
         name: created_by_hist
-        description: Search filter for User
+        description: Search filter for Created by
         required: false
       - schema:
           type: string
         in: query
         name: created_dt_hist
-        description: Search filter for Date
+        description: Search filter for Created date
         required: false
       - schema:
           type: string
@@ -4458,19 +4458,19 @@ paths:
           type: string
         in: query
         name: rhOpaEntId
-        description: Search filter for Entretien
+        description: Search filter for Interview
         required: false
       - schema:
           type: string
         in: query
         name: rhOpaEntId__rhEntCpgId
-        description: Search filter for rhOpaEntId Campagne
+        description: Search filter for Interview Campaign
         required: false
       - schema:
           type: integer
         in: query
         name: rhOpaEntId__rhEntCpgId__rhCpgAnnee
-        description: Search filter for rhOpaEntId rhEntCpgId Year
+        description: Search filter for Interview Campaign Year
         required: false
       - schema:
           type: string
@@ -4481,19 +4481,19 @@ paths:
           - VE
         in: query
         name: rhOpaEntId__rhEntEtat
-        description: Search filter for rhOpaEntId Etat
+        description: Search filter for Interview Etat
         required: false
       - schema:
           type: string
         in: query
         name: rhOpaEntId__rhEntColId
-        description: Search filter for rhOpaEntId Collaborateur
+        description: Search filter for Interview Employee
         required: false
       - schema:
           type: string
         in: query
         name: rhOpaEntId__rhEntColId__rhColMatricule
-        description: Search filter for rhOpaEntId rhEntColId Matricule
+        description: Search filter for Interview Employee Matricule
         required: false
       - schema:
           type: string
@@ -4503,19 +4503,19 @@ paths:
           - M
         in: query
         name: rhOpaEntId__rhEntColId__rhColCivilite
-        description: Search filter for rhOpaEntId rhEntColId Civilité
+        description: Search filter for Interview Employee Civilité
         required: false
       - schema:
           type: string
         in: query
         name: rhOpaEntId__rhEntColId__rhColNom
-        description: Search filter for rhOpaEntId rhEntColId Nom
+        description: Search filter for Interview Employee Nom
         required: false
       - schema:
           type: string
         in: query
         name: rhOpaEntId__rhEntColId__rhColPrenom
-        description: Search filter for rhOpaEntId rhEntColId Prénom
+        description: Search filter for Interview Employee Prénom
         required: false
       - schema:
           type: integer
@@ -5491,19 +5491,19 @@ paths:
           type: string
         in: query
         name: rhOfuEntId
-        description: Search filter for Entretien
+        description: Search filter for Interview
         required: false
       - schema:
           type: string
         in: query
         name: rhOfuEntId__rhEntCpgId
-        description: Search filter for rhOfuEntId Campagne
+        description: Search filter for Interview Campaign
         required: false
       - schema:
           type: integer
         in: query
         name: rhOfuEntId__rhEntCpgId__rhCpgAnnee
-        description: Search filter for rhOfuEntId rhEntCpgId Year
+        description: Search filter for Interview Campaign Year
         required: false
       - schema:
           type: string
@@ -5514,19 +5514,19 @@ paths:
           - VE
         in: query
         name: rhOfuEntId__rhEntEtat
-        description: Search filter for rhOfuEntId Etat
+        description: Search filter for Interview Etat
         required: false
       - schema:
           type: string
         in: query
         name: rhOfuEntId__rhEntColId
-        description: Search filter for rhOfuEntId Collaborateur
+        description: Search filter for Interview Employee
         required: false
       - schema:
           type: string
         in: query
         name: rhOfuEntId__rhEntColId__rhColMatricule
-        description: Search filter for rhOfuEntId rhEntColId Matricule
+        description: Search filter for Interview Employee Matricule
         required: false
       - schema:
           type: string
@@ -5536,19 +5536,19 @@ paths:
           - M
         in: query
         name: rhOfuEntId__rhEntColId__rhColCivilite
-        description: Search filter for rhOfuEntId rhEntColId Civilité
+        description: Search filter for Interview Employee Civilité
         required: false
       - schema:
           type: string
         in: query
         name: rhOfuEntId__rhEntColId__rhColNom
-        description: Search filter for rhOfuEntId rhEntColId Nom
+        description: Search filter for Interview Employee Nom
         required: false
       - schema:
           type: string
         in: query
         name: rhOfuEntId__rhEntColId__rhColPrenom
-        description: Search filter for rhOfuEntId rhEntColId Prénom
+        description: Search filter for Interview Employee Prénom
         required: false
       - schema:
           type: integer
@@ -5954,19 +5954,19 @@ paths:
           type: string
         in: query
         name: rhColSrvId
-        description: Search filter for Service
+        description: Search filter for Department
         required: false
       - schema:
           type: string
         in: query
         name: rhColSrvId__rhSrvCode
-        description: Search filter for rhColSrvId Code
+        description: Search filter for Department Code
         required: false
       - schema:
           type: string
         in: query
         name: rhColSrvId__rhSrvLibelle
-        description: Search filter for rhColSrvId Label
+        description: Search filter for Department Label
         required: false
       - schema:
           type: string
@@ -5992,7 +5992,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module RH
   title: RH
-  version: '4.0'
+  version: '5'
 tags:
 - name: RHCampagne
   description: Campaign

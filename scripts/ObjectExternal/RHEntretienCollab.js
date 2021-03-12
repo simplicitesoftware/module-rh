@@ -5,8 +5,8 @@ RHEntretienCollab.display = function(params) {
 	wp.setLanguage("fr");
 	wp.appendAjax();
 	wp.appendHTMLEditor();
-	wp.appendCSSInclude(HTMLPage.getResourceCSSURL(this, "CSS"));
-	wp.appendJSInclude(HTMLPage.getResourceJSURL(this, "JS"));
+	wp.appendCSSInclude(HTMLPage.getResourceCSSURL(this, "STYLES"));
+	wp.appendJSInclude(HTMLPage.getResourceJSURL(this, "SCRIPT"));
 
 	wp.setFavicon(HTMLPage.getResourceIconURL(this, "FAVICON"));
 

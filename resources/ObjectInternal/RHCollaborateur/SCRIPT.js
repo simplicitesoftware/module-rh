@@ -1,4 +1,4 @@
-var RHCollaborateur = typeof RHCollaborateur !== "undefined" ? RHCollaborateur : (function(ui, $) {
+var RHCollaborateur = RHCollaborateur || (function(ui, $) {
 	Simplicite.UI.hooks.RHCollaborateur = function(o, cbk) {
 		try {
 			o.locals.ui.form.onload = function(ctn, obj) {
