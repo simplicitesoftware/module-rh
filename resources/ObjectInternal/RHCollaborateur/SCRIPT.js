@@ -1,4 +1,4 @@
-var RHCollaborateur = RHCollaborateur || (function(ui, $) {
+(function(ui) {
 	Simplicite.UI.hooks.RHCollaborateur = function(o, cbk) {
 		try {
 			o.locals.ui.form.onload = function(ctn, obj) {
@@ -36,4 +36,4 @@ var RHCollaborateur = RHCollaborateur || (function(ui, $) {
 			cbk && cbk();
 		}
 	};
-})(window.$ui, jQuery);
+})(window.$ui);

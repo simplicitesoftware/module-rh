@@ -85,6 +85,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<thm_menu_sta_t>#505050</thm_menu_sta_t>
 		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<thm_const/>
 	</data>
 </object>
 <object>
@@ -1548,7 +1549,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1585,7 +1586,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1622,7 +1623,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_CMP_TYPE</fld_list_id.lov_name>
@@ -1659,7 +1660,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1696,7 +1697,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_CIVILITE</fld_list_id.lov_name>
@@ -1733,7 +1734,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1770,7 +1771,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1807,7 +1808,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1844,7 +1845,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1881,7 +1882,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
@@ -1918,7 +1919,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1955,7 +1956,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>1</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>25</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1992,7 +1993,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2029,7 +2030,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2066,7 +2067,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2103,7 +2104,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2140,7 +2141,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>12</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2177,7 +2178,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2214,7 +2215,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
@@ -2251,7 +2252,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2288,7 +2289,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2325,7 +2326,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2362,7 +2363,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2399,7 +2400,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2436,7 +2437,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_COL_STATUT</fld_list_id.lov_name>
@@ -2473,7 +2474,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2510,7 +2511,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2547,7 +2548,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2584,7 +2585,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2621,7 +2622,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2658,7 +2659,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2695,7 +2696,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2732,7 +2733,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2769,7 +2770,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2806,7 +2807,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2843,7 +2844,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2880,7 +2881,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_DFR_ETAT</fld_list_id.lov_name>
@@ -2917,7 +2918,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2954,7 +2955,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2991,7 +2992,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_TRIMESTRE</fld_list_id.lov_name>
@@ -3028,7 +3029,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3065,7 +3066,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3102,7 +3103,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3139,7 +3140,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3176,7 +3177,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>5</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3213,7 +3214,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3250,7 +3251,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_ENT_ETAT</fld_list_id.lov_name>
@@ -3287,7 +3288,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_ENT_EVALUATION</fld_list_id.lov_name>
@@ -3324,7 +3325,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3361,7 +3362,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3398,7 +3399,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>10</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3435,7 +3436,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>1</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3472,7 +3473,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
@@ -3509,7 +3510,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3546,7 +3547,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3583,7 +3584,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3620,7 +3621,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3657,7 +3658,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>14</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_TRIMESTRE</fld_list_id.lov_name>
@@ -3694,7 +3695,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3731,7 +3732,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_FRM_TYPE</fld_list_id.lov_name>
@@ -3768,7 +3769,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3805,7 +3806,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3842,7 +3843,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_FRS_EVALUATION</fld_list_id.lov_name>
@@ -3879,7 +3880,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3916,7 +3917,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3953,7 +3954,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3990,7 +3991,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4027,7 +4028,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4064,7 +4065,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_OPA_OFU_TYPE</fld_list_id.lov_name>
@@ -4101,7 +4102,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4138,7 +4139,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4175,7 +4176,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</fld_list_id.lov_name>
@@ -4212,7 +4213,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4249,7 +4250,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4286,7 +4287,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_OPA_OFU_TYPE</fld_list_id.lov_name>
@@ -4323,7 +4324,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4360,7 +4361,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4397,7 +4398,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4434,7 +4435,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4471,7 +4472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4508,7 +4509,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>RH_OSR_TYPE</fld_list_id.lov_name>
@@ -4545,7 +4546,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
@@ -4582,7 +4583,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4619,7 +4620,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4656,7 +4657,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -5666,6 +5667,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHCollaborateur</obo_name>
@@ -5730,6 +5733,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHCollaborateurCompetence</obo_name>
@@ -5794,6 +5799,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHCollaborateurHistoric</obo_name>
@@ -5816,7 +5823,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef/>
+		<obo_srh_predef>1</obo_srh_predef>
 		<obo_selrow>1</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>1</obo_delall>
@@ -5858,6 +5865,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHCompetence</obo_name>
@@ -5922,6 +5931,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHDemandeFormation</obo_name>
@@ -5986,6 +5997,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHDemandeFormationHistoric</obo_name>
@@ -6008,7 +6021,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef/>
+		<obo_srh_predef>1</obo_srh_predef>
 		<obo_selrow>1</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>1</obo_delall>
@@ -6050,6 +6063,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHEntretien</obo_name>
@@ -6114,6 +6129,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHEntretienHistoric</obo_name>
@@ -6136,7 +6153,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef/>
+		<obo_srh_predef>1</obo_srh_predef>
 		<obo_selrow>1</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>1</obo_delall>
@@ -6178,6 +6195,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHFormation</obo_name>
@@ -6242,6 +6261,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHFormationSuivie</obo_name>
@@ -6306,6 +6327,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHObjectifFutur</obo_name>
@@ -6370,6 +6393,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHObjectifPasse</obo_name>
@@ -6434,6 +6459,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHObjectifService</obo_name>
@@ -6498,6 +6525,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>RHService</obo_name>
@@ -6562,6 +6591,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_search_ts/>
 		<obo_minrows/>
 		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas>1</obo_list_areas>
 	</data>
 </object>
 <object>
@@ -14256,37 +14287,37 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<ctg_crosstab_id.ctb_name>RHCollaborateurCompetence-T1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>RH_ADMIN</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>RHCollaborateurCompetence-T1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>RH_EVAL</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>RHDemandeFormation-T1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>RH_ADMIN</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>RHDemandeFormation-T1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>RH_EVAL</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>RHEntretien-T1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>RH_ADMIN</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>RHEntretien-T1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>RH_EVAL</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 </object>
@@ -14418,6 +14449,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<vwi_show>RHEntretien</vwi_show>
 		<vwi_url><![CDATA[&zgraph=bar&zcontrol=no&zwidth=500&zheight=400&zstotal=no]]></vwi_url>
 		<vwi_image/>
+		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name>RHEntretien-T1</vwi_crosstab_id.ctb_name>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
@@ -14436,6 +14468,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<vwi_show>RHDemandeFormation</vwi_show>
 		<vwi_url><![CDATA[&zgraph=pie&zcontrol=no&zwidth=500&zheight=400&zstotal=no]]></vwi_url>
 		<vwi_image/>
+		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name>RHDemandeFormation-T1</vwi_crosstab_id.ctb_name>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
@@ -14454,6 +14487,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<vwi_show>RHEntretien</vwi_show>
 		<vwi_url/>
 		<vwi_image/>
+		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name/>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>

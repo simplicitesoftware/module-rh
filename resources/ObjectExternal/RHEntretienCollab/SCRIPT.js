@@ -1,4 +1,4 @@
-var RHEntretienCollab = RHEntretienCollab || (function($) {
+var RHEntretienCollab = (function($) {
 	var $s;
 	var ent, opa, ofu;
 
