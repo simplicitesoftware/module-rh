@@ -1,9 +1,9 @@
 {
-    "date": "2021-05-07 22:21:25",
+    "date": "2021-10-01 18:04:20",
     "name": "RH",
     "format": "xml",
     "files": ["RH.xml"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-rh.git"}},
     "version": "5",
-    "platform": "5.2.0-alpha"
+    "platform": "5.2.0-beta"
 }
