@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-rh.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-02-28 22:17:23</mdl_lastupd>
+		<mdl_type/>
 		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-RH&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-RH)
 
 ### Introduction
@@ -67,8 +67,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<thm_color3/>
 		<thm_text3/>
 		<thm_base>light</thm_base>
-		<thm_css_doc>files/Theme/RH/RH_gen.css</thm_css_doc>
-		<thm_addon/>
+		<thm_addon>files/Theme/RH/addon.less</thm_addon>
 		<thm_searchbox>#f7F7F7</thm_searchbox>
 		<thm_active/>
 		<thm_font/>
@@ -192,6 +191,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_last_logon/>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
+		<usr_mfa_method/>
+		<usr_mfa_settings/>
 		<usr_uuid>a5ce05f5-0599-41f2-a396-bfbebcb1b735</usr_uuid>
 	</data>
 </object>
@@ -1039,7 +1040,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_CIVILITE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>MLLE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Mademoiselle]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1047,7 +1047,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_CIVILITE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>MME</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Madame]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1055,7 +1054,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_CIVILITE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>M</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Monsieur]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1063,7 +1061,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_CMP_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>TEC</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Technique]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1071,7 +1068,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_CMP_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>FON</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Fonctionnelle]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1079,7 +1075,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_CMP_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ENC</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Encadrement]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1087,7 +1082,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_CMP_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>LNG</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Langue]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1095,7 +1089,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_CMP_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>AUT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>99</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Autre]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1103,7 +1096,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_COL_STATUT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CDI</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[CDI]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1111,7 +1103,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_COL_STATUT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CDD</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[CDD]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1119,7 +1110,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_COL_STATUT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>STG</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Stagiaire]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1127,7 +1117,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_COL_STATUT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>APP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Apprenti(e)]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1135,7 +1124,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>D</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Requested]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1143,7 +1131,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>A</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Accepted]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1151,7 +1138,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>R</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Refused]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1159,7 +1145,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>D</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Demandée]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1167,7 +1152,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>A</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Acceptée]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1175,7 +1159,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_DFR_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>R</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Refusée]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1183,7 +1166,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>BR</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Draft]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1191,7 +1173,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Completed]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1199,7 +1180,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>VC</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Validated by the employee]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1207,7 +1187,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>VE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Validated by the evaluator]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1215,7 +1194,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>BR</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Brouillon]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1223,7 +1201,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Complet]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1231,7 +1208,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>VC</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Validé par le collaborateur]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1239,7 +1215,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_ETAT</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>VE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Validé par l'évaluateur]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1247,7 +1222,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>APP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[A++]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1255,7 +1229,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>AP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[A+]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1263,7 +1236,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>A</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[A]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1271,7 +1243,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>AM</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[A-]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1279,7 +1250,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>BP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>5</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[B+]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1287,7 +1257,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>B</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>6</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[B]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1295,7 +1264,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>BM</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>7</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[B-]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1303,7 +1271,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>C</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>8</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[C]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1311,7 +1278,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_ENT_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>D</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>8</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[D]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1319,7 +1285,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>AUV</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Audiovisuel]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1327,7 +1292,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>MKT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Marketing]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1335,7 +1299,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>BUR</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Bureautique]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1343,7 +1306,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>INF</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>5</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Informatique]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1351,7 +1313,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>WEB</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>6</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Web]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1359,7 +1320,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>GES</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>7</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Gestion]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1367,7 +1327,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CMP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>8</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Comptabilité]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1375,7 +1334,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>REH</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>9</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Resources Humaines]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1383,7 +1341,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>DRT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>10</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Droit]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1391,7 +1348,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRM_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>AUT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>99</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Autre]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1399,7 +1355,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRS_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>1</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Très utile]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1407,7 +1362,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRS_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>2</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Moyennement utile]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1415,7 +1369,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_FRS_EVALUATION</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>3</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Faiblement utile]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1423,7 +1376,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>1</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Excellent]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1431,7 +1383,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>2</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Bon]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1439,7 +1390,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>3</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Correct]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1447,7 +1397,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OPA_NIVEAUATTEINTE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>4</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Insuffisant]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1455,7 +1404,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OPA_OFU_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>SFA</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Savoir faire]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1463,7 +1411,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OPA_OFU_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>SET</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Savoir être]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1471,7 +1418,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OPA_OFU_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>AUT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Autre]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1479,7 +1425,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OSR_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>QLT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Qualitatif]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1487,7 +1432,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OSR_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>QTT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Quantitatif]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1495,7 +1439,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_OSR_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>AUT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>99</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Autre]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1503,7 +1446,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_TRIMESTRE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T1</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Trimestre 1]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1511,7 +1453,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_TRIMESTRE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T2</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Trimestre 2]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1519,7 +1460,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_TRIMESTRE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T3</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Trimestre 3]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -1527,7 +1467,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_code_id.lov_list_id.lov_name>RH_TRIMESTRE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T4</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Trimestre 4]]></lov_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -5607,6 +5546,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHCampagne</obo_name>
 		<obo_dbtable>rh_campagne</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -5673,6 +5613,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHCollaborateur</obo_name>
 		<obo_dbtable>rh_collaborateur</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>scripts/ObjectInternal/RHCollaborateur.js</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -5739,6 +5680,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHCollaborateurCompetence</obo_name>
 		<obo_dbtable>rh_collaborateur_competence</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -5805,6 +5747,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHCollaborateurHistoric</obo_name>
 		<obo_dbtable>rh_collaborateur_hist</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -5871,6 +5814,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHCompetence</obo_name>
 		<obo_dbtable>rh_competence</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -5937,6 +5881,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHDemandeFormation</obo_name>
 		<obo_dbtable>rh_demande_formation</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>scripts/ObjectInternal/RHDemandeFormation.js</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -6003,6 +5948,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHDemandeFormationHistoric</obo_name>
 		<obo_dbtable>rh_demande_formation_hist</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -6069,6 +6015,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHEntretien</obo_name>
 		<obo_dbtable>rh_entretien</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>scripts/ObjectInternal/RHEntretien.js</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -6135,6 +6082,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHEntretienHistoric</obo_name>
 		<obo_dbtable>rh_entretien_hist</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -6201,6 +6149,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHFormation</obo_name>
 		<obo_dbtable>rh_formation</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -6267,6 +6216,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHFormationSuivie</obo_name>
 		<obo_dbtable>rh_formation_suivie</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -6333,6 +6283,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHObjectifFutur</obo_name>
 		<obo_dbtable>rh_objectiffutur</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>scripts/ObjectInternal/RHObjectifFutur.js</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -6399,6 +6350,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHObjectifPasse</obo_name>
 		<obo_dbtable>rh_objectifpasse</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>scripts/ObjectInternal/RHObjectifPasse.js</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -6465,6 +6417,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHObjectifService</obo_name>
 		<obo_dbtable>rh_objectifservice</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>scripts/ObjectInternal/RHObjectifService.js</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -6531,6 +6484,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<obo_name>RHService</obo_name>
 		<obo_dbtable>rh_service</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -14590,7 +14544,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>rh</res_code>
 		<res_cached>1</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/rh.png</res_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -14608,7 +14561,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>rh-module</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/rh-module.svg</res_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -14626,7 +14578,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>rh-module-screenshot</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/rh-module-screenshot.png</res_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -14644,26 +14595,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/RHEntretienCollab/STYLES.css</res_file>
-		<res_file_compiled>resources/ObjectExternal/RHEntretienCollab/STYLES.min.css</res_file_compiled>
 		<res_image/>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>RHEntretienCollab</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>ICO</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>FAVICON</res_code>
-		<res_cached>0</res_cached>
-		<res_file/>
-		<res_file_compiled/>
-		<res_image>resources/ObjectExternal/RHEntretienCollab/FAVICON.png</res_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -14680,7 +14612,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>LOADING</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/ObjectExternal/RHEntretienCollab/LOADING.gif</res_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -14698,7 +14629,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>LOGO</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/ObjectExternal/RHEntretienCollab/LOGO.png</res_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -14716,7 +14646,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>POWEREDBY</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/ObjectExternal/RHEntretienCollab/POWEREDBY.png</res_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -14734,7 +14663,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/RHEntretienCollab/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectExternal/RHEntretienCollab/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -14752,7 +14680,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/RHCollaborateur/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectInternal/RHCollaborateur/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -14770,7 +14697,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<res_code>LOGO</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/ObjectInternal/RHEntretien/LOGO.png</res_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>

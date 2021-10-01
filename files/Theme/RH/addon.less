@@ -1,0 +1,96 @@
+@rh-color: #202020;
+@rh-links: #395882;
+@rh-reference: #f2f9ff;
+@rh-icon: #202020;
+@rh-border: solid 1px #e0e0e0;
+@rh-shadow: 4px 4px 6px #e7e7e7;
+
+.btn {
+	border-radius: 1rem;
+}
+.header .searchbox input, .header .searchbox.focus input, .header .searchbox .btn, .header .searchbox.focus .btn {
+	border: @rh-border;
+	border-radius: 1rem !important;
+}
+.js-search, .js-search-open {
+	border: none 0 !important;
+	background: none !important;
+	color: @rh-color !important;
+}
+.panel, .card {
+	border-radius: 1rem;
+	box-shadow: @rh-shadow;
+	margin: 1rem .5rem;
+}
+.panel-default > .panel-heading, .panel-default > .panel-footer, .card-header, .card-footer {
+	color: @rh-color;
+	background: none;
+}
+.table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > th, .table tr.totals > td {
+	background: #ffffff;
+	color: @rh-color;
+}
+.page-item.active .page-link {
+    background-color: @rh-color;
+    border-color: @rh-color;
+}
+.nav-tabs .nav-link {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+.control-group > label,
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active,
+.nav-tabs > li > a, .nav-tabs .nav-link {
+	color: @rh-color;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    color: @rh-links;
+    background: none;
+}
+.tabs-left .tab-content {
+	border: solid 1px red;
+}
+.reference > .control-group input,
+.reference > .control-group select,
+.reference > .control-group textarea,
+.reference > .control-group .markdown-html {
+    background: @rh-reference;
+}
+.list-shortcuts .item {
+    background: #ffffff;
+    color: @rh-color;
+    border: @rh-border;
+    box-shadow: @rh-shadow;
+}
+ul.main-menu .badge {
+    background-color: #ffffdd;
+}
+a, a:hover, a:active,
+.page-link, .page-link:hover, .page-link:active {
+	color: @rh-links;
+}
+ul.main-menu > li a:hover, ul.main-menu > li.active > a {
+	border-radius: 0 1rem 1rem 0;
+}
+ul.sub-menu a.menu-sel::before {
+    background: @rh-color;
+}
+ul.main-menu > li .icon,
+.icon-title i, .icon-title span,
+.list-shortcuts .item .icon {
+	color: @rh-icon;
+}
+.control-group > label {
+	font-weight: bold;
+	color: #5888CA;
+	text-transform: uppercase;
+}
+.ctrow {
+	border-bottom: dotted 1px #e0e0e0 !important;
+	border-top: none 0 !important;
+	border-right: none 0 !important;
+	border-left: none 0 !important;
+}
+.ctcell {
+	border: dotted 1px #e0e0e0 !important;
+}
