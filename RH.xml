@@ -17218,7 +17218,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obd_name>RHEntretiens</tsl_id.obd_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Interviews</tsl_value>
+		<tsl_value>Interviews management</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17226,7 +17226,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obd_name>RHFormations</tsl_id.obd_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Trainings</tsl_value>
+		<tsl_value>Trainings management</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17250,7 +17250,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obd_name>RHEntretiens</tsl_id.obd_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Entretiens</tsl_value>
+		<tsl_value>Gestion des entretiens</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17258,7 +17258,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obd_name>RHFormations</tsl_id.obd_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Formations</tsl_value>
+		<tsl_value>Gestion des formations</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17278,7 +17278,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHCampagne</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Campaign</tsl_value>
+		<tsl_value>Campaign|Campaigns</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17286,7 +17286,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHCollaborateur</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Employee</tsl_value>
+		<tsl_value>Employee|Employees</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17294,7 +17294,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHCollaborateurCompetence</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Employee skill</tsl_value>
+		<tsl_value>Employee skill|Employee skills</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17310,7 +17310,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHCompetence</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Skill</tsl_value>
+		<tsl_value>Skill|Skills</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17318,7 +17318,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHDemandeFormation</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Training request</tsl_value>
+		<tsl_value>Training request|Training requests</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17334,7 +17334,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHEntretien</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Interview</tsl_value>
+		<tsl_value>Interview|Interviews</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17350,7 +17350,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHFormation</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Training</tsl_value>
+		<tsl_value>Training|Trainings</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17358,7 +17358,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHFormationSuivie</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Attended training</tsl_value>
+		<tsl_value>Attended training|Attended trainings</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17366,7 +17366,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHObjectifFutur</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Future objective</tsl_value>
+		<tsl_value>Future objective|Future objectives</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17374,7 +17374,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHObjectifPasse</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Past objective</tsl_value>
+		<tsl_value>Past objective|Past objectives</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17382,7 +17382,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHObjectifService</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Departement objective</tsl_value>
+		<tsl_value>Departement objective|Departement objectives</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17390,7 +17390,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHService</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Department</tsl_value>
+		<tsl_value>Department|Departments</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17398,7 +17398,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHCampagne</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Campagne</tsl_value>
+		<tsl_value>Campagne|Campagnes</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17406,7 +17406,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHCollaborateur</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Collaborateur</tsl_value>
+		<tsl_value>Collaborateur|Collaborateurs</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17430,7 +17430,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHCompetence</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Compétence</tsl_value>
+		<tsl_value>Compétence|Compétences</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17438,7 +17438,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHDemandeFormation</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Demande de formation</tsl_value>
+		<tsl_value>Demande de formation|Demandes de formation</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17454,7 +17454,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHEntretien</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Entretien</tsl_value>
+		<tsl_value>Entretien|Entretiens</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17470,7 +17470,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHFormation</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Formation</tsl_value>
+		<tsl_value>Formation|Formations</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17478,7 +17478,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHFormationSuivie</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Formation suivie</tsl_value>
+		<tsl_value>Formation suivie|Formations suivies</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17486,7 +17486,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHObjectifFutur</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Objectif futur</tsl_value>
+		<tsl_value>Objectif futur|Objectifs futurs</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17494,7 +17494,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHObjectifPasse</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Objectif passé</tsl_value>
+		<tsl_value>Objectif passé|Objectifs passés</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17502,7 +17502,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHObjectifService</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Objectif service</tsl_value>
+		<tsl_value>Objectif du service|Objectifs du service</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -17510,7 +17510,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>RHService</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Service</tsl_value>
+		<tsl_value>Service|Services</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
