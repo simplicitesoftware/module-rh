@@ -133,6 +133,27 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/RHCollaborateurHistoric'
+    PlaceData:
+      type: object
+      properties:
+        coord:
+          description: Geographical coordinates
+          type: string
+        address:
+          description: Address
+          type: string
+        row_id:
+          description: Row ID
+          type: string
+        label1:
+          description: 'Label #1'
+          type: string
+        label2:
+          description: 'Label #2'
+          type: string
+        label3:
+          description: 'Label #3'
+          type: string
     RHFormationSuivie:
       type: object
       properties:
@@ -216,6 +237,17 @@ components:
           type: string
         rhFrsCommentaires:
           description: Commentaires
+          type: string
+    PlaceMapData:
+      type: object
+      properties:
+        places:
+          description: Places
+          type: array
+          items:
+            $ref: '#/components/schemas/PlaceData'
+        name:
+          description: Name
           type: string
     RHFormation:
       type: object
@@ -957,6 +989,8 @@ components:
       bearerFormat: Simplicite token
       scheme: bearer
       type: http
+servers:
+- url: /api
 openapi: 3.0.2
 paths:
   /rest/RHDemandeFormationHistoric:
@@ -1372,7 +1406,7 @@ paths:
       - RHObjectifService
   /rest/RHCollaborateurHistoric/{row_id}:
     post:
-      summary: Create a new RHCollaborateurHistoricbusiness object record
+      summary: Create a new RHCollaborateurHistoric business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1516,7 +1550,7 @@ paths:
       tags:
       - RHCollaborateurHistoric
     put:
-      summary: Update a RHCollaborateurHistoricbusiness object record
+      summary: Update a RHCollaborateurHistoric business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1565,6 +1599,46 @@ paths:
         required: true
       tags:
       - RHCollaborateurHistoric
+  /rest/RHCollaborateur/{row_id}/placemap:RHCollborateur:
+    get:
+      summary: Call a place map for RHCollaborateur business object
+      security:
+      - bearerAuth: []
+      operationId: obj-rhcollaborateur-placemap-rhcollborateur
+      responses:
+        '200':
+          description: Success in calling the place map adat
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlaceMapData'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - RHCollaborateur
   /rest/RHEntretien:
     get:
       summary: Search RHEntretien business object records or get contextualized metadata
@@ -2113,7 +2187,7 @@ paths:
       - RHDemandeFormation
   /rest/RHFormation/{row_id}:
     post:
-      summary: Create a new RHFormationbusiness object record
+      summary: Create a new RHFormation business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2257,7 +2331,7 @@ paths:
       tags:
       - RHFormation
     put:
-      summary: Update a RHFormationbusiness object record
+      summary: Update a RHFormation business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2308,7 +2382,7 @@ paths:
       - RHFormation
   /rest/RHObjectifPasse/{row_id}:
     post:
-      summary: Create a new RHObjectifPassebusiness object record
+      summary: Create a new RHObjectifPasse business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2452,7 +2526,7 @@ paths:
       tags:
       - RHObjectifPasse
     put:
-      summary: Update a RHObjectifPassebusiness object record
+      summary: Update a RHObjectifPasse business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2503,7 +2577,7 @@ paths:
       - RHObjectifPasse
   /rest/RHService/{row_id}:
     post:
-      summary: Create a new RHServicebusiness object record
+      summary: Create a new RHService business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2647,7 +2721,7 @@ paths:
       tags:
       - RHService
     put:
-      summary: Update a RHServicebusiness object record
+      summary: Update a RHService business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2698,7 +2772,7 @@ paths:
       - RHService
   /rest/RHDemandeFormationHistoric/{row_id}:
     post:
-      summary: Create a new RHDemandeFormationHistoricbusiness object record
+      summary: Create a new RHDemandeFormationHistoric business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2842,7 +2916,7 @@ paths:
       tags:
       - RHDemandeFormationHistoric
     put:
-      summary: Update a RHDemandeFormationHistoricbusiness object record
+      summary: Update a RHDemandeFormationHistoric business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2893,7 +2967,7 @@ paths:
       - RHDemandeFormationHistoric
   /rest/RHEntretien/{row_id}:
     post:
-      summary: Create a new RHEntretienbusiness object record
+      summary: Create a new RHEntretien business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3037,7 +3111,7 @@ paths:
       tags:
       - RHEntretien
     put:
-      summary: Update a RHEntretienbusiness object record
+      summary: Update a RHEntretien business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3261,7 +3335,7 @@ paths:
       - RHCollaborateurHistoric
   /rest/RHCollaborateur/{row_id}:
     post:
-      summary: Create a new RHCollaborateurbusiness object record
+      summary: Create a new RHCollaborateur business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3405,7 +3479,7 @@ paths:
       tags:
       - RHCollaborateur
     put:
-      summary: Update a RHCollaborateurbusiness object record
+      summary: Update a RHCollaborateur business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3612,7 +3686,7 @@ paths:
       - RHCollaborateurCompetence
   /rest/RHEntretienHistoric/{row_id}:
     post:
-      summary: Create a new RHEntretienHistoricbusiness object record
+      summary: Create a new RHEntretienHistoric business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3756,7 +3830,7 @@ paths:
       tags:
       - RHEntretienHistoric
     put:
-      summary: Update a RHEntretienHistoricbusiness object record
+      summary: Update a RHEntretienHistoric business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3807,7 +3881,7 @@ paths:
       - RHEntretienHistoric
   /rest/RHFormationSuivie/{row_id}:
     post:
-      summary: Create a new RHFormationSuiviebusiness object record
+      summary: Create a new RHFormationSuivie business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3951,7 +4025,7 @@ paths:
       tags:
       - RHFormationSuivie
     put:
-      summary: Update a RHFormationSuiviebusiness object record
+      summary: Update a RHFormationSuivie business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -4215,7 +4289,7 @@ paths:
       - RHEntretienHistoric
   /rest/RHCollaborateurCompetence/{row_id}:
     post:
-      summary: Create a new RHCollaborateurCompetencebusiness object record
+      summary: Create a new RHCollaborateurCompetence business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -4359,7 +4433,7 @@ paths:
       tags:
       - RHCollaborateurCompetence
     put:
-      summary: Update a RHCollaborateurCompetencebusiness object record
+      summary: Update a RHCollaborateurCompetence business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -4586,7 +4660,7 @@ paths:
       - session
   /rest/RHObjectifService/{row_id}:
     post:
-      summary: Create a new RHObjectifServicebusiness object record
+      summary: Create a new RHObjectifService business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -4730,7 +4804,7 @@ paths:
       tags:
       - RHObjectifService
     put:
-      summary: Update a RHObjectifServicebusiness object record
+      summary: Update a RHObjectifService business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -4858,7 +4932,7 @@ paths:
       - RHService
   /rest/RHCompetence/{row_id}:
     post:
-      summary: Create a new RHCompetencebusiness object record
+      summary: Create a new RHCompetence business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -5002,7 +5076,7 @@ paths:
       tags:
       - RHCompetence
     put:
-      summary: Update a RHCompetencebusiness object record
+      summary: Update a RHCompetence business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -5053,7 +5127,7 @@ paths:
       - RHCompetence
   /rest/RHCampagne/{row_id}:
     post:
-      summary: Create a new RHCampagnebusiness object record
+      summary: Create a new RHCampagne business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -5197,7 +5271,7 @@ paths:
       tags:
       - RHCampagne
     put:
-      summary: Update a RHCampagnebusiness object record
+      summary: Update a RHCampagne business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -5248,7 +5322,7 @@ paths:
       - RHCampagne
   /rest/RHDemandeFormation/{row_id}:
     post:
-      summary: Create a new RHDemandeFormationbusiness object record
+      summary: Create a new RHDemandeFormation business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -5392,7 +5466,7 @@ paths:
       tags:
       - RHDemandeFormation
     put:
-      summary: Update a RHDemandeFormationbusiness object record
+      summary: Update a RHDemandeFormation business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -5576,7 +5650,7 @@ paths:
       - RHObjectifFutur
   /rest/RHObjectifFutur/{row_id}:
     post:
-      summary: Create a new RHObjectifFuturbusiness object record
+      summary: Create a new RHObjectifFutur business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -5720,7 +5794,7 @@ paths:
       tags:
       - RHObjectifFutur
     put:
-      summary: Update a RHObjectifFuturbusiness object record
+      summary: Update a RHObjectifFutur business object record
       security:
       - bearerAuth: []
       requestBody:

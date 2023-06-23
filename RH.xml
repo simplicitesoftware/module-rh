@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-rh.git"
 	}
 }]]></mdl_url>
-		<mdl_type>A</mdl_type>
+		<mdl_type/>
 		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-RH&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-RH)
 
 ### Introduction
@@ -67,11 +67,14 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<thm_color3/>
 		<thm_text3/>
 		<thm_base>light</thm_base>
+		<thm_css_doc>files/Theme/RH/RH_gen.css</thm_css_doc>
 		<thm_addon/>
 		<thm_searchbox>#f7F7F7</thm_searchbox>
 		<thm_active/>
 		<thm_font/>
 		<thm_iconset/>
+		<thm_code_editor_theme/>
+		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
 		<thm_menu_dom_c>#ffffff</thm_menu_dom_c>
 		<thm_menu_dom_t>#202020</thm_menu_dom_t>
 		<thm_menu_dact_c>#ffffff</thm_menu_dact_c>
@@ -134,22 +137,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<name>Model</name>
 	<action>upsert</action>
 	<data>
-		<mod_name>Model-RH_DFR_ETAT</mod_name>
-		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
-		<mod_doc>files/Model/Model-RH_DFR_ETAT.svg</mod_doc>
-		<mod_json/>
-		<mod_image>files/Model/Model-RH_DFR_ETAT.png</mod_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
-		<mod_name>Model-RH_ENT_ETAT</mod_name>
-		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
-		<mod_doc>files/Model/Model-RH_ENT_ETAT.svg</mod_doc>
-		<mod_json/>
-		<mod_image>files/Model/Model-RH_ENT_ETAT.png</mod_image>
-		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-	</data>
-	<data>
 		<mod_name>RH</mod_name>
 		<mod_template_id.mtp_name>ModelObject</mod_template_id.mtp_name>
 		<mod_doc>files/Model/RH.svg</mod_doc>
@@ -157,26 +144,42 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<mod_image>files/Model/RH.png</mod_image>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
+	<data>
+		<mod_name>RH_DFR</mod_name>
+		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
+		<mod_doc>files/Model/RH_DFR.svg</mod_doc>
+		<mod_json/>
+		<mod_image>files/Model/RH_DFR.png</mod_image>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<mod_name>RH_ENT</mod_name>
+		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
+		<mod_doc>files/Model/RH_ENT.svg</mod_doc>
+		<mod_json/>
+		<mod_image>files/Model/RH_ENT.png</mod_image>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>User</name>
 	<action>upsert</action>
 	<data>
-		<usr_image_id>files/User/adminrh.png</usr_image_id>
 		<usr_login>adminrh</usr_login>
+		<usr_lang>FRA</usr_lang>
+		<usr_image_id>files/User/adminrh.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>20</usr_minrows>
 		<usr_maxrows>50</usr_maxrows>
+		<usr_active>1</usr_active>
 		<usr_title>MR</usr_title>
-		<usr_first_name/>
 		<usr_last_name>Administrateur</usr_last_name>
-		<usr_lang>FRA</usr_lang>
+		<usr_first_name/>
 		<usr_email/>
+		<usr_home_id.viw_name>RHAdminHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
-		<usr_active>1</usr_active>
-		<usr_home_id.viw_name>RHAdminHome</usr_home_id.viw_name>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -190,6 +193,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_logout>2018-05-15 23:30:30</usr_logout>
 		<usr_last_logon/>
 		<usr_dateformat/>
+		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_mfa_method/>
 		<usr_mfa_settings/>
@@ -373,14 +377,14 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<lov_name>RH_DFR_ETAT</lov_name>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_model_id.mod_name>Model-RH_DFR_ETAT</lov_model_id.mod_name>
-		<lov_model_id.mod_image>files/Model/Model-RH_DFR_ETAT.png</lov_model_id.mod_image>
+		<lov_model_id.mod_name>RH_DFR</lov_model_id.mod_name>
+		<lov_model_id.mod_image>files/Model/RH_DFR.png</lov_model_id.mod_image>
 	</data>
 	<data>
 		<lov_name>RH_ENT_ETAT</lov_name>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_model_id.mod_name>Model-RH_ENT_ETAT</lov_model_id.mod_name>
-		<lov_model_id.mod_image>files/Model/Model-RH_ENT_ETAT.png</lov_model_id.mod_image>
+		<lov_model_id.mod_name>RH_ENT</lov_model_id.mod_name>
+		<lov_model_id.mod_image>files/Model/RH_ENT.png</lov_model_id.mod_image>
 	</data>
 	<data>
 		<lov_name>RH_ENT_EVALUATION</lov_name>
@@ -467,10 +471,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Technique</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_icon>fas/tools</lov_icon>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_CMP_TYPE</lov_list_id.lov_name>
@@ -478,10 +482,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Fonctionelle</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_icon>fas/users-cog</lov_icon>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_CMP_TYPE</lov_list_id.lov_name>
@@ -489,10 +493,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Encadrement</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_icon>fas/user-friends</lov_icon>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_CMP_TYPE</lov_list_id.lov_name>
@@ -500,10 +504,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>4</lov_order_by>
 		<lov_label>Langue</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_icon>fas/globe-africa</lov_icon>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_CMP_TYPE</lov_list_id.lov_name>
@@ -511,10 +515,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>99</lov_order_by>
 		<lov_label>Autre</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_icon>fas/clipboard</lov_icon>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_COL_STATUT</lov_list_id.lov_name>
@@ -643,10 +647,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>1</lov_order_by>
 		<lov_label>A++</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#6AA84F</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
@@ -654,10 +658,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>2</lov_order_by>
 		<lov_label>A+</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#93C47D</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
@@ -665,10 +669,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>3</lov_order_by>
 		<lov_label>A</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#B6D7A8</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
@@ -676,10 +680,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>4</lov_order_by>
 		<lov_label>A-</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#FFE599</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
@@ -687,10 +691,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>5</lov_order_by>
 		<lov_label>B+</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#F6B26B</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
@@ -698,10 +702,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>6</lov_order_by>
 		<lov_label>B</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#F6B26B</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
@@ -709,10 +713,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>7</lov_order_by>
 		<lov_label>B-</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#E69138</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
@@ -720,10 +724,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>8</lov_order_by>
 		<lov_label>C</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#ea9999</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_ENT_EVALUATION</lov_list_id.lov_name>
@@ -731,10 +735,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>8</lov_order_by>
 		<lov_label>D</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#e06666</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -742,10 +746,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Audiovisuel</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -753,10 +757,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Marketing</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -764,10 +768,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>4</lov_order_by>
 		<lov_label>Bureatutique</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -775,10 +779,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>5</lov_order_by>
 		<lov_label>Informatique</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -786,10 +790,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>6</lov_order_by>
 		<lov_label>Internet</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -797,10 +801,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>7</lov_order_by>
 		<lov_label>Gestion</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -808,10 +812,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>8</lov_order_by>
 		<lov_label>Comptabilité</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -819,10 +823,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>9</lov_order_by>
 		<lov_label>Ressources Humaines</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -830,10 +834,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>10</lov_order_by>
 		<lov_label>Droit</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRM_TYPE</lov_list_id.lov_name>
@@ -841,10 +845,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>99</lov_order_by>
 		<lov_label>Autre</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C7C7C7</lov_color_bg>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>RH_FRS_EVALUATION</lov_list_id.lov_name>
@@ -1488,6 +1492,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -1511,6 +1516,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhCmpNom</fld_name>
@@ -1525,6 +1531,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -1548,6 +1555,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhCmpType</fld_name>
@@ -1562,6 +1570,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -1574,7 +1583,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
-		<fld_groupby>0</fld_groupby>
+		<fld_groupby>1</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -1585,6 +1594,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColAdresse</fld_name>
@@ -1599,6 +1609,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -1622,6 +1633,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColCivilite</fld_name>
@@ -1636,6 +1648,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -1659,6 +1672,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColCmpCmpId</fld_name>
@@ -1673,6 +1687,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1696,6 +1711,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColCmpColId</fld_name>
@@ -1710,6 +1726,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1733,6 +1750,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColCmpCommentaires</fld_name>
@@ -1747,6 +1765,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
@@ -1770,6 +1789,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColCmpNiveau</fld_name>
@@ -1784,6 +1804,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
@@ -1807,6 +1828,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColCodePostal</fld_name>
@@ -1821,6 +1843,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
@@ -1844,6 +1867,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColComplement</fld_name>
@@ -1858,6 +1882,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -1881,6 +1906,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColCoords</fld_name>
@@ -1895,6 +1921,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>1</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>25</fld_type>
 		<fld_type_id.flt_code/>
@@ -1918,6 +1945,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColDateDebut</fld_name>
@@ -1932,6 +1960,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -1955,6 +1984,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColDateDebutSrv</fld_name>
@@ -1969,6 +1999,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -1992,6 +2023,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColDateFin</fld_name>
@@ -2006,6 +2038,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -2029,6 +2062,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColDateNaissance</fld_name>
@@ -2043,6 +2077,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -2066,6 +2101,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColEmail</fld_name>
@@ -2080,6 +2116,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>12</fld_type>
 		<fld_type_id.flt_code/>
@@ -2103,6 +2140,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColFax</fld_name>
@@ -2117,6 +2155,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
@@ -2140,6 +2179,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColMatricule</fld_name>
@@ -2154,6 +2194,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
@@ -2177,6 +2218,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColMobile</fld_name>
@@ -2191,6 +2233,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
@@ -2214,6 +2257,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColNom</fld_name>
@@ -2228,6 +2272,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -2251,6 +2296,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColPhoto</fld_name>
@@ -2265,6 +2311,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
@@ -2288,6 +2335,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColPrenom</fld_name>
@@ -2302,6 +2350,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -2325,6 +2374,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColSrvId</fld_name>
@@ -2339,6 +2389,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -2362,6 +2413,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColStatut</fld_name>
@@ -2376,6 +2428,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -2399,6 +2452,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColTelephone</fld_name>
@@ -2413,6 +2467,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
@@ -2436,6 +2491,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColTitre</fld_name>
@@ -2450,6 +2506,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -2473,6 +2530,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColUsrId</fld_name>
@@ -2487,6 +2545,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -2510,6 +2569,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhColVille</fld_name>
@@ -2524,6 +2584,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -2547,6 +2608,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhCpgAnnee</fld_name>
@@ -2561,6 +2623,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
@@ -2584,6 +2647,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhCpgDateDebut</fld_name>
@@ -2598,6 +2662,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -2621,6 +2686,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhCpgDateFin</fld_name>
@@ -2635,6 +2701,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -2658,6 +2725,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhCpgDescription</fld_name>
@@ -2672,6 +2740,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -2695,6 +2764,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhCpgNotice</fld_name>
@@ -2709,6 +2779,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
@@ -2732,6 +2803,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhDfrColId</fld_name>
@@ -2746,6 +2818,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -2769,6 +2842,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhDfrDIF</fld_name>
@@ -2783,6 +2857,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
@@ -2806,6 +2881,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhDfrEtat</fld_name>
@@ -2820,6 +2896,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -2843,6 +2920,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhDfrFrmId</fld_name>
@@ -2857,6 +2935,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -2880,6 +2959,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhDfrMotivation</fld_name>
@@ -2894,6 +2974,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -2917,6 +2998,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhDfrPeriodeSouhaitee</fld_name>
@@ -2931,6 +3013,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -2954,6 +3037,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntBilanCollaborateur</fld_name>
@@ -2968,6 +3052,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -2991,6 +3076,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntBilanEvaluateur</fld_name>
@@ -3005,6 +3091,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -3028,6 +3115,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntColId</fld_name>
@@ -3042,6 +3130,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -3065,6 +3154,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntCpgId</fld_name>
@@ -3079,6 +3169,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -3102,6 +3193,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntDate</fld_name>
@@ -3116,6 +3208,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>5</fld_type>
 		<fld_type_id.flt_code/>
@@ -3139,6 +3232,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntDuree</fld_name>
@@ -3153,6 +3247,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
@@ -3176,6 +3271,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntEtat</fld_name>
@@ -3190,6 +3286,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -3213,6 +3310,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntEvaluation</fld_name>
@@ -3227,6 +3325,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -3250,6 +3349,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntEvlId</fld_name>
@@ -3264,6 +3364,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -3287,6 +3388,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntSuivi</fld_name>
@@ -3301,6 +3403,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
@@ -3324,6 +3427,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntURL</fld_name>
@@ -3338,6 +3442,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>10</fld_type>
 		<fld_type_id.flt_code/>
@@ -3361,6 +3466,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhEntURLCode</fld_name>
@@ -3375,6 +3481,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>1</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -3398,6 +3505,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrmCode</fld_name>
@@ -3412,6 +3520,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
@@ -3435,6 +3544,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrmCout</fld_name>
@@ -3449,6 +3559,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
@@ -3472,6 +3583,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrmDescription</fld_name>
@@ -3486,6 +3598,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -3509,6 +3622,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrmDisponible</fld_name>
@@ -3523,6 +3637,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
@@ -3546,6 +3661,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrmLibelle</fld_name>
@@ -3560,6 +3676,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -3583,6 +3700,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrmPeriode</fld_name>
@@ -3597,6 +3715,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>14</fld_type>
 		<fld_type_id.flt_code/>
@@ -3620,6 +3739,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrmProgramme</fld_name>
@@ -3634,6 +3754,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
@@ -3657,6 +3778,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrmType</fld_name>
@@ -3671,6 +3793,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -3694,6 +3817,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrsColId</fld_name>
@@ -3708,6 +3832,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -3731,6 +3856,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrsCommentaires</fld_name>
@@ -3745,6 +3871,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -3768,6 +3895,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrsEvaluation</fld_name>
@@ -3782,6 +3910,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -3805,6 +3934,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFrsFrmId</fld_name>
@@ -3819,6 +3949,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -3842,6 +3973,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhFsrDate</fld_name>
@@ -3856,6 +3988,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -3879,6 +4012,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOfuEntId</fld_name>
@@ -3893,6 +4027,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -3916,6 +4051,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOfuNumero</fld_name>
@@ -3930,6 +4066,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
@@ -3953,6 +4090,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOfuObjectif</fld_name>
@@ -3967,6 +4105,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -3990,6 +4129,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOfuType</fld_name>
@@ -4004,6 +4144,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -4027,6 +4168,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOpaCommentaires</fld_name>
@@ -4041,6 +4183,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -4064,6 +4207,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOpaEntId</fld_name>
@@ -4078,6 +4222,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -4101,6 +4246,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOpaNiveauAtteinte</fld_name>
@@ -4115,6 +4261,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -4138,6 +4285,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOpaNumero</fld_name>
@@ -4152,6 +4300,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
@@ -4175,6 +4324,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOpaObjectif</fld_name>
@@ -4189,6 +4339,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -4212,6 +4363,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOpaType</fld_name>
@@ -4226,6 +4378,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -4249,6 +4402,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOsrCpgId</fld_name>
@@ -4263,6 +4417,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -4286,6 +4441,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOsrNumero</fld_name>
@@ -4300,6 +4456,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
@@ -4323,6 +4480,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOsrObjectif</fld_name>
@@ -4337,6 +4495,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -4360,6 +4519,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOsrPieceJointe</fld_name>
@@ -4374,6 +4534,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
@@ -4397,6 +4558,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOsrSrvId</fld_name>
@@ -4411,6 +4573,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -4434,6 +4597,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhOsrType</fld_name>
@@ -4448,6 +4612,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -4471,6 +4636,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhSrvCode</fld_name>
@@ -4485,6 +4651,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
@@ -4508,6 +4675,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhSrvDescription</fld_name>
@@ -4522,6 +4690,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -4545,6 +4714,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhSrvLibelle</fld_name>
@@ -4559,6 +4729,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -4582,6 +4753,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>rhSrvLogo</fld_name>
@@ -4596,6 +4768,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
@@ -4619,6 +4792,31 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
+	</data>
+</object>
+<object>
+	<name>FieldStyle</name>
+	<action>upsert</action>
+	<data>
+		<sty_object>*</sty_object>
+		<sty_field>rhFrmDisponible</sty_field>
+		<sty_value>0</sty_value>
+		<sty_vmin/>
+		<sty_vmax/>
+		<sty_style/>
+		<sty_image>icon/color/btn_red</sty_image>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<sty_object>*</sty_object>
+		<sty_field>rhFrmDisponible</sty_field>
+		<sty_value>1</sty_value>
+		<sty_vmin/>
+		<sty_vmax/>
+		<sty_style/>
+		<sty_image>icon/color/btn_green</sty_image>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -4636,8 +4834,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tpl_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="area" data-area="2,3,4"></div>
-</div>
-]]></tpl_ui>
+</div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -4830,8 +5027,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
       <div class="field" data-field="rhColUsrId__usr_login"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -4863,8 +5059,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
       <div class="field" data-field="rhColVille"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -4882,8 +5077,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
       <div class="field" data-field="rhColDateFin"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -4903,8 +5097,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
       <div class="field" data-field="rhColTitre"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
@@ -5561,7 +5754,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>RHEntretien;entCpgId</obo_dfltref>
 		<obo_template_id.tpl_name>RHCampagne</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5587,6 +5779,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -5628,7 +5821,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>RHCollaborateurCompetence;colcmpColId</obo_dfltref>
 		<obo_template_id.tpl_name>RHCollaborateur</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5654,6 +5846,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -5695,7 +5888,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>RHCollaborateurCompetence</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5721,6 +5913,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -5762,7 +5955,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5788,6 +5980,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -5826,10 +6019,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_exportorder>3</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
-		<obo_groupby>0</obo_groupby>
+		<obo_groupby>1</obo_groupby>
 		<obo_dfltref>RHCollaborateurCompetence;colcmpCmpId</obo_dfltref>
 		<obo_template_id.tpl_name>RHCompetence</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5855,6 +6047,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -5896,7 +6089,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>RHDemandeFormationHistoric;row_ref_id</obo_dfltref>
 		<obo_template_id.tpl_name>RHDemandeFormation</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5922,6 +6114,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -5963,7 +6156,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5989,6 +6181,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -6030,7 +6223,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>RHObjectifPasse;opaEntId</obo_dfltref>
 		<obo_template_id.tpl_name>RHEntretien</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -6056,6 +6248,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -6097,7 +6290,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -6123,6 +6315,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -6164,7 +6357,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>RHDemandeFormation;dfrFrmId</obo_dfltref>
 		<obo_template_id.tpl_name>RHFormation</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -6190,6 +6382,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -6231,7 +6424,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>RHFormationSuivie</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -6257,6 +6449,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -6298,7 +6491,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>RHObjectifFutur</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -6324,6 +6516,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -6365,7 +6558,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>RHObjectifPasse</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -6391,6 +6583,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -6432,7 +6625,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>RHObjectifService</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -6458,6 +6650,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -6499,7 +6692,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>RHCollaborateur;colSrvId</obo_dfltref>
 		<obo_template_id.tpl_name>RHService</obo_template_id.tpl_name>
-		<obo_cache>S</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -6525,6 +6717,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -6577,6 +6770,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[YEAR]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCampagne-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6606,6 +6802,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[DATE]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCampagne-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6635,6 +6834,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCampagne-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6664,6 +6866,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCampagne-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6693,6 +6898,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCampagne-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6722,6 +6930,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6751,6 +6962,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6780,6 +6994,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6809,6 +7026,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6838,6 +7058,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6867,6 +7090,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6896,6 +7122,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6925,6 +7154,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6954,6 +7186,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -6983,6 +7218,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7012,6 +7250,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7041,6 +7282,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7070,6 +7314,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7099,6 +7346,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7128,6 +7378,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7157,6 +7410,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7186,6 +7442,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7215,6 +7474,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7244,6 +7506,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[DATE]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7273,6 +7538,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7302,6 +7570,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7331,6 +7602,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7360,6 +7634,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7389,6 +7666,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7418,6 +7698,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateur-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7447,6 +7730,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7476,6 +7762,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7505,6 +7794,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7534,6 +7826,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7563,6 +7858,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7592,6 +7890,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7621,6 +7922,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7650,6 +7954,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7679,6 +7986,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7708,6 +8018,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7737,6 +8050,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7766,6 +8082,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7795,6 +8114,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[0]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7824,6 +8146,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCollaborateurCompetence-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7853,6 +8178,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7882,6 +8210,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7911,6 +8242,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7940,6 +8274,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7969,6 +8306,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -7998,6 +8338,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8027,6 +8370,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8056,6 +8402,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8085,6 +8434,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8114,6 +8466,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8143,6 +8498,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHCompetence-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8172,6 +8530,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8201,6 +8562,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8230,6 +8594,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8259,6 +8626,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8288,6 +8658,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8317,6 +8690,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8346,6 +8722,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8375,6 +8754,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8404,6 +8786,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8433,6 +8818,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8462,6 +8850,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8491,6 +8882,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8520,6 +8914,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8549,6 +8946,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8578,6 +8978,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[D]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8607,6 +9010,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8636,6 +9042,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8665,6 +9074,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[0]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHDemandeFormation-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8694,6 +9106,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8723,6 +9138,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8752,6 +9170,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8781,6 +9202,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8810,6 +9234,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[D]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8839,6 +9266,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8868,6 +9298,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[YEAR]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8897,6 +9330,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[DATE]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8926,6 +9362,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8955,6 +9394,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[DATE] + " 08:00:00"]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -8984,6 +9426,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[2]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9013,6 +9458,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9042,6 +9490,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9071,6 +9522,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9100,6 +9554,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9129,6 +9586,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9158,6 +9618,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9187,6 +9650,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9216,6 +9682,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9245,6 +9714,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9274,6 +9746,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9303,6 +9778,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9332,6 +9810,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9361,6 +9842,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9390,6 +9874,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9419,6 +9906,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9448,6 +9938,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9477,6 +9970,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9506,6 +10002,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9535,6 +10034,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9564,6 +10066,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-5</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>5</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9593,6 +10098,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-5</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>5</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9622,6 +10130,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-5</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>5</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9651,6 +10162,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[0]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHEntretien-5</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>5</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9680,6 +10194,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9709,6 +10226,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9738,6 +10258,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9767,6 +10290,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9796,6 +10322,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9825,6 +10354,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9854,6 +10386,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9883,6 +10418,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9912,6 +10450,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[1]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormation-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9941,6 +10482,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormation-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9970,6 +10514,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormation-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -9999,6 +10546,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormation-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10028,6 +10578,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[0]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormation-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10057,6 +10610,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10086,6 +10642,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10115,6 +10674,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10144,6 +10706,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10173,6 +10738,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10202,6 +10770,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10231,6 +10802,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10260,6 +10834,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10289,6 +10866,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10318,6 +10898,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10347,6 +10930,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10376,6 +10962,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10405,6 +10994,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10434,6 +11026,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10463,6 +11058,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10492,6 +11090,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[DATE]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10521,6 +11122,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHFormationSuivie-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10550,6 +11154,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10579,6 +11186,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10608,6 +11218,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[YEAR]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10637,6 +11250,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10666,6 +11282,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10695,6 +11314,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10724,6 +11346,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10753,6 +11378,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10782,6 +11410,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10811,6 +11442,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10840,6 +11474,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10869,6 +11506,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifFutur-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10898,6 +11538,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10927,6 +11570,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10956,6 +11602,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[YEAR]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -10985,6 +11634,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11014,6 +11666,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11043,6 +11698,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11072,6 +11730,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11101,6 +11762,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11130,6 +11794,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11159,6 +11826,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11188,6 +11858,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11217,6 +11890,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11246,6 +11922,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11275,6 +11954,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifPasse-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11304,6 +11986,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11333,6 +12018,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[YEAR]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11362,6 +12050,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[DATE]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11391,6 +12082,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11420,6 +12114,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11449,6 +12146,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11478,6 +12178,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq>3</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11507,6 +12210,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11536,6 +12242,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11565,6 +12274,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11594,6 +12306,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHObjectifService-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11623,6 +12338,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHService-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11652,6 +12370,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHService-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11681,6 +12402,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHService-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11710,6 +12434,9 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>RHService-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
@@ -11731,6 +12458,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11755,6 +12483,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11779,6 +12508,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11803,6 +12533,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11827,6 +12558,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11851,6 +12583,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11875,6 +12608,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11899,6 +12633,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11923,6 +12658,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11947,6 +12683,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11971,6 +12708,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -11995,6 +12733,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -12019,6 +12758,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -12043,6 +12783,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -12067,6 +12808,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -12091,6 +12833,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -12115,6 +12858,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>0</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -12139,6 +12883,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -12163,6 +12908,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -12196,6 +12942,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
 	</data>
 	<data>
 		<act_name>RH_DFR_ETAT-D-R</act_name>
@@ -12215,6 +12963,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
 	</data>
 	<data>
 		<act_name>RH_ENT_ETAT-BR-CP</act_name>
@@ -12234,6 +12984,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
 	</data>
 	<data>
 		<act_name>RH_ENT_ETAT-CP-VC</act_name>
@@ -12253,6 +13005,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
 	</data>
 	<data>
 		<act_name>RH_ENT_ETAT-VC-VE</act_name>
@@ -12272,6 +13026,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
 	</data>
 </object>
 <object>
@@ -14086,6 +14842,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>RHCollaborateurCompetence-T1</cax_crosstab_id.ctb_name>
@@ -14107,6 +14864,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>RHCollaborateurCompetence-T1</cax_crosstab_id.ctb_name>
@@ -14128,6 +14886,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>RHDemandeFormation-T1</cax_crosstab_id.ctb_name>
@@ -14149,6 +14908,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>RHDemandeFormation-T1</cax_crosstab_id.ctb_name>
@@ -14170,6 +14930,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>RHEntretien-T1</cax_crosstab_id.ctb_name>
@@ -14191,6 +14952,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>RHEntretien-T1</cax_crosstab_id.ctb_name>
@@ -14212,6 +14974,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>RHEntretien-T1</cax_crosstab_id.ctb_name>
@@ -14233,6 +14996,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 </object>
 <object>
@@ -14403,6 +15167,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<vwi_show>RHEntretien</vwi_show>
 		<vwi_url><![CDATA[&zgraph=bar&zcontrol=no&zwidth=500&zheight=400&zstotal=no]]></vwi_url>
 		<vwi_image/>
+		<vwi_subview_id.viw_name/>
 		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name>RHEntretien-T1</vwi_crosstab_id.ctb_name>
 		<vwi_printtmpl_id.prt_name/>
@@ -14422,6 +15187,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<vwi_show>RHDemandeFormation</vwi_show>
 		<vwi_url><![CDATA[&zgraph=pie&zcontrol=no&zwidth=500&zheight=400&zstotal=no]]></vwi_url>
 		<vwi_image/>
+		<vwi_subview_id.viw_name/>
 		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name>RHDemandeFormation-T1</vwi_crosstab_id.ctb_name>
 		<vwi_printtmpl_id.prt_name/>
@@ -14441,6 +15207,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<vwi_show>RHEntretien</vwi_show>
 		<vwi_url/>
 		<vwi_image/>
+		<vwi_subview_id.viw_name/>
 		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name/>
 		<vwi_printtmpl_id.prt_name/>
@@ -14465,11 +15232,14 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<agd_name>RHEntretienAgenda</agd_name>
 		<agd_object_id.obo_name>RHEntretien</agd_object_id.obo_name>
 		<agd_opendays>1;2;3;4;5</agd_opendays>
+		<agd_min_hr>00:00</agd_min_hr>
+		<agd_max_hr>24:00</agd_max_hr>
 		<agd_start_hr>08:00</agd_start_hr>
 		<agd_end_hr>18:00</agd_end_hr>
 		<agd_quantum>60</agd_quantum>
 		<agd_flying>1</agd_flying>
 		<agd_date_id.fld_name>rhEntDate</agd_date_id.fld_name>
+		<agd_enddate_id.fld_name/>
 		<agd_duration_id.fld_name>rhEntDuree</agd_duration_id.fld_name>
 		<agd_group_id.fld_name/>
 		<agd_user_id.fld_name>rhColUsrId</agd_user_id.fld_name>
