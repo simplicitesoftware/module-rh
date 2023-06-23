@@ -196,7 +196,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_mfa_method/>
-		<usr_mfa_settings/>
+		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
 		<usr_uuid>a5ce05f5-0599-41f2-a396-bfbebcb1b735</usr_uuid>
 	</data>
 </object>
@@ -8446,7 +8446,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obf_field_id.fld_name>rhCmpType</obf_field_id.fld_name>
 		<obf_field_id.fld_type>7</obf_field_id.fld_type>
 		<obf_order>1010</obf_order>
-		<obf_group_by/>
+		<obf_group_by>1</obf_group_by>
 		<obf_dfault_order>1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -14342,6 +14342,55 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 </object>
 <object>
+	<name>DocIndex</name>
+	<action>upsert</action>
+	<data>
+		<din_name>B-rhColPhoto</din_name>
+		<din_field_id.fld_name>rhColPhoto</din_field_id.fld_name>
+		<din_path/>
+		<din_min/>
+		<din_max/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<din_name>B-rhCpgNotice</din_name>
+		<din_field_id.fld_name>rhCpgNotice</din_field_id.fld_name>
+		<din_path/>
+		<din_min/>
+		<din_max/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<din_name>B-rhFrmProgramme</din_name>
+		<din_field_id.fld_name>rhFrmProgramme</din_field_id.fld_name>
+		<din_path/>
+		<din_min/>
+		<din_max/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<din_name>B-rhOsrPieceJointe</din_name>
+		<din_field_id.fld_name>rhOsrPieceJointe</din_field_id.fld_name>
+		<din_path/>
+		<din_min/>
+		<din_max/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<din_name>B-rhSrvLogo</din_name>
+		<din_field_id.fld_name>rhSrvLogo</din_field_id.fld_name>
+		<din_path/>
+		<din_min/>
+		<din_max/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>PrintTemplate</name>
 	<action>upsert</action>
 	<data>
@@ -17890,6 +17939,80 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Mes entretiens</tsl_value>
 		<tsl_help/>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateDocIndex</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhColPhoto</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-rh col photo</tsl_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhCpgNotice</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-rh cpg notice</tsl_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhFrmProgramme</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-rh frm programme</tsl_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhOsrPieceJointe</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-rh osr piece jointe</tsl_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhSrvLogo</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-rh srv logo</tsl_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhColPhoto</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-rh col photo</tsl_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhCpgNotice</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-rh cpg notice</tsl_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhFrmProgramme</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-rh frm programme</tsl_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhOsrPieceJointe</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-rh osr piece jointe</tsl_value>
+		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-rhSrvLogo</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-rh srv logo</tsl_value>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 	</data>
 </object>
