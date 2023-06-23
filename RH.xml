@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Technique</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_color_bg>#ea9999</lov_color_bg>
 		<lov_icon>fas/tools</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>
@@ -483,7 +483,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Fonctionelle</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_color_bg>#B6D7A8</lov_color_bg>
 		<lov_icon>fas/users-cog</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>
@@ -494,7 +494,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Encadrement</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_color_bg>#A4C2F4</lov_color_bg>
 		<lov_icon>fas/user-friends</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>
@@ -505,7 +505,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Langue</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_color_bg>#b4a7d6</lov_color_bg>
 		<lov_icon>fas/globe-africa</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>
@@ -516,7 +516,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Autre</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#E4E4E4</lov_color_bg>
+		<lov_color_bg>#d5a6bd</lov_color_bg>
 		<lov_icon>fas/clipboard</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>
@@ -747,7 +747,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Audiovisuel</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#DD7E6B</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -758,7 +758,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Marketing</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#EA9999</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -769,7 +769,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Bureatutique</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#F9CB9C</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -780,7 +780,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Informatique</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#FFE599</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -791,7 +791,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Internet</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#B6D7A8</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -802,7 +802,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Gestion</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#A2C4C9</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -813,7 +813,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Comptabilité</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#A4C2F4</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -824,7 +824,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Ressources Humaines</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#9FC5E8</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -835,7 +835,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Droit</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#b4a7d6</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -846,7 +846,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_label>Autre</lov_label>
 		<row_module_id.mdl_name>RH</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
-		<lov_color_bg>#C7C7C7</lov_color_bg>
+		<lov_color_bg>#d5a6bd</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
