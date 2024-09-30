@@ -5,7 +5,7 @@
 |___/_|_|_|_| .__/_|_\__|_|\__\___|
             |_| 
 -->
-![](https://docs.simplicite.io//logos/logo250.png)
+![](https://platform.simplicite.io/logos/standard/logo250.png)
 * * *
 
 `RH` module definition
@@ -58,8 +58,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `rhColCmpColId` link to **`RHCollaborateur`**                | id                                       | yes*     | yes       |          | -                                                                                |
-| _Ref. `rhColCmpColId.rhColCivilite`_                         | _enum(10) using `RH_CIVILITE` list_      |          |           |          | -                                                                                |
 | _Ref. `rhColCmpColId.rhColMatricule`_                        | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhColCmpColId.rhColCivilite`_                         | _enum(10) using `RH_CIVILITE` list_      |          |           |          | -                                                                                |
 | _Ref. `rhColCmpColId.rhColNom`_                              | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhColCmpColId.rhColPrenom`_                           | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhColCmpColId.rhColSrvId`_                            | _id_                                     |          |           |          | -                                                                                |
@@ -118,8 +118,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 | _Ref. `rhDfrColId.rhColNom`_                                 | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhDfrColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhDfrColId.rhColSrvId`_                               | _id_                                     |          |           |          | -                                                                                |
-| _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
 | _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
 | _Ref. `rhDfrColId.rhColTitre`_                               | _char(100)_                              |          |           |          | -                                                                                |
 | `rhDfrFrmId` link to **`RHFormation`**                       | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `rhDfrFrmId.rhFrmCode`_                                | _regexp(30)_                             |          |           |          | -                                                                                |
@@ -216,8 +216,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 | _Ref. `rhColUsrId.usr_login`_                                | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 | `rhEntBilanEvaluateur`                                       | html(50000)                              |          | yes       |          | -                                                                                |
 | `rhEntBilanCollaborateur`                                    | html(50000)                              |          |           |          | -                                                                                |
-| `rhEntEvaluation`                                            | enum(3) using `RH_ENT_EVALUATION` list   |          | yes       |          | -                                                                                |
 | `rhEntSuivi`                                                 | boolean                                  |          | yes       |          | -                                                                                |
+| `rhEntEvaluation`                                            | enum(3) using `RH_ENT_EVALUATION` list   |          | yes       |          | -                                                                                |
 
 ### Lists
 
@@ -280,15 +280,15 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 | _Ref. `rhFrsColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhFrsColId.rhColSrvId`_                               | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
-| _Ref. `rhFrsColId.rhColTitre`_                               | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `rhFrsColId.rhColTitre`_                               | _char(100)_                              |          |           |          | -                                                                                |
 | `rhFrsFrmId` link to **`RHFormation`**                       | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `rhFrsFrmId.rhFrmCode`_                                | _regexp(30)_                             |          |           |          | -                                                                                |
 | _Ref. `rhFrsFrmId.rhFrmType`_                                | _enum(3) using `RH_FRM_TYPE` list_       |          |           |          | -                                                                                |
 | _Ref. `rhFrsFrmId.rhFrmLibelle`_                             | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhFrsFrmId.rhFrmPeriode`_                             | _multi(20) using `RH_TRIMESTRE` list_    |          |           |          | -                                                                                |
-| `rhFsrDate`                                                  | date                                     | yes      | yes       |          | -                                                                                |
 | `rhFrsEvaluation`                                            | enum(3) using `RH_FRS_EVALUATION` list   | yes      | yes       |          | -                                                                                |
+| `rhFsrDate`                                                  | date                                     | yes      | yes       |          | -                                                                                |
 | `rhFrsCommentaires`                                          | html(50000)                              |          | yes       |          | -                                                                                |
 
 ### Lists

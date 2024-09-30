@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: RH 5
+#             |_| Module: RH 6
 basePath: /api
 paths:
   /rest/RHDemandeFormationHistoric:
@@ -597,6 +597,18 @@ paths:
         type: string
         required: false
       - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - RHEntretien-T1
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
+        required: false
+      - in: query
         name: rhEntCpgId
         description: Search filter for Campaign
         type: string
@@ -875,6 +887,18 @@ paths:
         name: _indexsearch
         description: Index search query
         type: string
+        required: false
+      - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - RHDemandeFormation-T1
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
         required: false
       - in: query
         name: rhDfrColId
@@ -2152,6 +2176,18 @@ paths:
       - in: query
         name: _doc
         description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - RHCollaborateurCompetence-T1
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
         type: boolean
         required: false
       - in: query
@@ -5222,7 +5258,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module RH
   title: RH
-  version: '5'
+  version: '6'
 tags:
 - name: RHCampagne
   description: Campaign
