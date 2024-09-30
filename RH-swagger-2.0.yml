@@ -597,18 +597,6 @@ paths:
         type: string
         required: false
       - in: query
-        name: _crosstab
-        description: Apply pivot table
-        type: string
-        required: false
-        enum:
-        - RHEntretien-T1
-      - in: query
-        name: _crosstabcubes
-        description: Pivot table data as cubes?
-        type: boolean
-        required: false
-      - in: query
         name: rhEntCpgId
         description: Search filter for Campaign
         type: string
@@ -887,18 +875,6 @@ paths:
         name: _indexsearch
         description: Index search query
         type: string
-        required: false
-      - in: query
-        name: _crosstab
-        description: Apply pivot table
-        type: string
-        required: false
-        enum:
-        - RHDemandeFormation-T1
-      - in: query
-        name: _crosstabcubes
-        description: Pivot table data as cubes?
-        type: boolean
         required: false
       - in: query
         name: rhDfrColId
@@ -2176,18 +2152,6 @@ paths:
       - in: query
         name: _doc
         description: Documentation?
-        type: boolean
-        required: false
-      - in: query
-        name: _crosstab
-        description: Apply pivot table
-        type: string
-        required: false
-        enum:
-        - RHCollaborateurCompetence-T1
-      - in: query
-        name: _crosstabcubes
-        description: Pivot table data as cubes?
         type: boolean
         required: false
       - in: query
