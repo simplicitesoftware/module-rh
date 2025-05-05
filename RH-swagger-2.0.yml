@@ -131,7 +131,7 @@ paths:
         required: false
       - in: query
         name: rhFrsColId__rhColCivilite
-        description: Search filter for Employee Civilité
+        description: Search filter for Employee Civility
         type: string
         required: false
         enum:
@@ -140,12 +140,12 @@ paths:
         - M
       - in: query
         name: rhFrsColId__rhColNom
-        description: Search filter for Employee Nom
+        description: Search filter for Employee Last name
         type: string
         required: false
       - in: query
         name: rhFrsColId__rhColPrenom
-        description: Search filter for Employee Prénom
+        description: Search filter for Employee First name
         type: string
         required: false
       - in: query
@@ -165,7 +165,7 @@ paths:
         required: false
       - in: query
         name: rhFrsColId__rhColTitre
-        description: Search filter for Employee Titre
+        description: Search filter for Employee Title
         type: string
         required: false
       - in: query
@@ -201,7 +201,7 @@ paths:
         required: false
       - in: query
         name: rhFrsFrmId__rhFrmPeriode
-        description: Search filter for Training Période
+        description: Search filter for Training Period
         type: string
         required: false
         enum:
@@ -225,7 +225,7 @@ paths:
         - '3'
       - in: query
         name: rhFrsCommentaires
-        description: Search filter for Commentaires
+        description: Search filter for Comments
         type: string
         required: false
       tags:
@@ -670,7 +670,7 @@ paths:
         required: false
       - in: query
         name: rhEntColId__rhColCivilite
-        description: Search filter for Employee Civilité
+        description: Search filter for Employee Civility
         type: string
         required: false
         enum:
@@ -679,12 +679,12 @@ paths:
         - M
       - in: query
         name: rhEntColId__rhColNom
-        description: Search filter for Employee Nom
+        description: Search filter for Employee Last name
         type: string
         required: false
       - in: query
         name: rhEntColId__rhColPrenom
-        description: Search filter for Employee Prénom
+        description: Search filter for Employee First name
         type: string
         required: false
       - in: query
@@ -704,7 +704,7 @@ paths:
         required: false
       - in: query
         name: rhEntColId__rhColTitre
-        description: Search filter for Employee Titre
+        description: Search filter for Employee Title
         type: string
         required: false
       - in: query
@@ -719,7 +719,7 @@ paths:
         required: false
       - in: query
         name: rhEntEvlId__rhColCivilite
-        description: Search filter for Evaluator Civilité
+        description: Search filter for Evaluator Civility
         type: string
         required: false
         enum:
@@ -728,12 +728,12 @@ paths:
         - M
       - in: query
         name: rhEntEvlId__rhColNom
-        description: Search filter for Evaluator Nom
+        description: Search filter for Evaluator Last name
         type: string
         required: false
       - in: query
         name: rhEntEvlId__rhColPrenom
-        description: Search filter for Evaluator Prénom
+        description: Search filter for Evaluator First name
         type: string
         required: false
       - in: query
@@ -748,22 +748,22 @@ paths:
         required: false
       - in: query
         name: rhEntBilanEvaluateur
-        description: Search filter for Conclusion de l'évaluateur
+        description: Search filter for Evaluator's conclusion
         type: string
         required: false
       - in: query
         name: rhEntBilanCollaborateur
-        description: Search filter for Conslusion du collaborateur
+        description: Search filter for Employee's conclusion
         type: string
         required: false
       - in: query
         name: rhEntSuivi
-        description: Search filter for Suivi spécifique
+        description: Search filter for Specific follow-up
         type: boolean
         required: false
       - in: query
         name: rhEntEvaluation
-        description: Search filter for Evaluation globale
+        description: Search filter for Global Evaluation
         type: string
         required: false
         enum:
@@ -823,7 +823,7 @@ paths:
         required: false
       - in: query
         name: rhCmpNom
-        description: Search filter for Nom
+        description: Search filter for Name
         type: string
         required: false
       - in: query
@@ -912,7 +912,7 @@ paths:
         required: false
       - in: query
         name: rhDfrColId__rhColCivilite
-        description: Search filter for Employee Civilité
+        description: Search filter for Employee Civility
         type: string
         required: false
         enum:
@@ -921,12 +921,12 @@ paths:
         - M
       - in: query
         name: rhDfrColId__rhColNom
-        description: Search filter for Employee Nom
+        description: Search filter for Employee Last name
         type: string
         required: false
       - in: query
         name: rhDfrColId__rhColPrenom
-        description: Search filter for Employee Prénom
+        description: Search filter for Employee First name
         type: string
         required: false
       - in: query
@@ -946,7 +946,7 @@ paths:
         required: false
       - in: query
         name: rhDfrColId__rhColTitre
-        description: Search filter for Employee Titre
+        description: Search filter for Employee Title
         type: string
         required: false
       - in: query
@@ -982,7 +982,7 @@ paths:
         required: false
       - in: query
         name: rhDfrFrmId__rhFrmPeriode
-        description: Search filter for Training Période
+        description: Search filter for Training Period
         type: string
         required: false
         enum:
@@ -1972,7 +1972,7 @@ paths:
         required: false
       - in: query
         name: rhColTitre
-        description: Search filter for Titre
+        description: Search filter for Title
         type: string
         required: false
       tags:
@@ -2202,7 +2202,7 @@ paths:
         required: false
       - in: query
         name: rhColCmpColId__rhColCivilite
-        description: Search filter for Employee Civilité
+        description: Search filter for Employee Civility
         type: string
         required: false
         enum:
@@ -2211,12 +2211,12 @@ paths:
         - M
       - in: query
         name: rhColCmpColId__rhColNom
-        description: Search filter for Employee Nom
+        description: Search filter for Employee Last name
         type: string
         required: false
       - in: query
         name: rhColCmpColId__rhColPrenom
-        description: Search filter for Employee Prénom
+        description: Search filter for Employee First name
         type: string
         required: false
       - in: query
@@ -2236,7 +2236,7 @@ paths:
         required: false
       - in: query
         name: rhColCmpColId__rhColTitre
-        description: Search filter for Employee Titre
+        description: Search filter for Employee Title
         type: string
         required: false
       - in: query
@@ -2246,7 +2246,7 @@ paths:
         required: false
       - in: query
         name: rhColCmpCmpId__rhCmpNom
-        description: Search filter for Skill Nom
+        description: Search filter for Skill Name
         type: string
         required: false
       - in: query
@@ -2694,7 +2694,7 @@ paths:
         required: false
       - in: query
         name: rhFrmPeriode
-        description: Search filter for Période
+        description: Search filter for Period
         type: string
         required: false
         enum:
@@ -3017,8 +3017,13 @@ paths:
         type: string
         required: false
       - in: query
+        name: rhOpaEntId__rhEntColId__rhColSrvId__rhSrvCode
+        description: Search filter for Interview Employee Department Code
+        type: string
+        required: false
+      - in: query
         name: rhOpaEntId__rhEntColId__rhColCivilite
-        description: Search filter for Interview Employee Civilité
+        description: Search filter for Interview Employee Civility
         type: string
         required: false
         enum:
@@ -3027,17 +3032,22 @@ paths:
         - M
       - in: query
         name: rhOpaEntId__rhEntColId__rhColNom
-        description: Search filter for Interview Employee Nom
+        description: Search filter for Interview Employee Last name
         type: string
         required: false
       - in: query
         name: rhOpaEntId__rhEntColId__rhColPrenom
-        description: Search filter for Interview Employee Prénom
+        description: Search filter for Interview Employee First name
+        type: string
+        required: false
+      - in: query
+        name: rhOpaEntId__rhEntColId__rhColSrvId
+        description: Search filter for Interview Employee Department
         type: string
         required: false
       - in: query
         name: rhOpaNumero
-        description: Search filter for Numéro
+        description: Search filter for Number
         type: integer
         required: false
       - in: query
@@ -3051,12 +3061,12 @@ paths:
         - AUT
       - in: query
         name: rhOpaObjectif
-        description: Search filter for Objectif
+        description: Search filter for Objective
         type: string
         required: false
       - in: query
         name: rhOpaNiveauAtteinte
-        description: Search filter for Niveau d'atteinte
+        description: Search filter for Achievement level
         type: string
         required: false
         enum:
@@ -3066,7 +3076,7 @@ paths:
         - '4'
       - in: query
         name: rhOpaCommentaires
-        description: Search filter for Commentaires
+        description: Search filter for Comments
         type: string
         required: false
       tags:
@@ -3094,6 +3104,40 @@ paths:
         required: false
       tags:
       - session
+  /rest/RHEntretien/{row_id}/publication:RHEntretien-PDF:
+    get:
+      summary: Call a custom publication for a RHEntretien business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-rhentretien-publication-rhentretien-pdf
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RHEntretien
   /rest/RHObjectifService/{row_id}:
     post:
       summary: Create a new RHObjectifService business object record
@@ -3883,7 +3927,7 @@ paths:
         required: false
       - in: query
         name: rhOfuEntId__rhEntColId__rhColCivilite
-        description: Search filter for Interview Employee Civilité
+        description: Search filter for Interview Employee Civility
         type: string
         required: false
         enum:
@@ -3892,17 +3936,17 @@ paths:
         - M
       - in: query
         name: rhOfuEntId__rhEntColId__rhColNom
-        description: Search filter for Interview Employee Nom
+        description: Search filter for Interview Employee Last name
         type: string
         required: false
       - in: query
         name: rhOfuEntId__rhEntColId__rhColPrenom
-        description: Search filter for Interview Employee Prénom
+        description: Search filter for Interview Employee First name
         type: string
         required: false
       - in: query
         name: rhOfuNumero
-        description: Search filter for Numéro
+        description: Search filter for Number
         type: integer
         required: false
       - in: query
@@ -3916,7 +3960,7 @@ paths:
         - AUT
       - in: query
         name: rhOfuObjectif
-        description: Search filter for Objectif
+        description: Search filter for Objective
         type: string
         required: false
       tags:
@@ -4134,7 +4178,7 @@ paths:
         required: false
       - in: query
         name: rhColCivilite
-        description: Search filter for Civilité
+        description: Search filter for Civility
         type: string
         required: false
         enum:
@@ -4143,12 +4187,12 @@ paths:
         - M
       - in: query
         name: rhColNom
-        description: Search filter for Nom
+        description: Search filter for Last name
         type: string
         required: false
       - in: query
         name: rhColPrenom
-        description: Search filter for Prénom
+        description: Search filter for First name
         type: string
         required: false
       - in: query
@@ -4258,7 +4302,7 @@ paths:
         required: false
       - in: query
         name: rhColTitre
-        description: Search filter for Titre
+        description: Search filter for Title
         type: string
         required: false
       tags:
@@ -4272,6 +4316,7 @@ securityDefinitions:
     type: apiKey
 definitions:
   Error404:
+    description: Not found
     type: object
     properties:
       error:
@@ -4283,36 +4328,44 @@ definitions:
         enum:
         - 404
   RHObjectifFutur:
+    description: Future objective
     type: object
     properties:
       rhOfuEntId__rhEntColId__rhColMatricule:
         description: Interview Employee Matricule
         type: string
+        maxLength: 20
       rhOfuEntId__rhEntCpgId__rhCpgAnnee:
         description: Interview Campaign Year
         type: integer
       rhOfuObjectif:
-        description: Objectif
+        description: Objective
         type: string
+        maxLength: 50000
       rhOfuEntId__rhEntColId:
         description: Interview Employee
         type: string
+        maxLength: 11
       rhOfuEntId__rhEntColId__rhColPrenom:
-        description: Interview Employee Prénom
+        description: Interview Employee First name
         type: string
+        maxLength: 100
       rhOfuType:
         description: Type
         type: string
+        maxLength: 30
         enum:
         - SFA
         - SET
         - AUT
       rhOfuEntId__rhEntColId__rhColNom:
-        description: Interview Employee Nom
+        description: Interview Employee Last name
         type: string
+        maxLength: 100
       rhOfuEntId__rhEntColId__rhColCivilite:
-        description: Interview Employee Civilité
+        description: Interview Employee Civility
         type: string
+        maxLength: 10
         enum:
         - MLLE
         - MME
@@ -4320,29 +4373,35 @@ definitions:
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhOfuEntId__rhEntCpgId:
         description: Interview Campaign
         type: string
+        maxLength: 11
       rhOfuNumero:
-        description: Numéro
+        description: Number
         type: integer
       rhOfuEntId:
         description: Interview
         type: string
+        maxLength: 11
       rhOfuEntId__rhEntEtat:
         description: Interview Etat
         type: string
+        maxLength: 2
         enum:
         - BR
         - CP
         - VC
         - VE
   RHObjectifService:
+    description: Departement objective
     type: object
     properties:
       rhOsrSrvId:
         description: Department
         type: string
+        maxLength: 11
       rhOsrNumero:
         description: Numéro objectif
         type: integer
@@ -4352,16 +4411,19 @@ definitions:
       rhOsrCpgId:
         description: Campaign
         type: string
+        maxLength: 11
       rhOsrCpgId__rhCpgAnnee:
         description: Campaign Year
         type: integer
       rhOsrCpgId__rhCpgDateDebut:
         description: Campaign Start date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhOsrType:
         description: Type objectif
         type: string
+        maxLength: 3
         enum:
         - QLT
         - QTT
@@ -4369,24 +4431,31 @@ definitions:
       rhOsrObjectif:
         description: Objectif
         type: string
+        maxLength: 50000
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhOsrSrvId__rhSrvLibelle:
         description: Department Label
         type: string
+        maxLength: 50
       rhOsrCpgId__rhCpgDateFin:
         description: Campaign End date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhOsrSrvId__rhSrvCode:
         description: Department Code
         type: string
+        maxLength: 20
   ArrayOfRHFormation:
+    description: List of Trainings
     type: array
     items:
       $ref: '#/definitions/RHFormation'
   PublicationResult:
+    description: Publication result
     type: object
     properties:
       mime:
@@ -4396,10 +4465,12 @@ definitions:
         description: Content (plain text or base64 encoded)
         type: string
   ArrayOfRHCollaborateurHistoric:
+    description: List of Employee (hist.)
     type: array
     items:
       $ref: '#/definitions/RHCollaborateurHistoric'
   PlaceData:
+    description: Place data
     type: object
     properties:
       coord:
@@ -4421,14 +4492,17 @@ definitions:
         description: 'Label #3'
         type: string
   RHFormationSuivie:
+    description: Attended training
     type: object
     properties:
       rhFrsColId__rhColPrenom:
-        description: Employee Prénom
+        description: Employee First name
         type: string
+        maxLength: 100
       rhFrsFrmId__rhFrmType:
         description: Training Type
         type: string
+        maxLength: 3
         enum:
         - AUV
         - MKT
@@ -4441,16 +4515,19 @@ definitions:
         - DRT
         - AUT
       rhFrsColId__rhColTitre:
-        description: Employee Titre
+        description: Employee Title
         type: string
+        maxLength: 100
       rhFrsFrmId__rhFrmLibelle:
         description: Training Libelle
         type: string
+        maxLength: 100
       rhFrsColId__rhColNom:
-        description: Employee Nom
+        description: Employee Last name
         type: string
+        maxLength: 100
       rhFrsFrmId__rhFrmPeriode:
-        description: Training Période
+        description: Training Period
         type: array
         items:
           type: string
@@ -4460,8 +4537,9 @@ definitions:
           - T3
           - T4
       rhFrsColId__rhColCivilite:
-        description: Employee Civilité
+        description: Employee Civility
         type: string
+        maxLength: 10
         enum:
         - MLLE
         - MME
@@ -4469,25 +4547,32 @@ definitions:
       rhFrsColId__rhColMatricule:
         description: Employee Matricule
         type: string
+        maxLength: 20
       rhFrsFrmId:
         description: Training
         type: string
+        maxLength: 11
       rhFrsColId__rhColSrvId__rhSrvLibelle:
         description: Employee Department Label
         type: string
+        maxLength: 50
       rhFrsColId:
         description: Employee
         type: string
+        maxLength: 11
       rhFsrDate:
         description: Date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhFrsColId__rhColSrvId__rhSrvCode:
         description: Employee Department Code
         type: string
+        maxLength: 20
       rhFrsEvaluation:
         description: Evaluation
         type: string
+        maxLength: 3
         enum:
         - '1'
         - '2'
@@ -4495,16 +4580,21 @@ definitions:
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhFrsFrmId__rhFrmCode:
         description: Training Code
         type: string
+        maxLength: 30
       rhFrsColId__rhColSrvId:
         description: Employee Department
         type: string
+        maxLength: 11
       rhFrsCommentaires:
-        description: Commentaires
+        description: Comments
         type: string
+        maxLength: 50000
   PlaceMapData:
+    description: Places map data
     type: object
     properties:
       places:
@@ -4516,6 +4606,7 @@ definitions:
         description: Name
         type: string
   RHFormation:
+    description: Training
     type: object
     properties:
       rhFrmDisponible:
@@ -4530,18 +4621,23 @@ definitions:
       rhFrmLibelle:
         description: Libelle
         type: string
+        maxLength: 100
       rhFrmCode:
         description: Code
         type: string
+        maxLength: 30
       rhFrmDescription:
         description: Description
         type: string
+        maxLength: 50000
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhFrmType:
         description: Type
         type: string
+        maxLength: 3
         enum:
         - AUV
         - MKT
@@ -4554,7 +4650,7 @@ definitions:
         - DRT
         - AUT
       rhFrmPeriode:
-        description: Période
+        description: Period
         type: array
         items:
           type: string
@@ -4564,28 +4660,35 @@ definitions:
           - T3
           - T4
   ArrayOfRHDemandeFormation:
+    description: List of Training requests
     type: array
     items:
       $ref: '#/definitions/RHDemandeFormation'
   ArrayOfRHCollaborateurCompetence:
+    description: List of Employee skills
     type: array
     items:
       $ref: '#/definitions/RHCollaborateurCompetence'
   RHCollaborateur:
+    description: Employee
     type: object
     properties:
       rhColPrenom:
-        description: Prénom
+        description: First name
         type: string
+        maxLength: 100
       rhColUsrId__usr_login:
         description: Login
         type: string
+        maxLength: 100
       rhColCodePostal:
         description: Code postal
         type: string
+        maxLength: 10
       rhColDateNaissance:
         description: Date de naissance
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhColPhoto:
         description: Photo
@@ -4593,23 +4696,29 @@ definitions:
       rhColAdresse:
         description: Adresse
         type: string
+        maxLength: 100
       rhColSrvId__rhSrvLibelle:
         description: Department Label
         type: string
+        maxLength: 50
       rhColDateFin:
         description: Date de fin
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhColCoords:
         description: Coordonnées
         type: string
+        maxLength: 50
         example: latitude;longitude
       rhColComplement:
         description: Complément
         type: string
+        maxLength: 100
       rhColCivilite:
-        description: Civilité
+        description: Civility
         type: string
+        maxLength: 10
         enum:
         - MLLE
         - MME
@@ -4617,60 +4726,77 @@ definitions:
       rhColEmail:
         description: E-mail
         type: string
+        maxLength: 50
       rhColSrvId__rhSrvCode:
         description: Department Code
         type: string
+        maxLength: 20
       rhColFax:
         description: Fax
         type: string
+        maxLength: 20
       rhColMatricule:
         description: Matricule
         type: string
+        maxLength: 20
       rhColMobile:
         description: Mobile
         type: string
+        maxLength: 20
       rhColDateDebutSrv:
         description: Date début dans le service
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhColTitre:
-        description: Titre
+        description: Title
         type: string
+        maxLength: 100
       rhColStatut:
         description: Statut
         type: string
+        maxLength: 3
         enum:
         - CDI
         - CDD
         - STG
         - APP
       rhColNom:
-        description: Nom
+        description: Last name
         type: string
+        maxLength: 100
       rhColDateDebut:
         description: Date de début
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhColVille:
         description: Ville
         type: string
+        maxLength: 50
       rhColUsrId:
         description: Compte utilisateur
         type: string
+        maxLength: 11
       rhColTelephone:
         description: Téléphone
         type: string
+        maxLength: 20
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhColSrvId:
         description: Department
         type: string
+        maxLength: 11
   ArrayOfRHCollaborateur:
+    description: List of Employees
     type: array
     items:
       $ref: '#/definitions/RHCollaborateur'
   RHEntretienHistoric:
+    description: Interview (hist.)
     type: object
     properties:
       row_idx:
@@ -4679,13 +4805,16 @@ definitions:
       created_dt_hist:
         description: Created date
         type: string
+        maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhEntEtat:
         description: Etat
         type: string
+        maxLength: 2
         enum:
         - BR
         - CP
@@ -4694,10 +4823,13 @@ definitions:
       created_by_hist:
         description: Created by
         type: string
+        maxLength: 100
       row_ref_id:
         description: Record row ID
         type: string
+        maxLength: 11
   RHCollaborateurHistoric:
+    description: Employee (hist.)
     type: object
     properties:
       row_idx:
@@ -4706,42 +4838,54 @@ definitions:
       rhColDateDebutSrv:
         description: Date début dans le service
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhColTitre:
-        description: Titre
+        description: Title
         type: string
+        maxLength: 100
       created_dt_hist:
         description: Created date
         type: string
+        maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhColSrvId__rhSrvCode:
         description: Department Code
         type: string
+        maxLength: 20
       created_by_hist:
         description: Created by
         type: string
+        maxLength: 100
       rhColSrvId:
         description: Department
         type: string
+        maxLength: 11
       row_ref_id:
         description: Record row ID
         type: string
+        maxLength: 11
   ArrayOfRHCampagne:
+    description: List of Campaigns
     type: array
     items:
       $ref: '#/definitions/RHCampagne'
   RHDemandeFormation:
+    description: Training request
     type: object
     properties:
       rhDfrColId__rhColSrvId__rhSrvLibelle:
         description: Employee Department Label
         type: string
+        maxLength: 50
       rhDfrFrmId__rhFrmType:
         description: Training Type
         type: string
+        maxLength: 3
         enum:
         - AUV
         - MKT
@@ -4756,8 +4900,9 @@ definitions:
       rhDfrFrmId:
         description: Training
         type: string
+        maxLength: 11
       rhDfrFrmId__rhFrmPeriode:
-        description: Training Période
+        description: Training Period
         type: array
         items:
           type: string
@@ -4767,20 +4912,25 @@ definitions:
           - T3
           - T4
       rhDfrColId__rhColPrenom:
-        description: Employee Prénom
+        description: Employee First name
         type: string
+        maxLength: 100
       rhDfrColId__rhColMatricule:
         description: Employee Matricule
         type: string
+        maxLength: 20
       rhDfrColId__rhColTitre:
-        description: Employee Titre
+        description: Employee Title
         type: string
+        maxLength: 100
       rhDfrFrmId__rhFrmCode:
         description: Training Code
         type: string
+        maxLength: 30
       rhDfrEtat:
         description: Etat
         type: string
+        maxLength: 1
         enum:
         - D
         - A
@@ -4791,21 +4941,27 @@ definitions:
       rhDfrMotivation:
         description: Motivation
         type: string
+        maxLength: 50000
       rhDfrColId__rhColSrvId:
         description: Employee Department
         type: string
+        maxLength: 11
       rhDfrColId__rhColSrvId__rhSrvCode:
         description: Employee Department Code
         type: string
+        maxLength: 20
       rhDfrFrmId__rhFrmLibelle:
         description: Training Libelle
         type: string
+        maxLength: 100
       rhDfrColId:
         description: Employee
         type: string
+        maxLength: 11
       rhDfrColId__rhColCivilite:
-        description: Employee Civilité
+        description: Employee Civility
         type: string
+        maxLength: 10
         enum:
         - MLLE
         - MME
@@ -4813,83 +4969,106 @@ definitions:
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhDfrColId__rhColNom:
-        description: Employee Nom
+        description: Employee Last name
         type: string
+        maxLength: 100
       rhDfrPeriodeSouhaitee:
         description: Période souhaitée
         type: string
+        maxLength: 2
         enum:
         - T1
         - T2
         - T3
         - T4
   RHEntretien:
+    description: Interview
     type: object
     properties:
       rhEntEvlId__rhColUsrId:
         description: Evaluator Compte utilisateur
         type: string
+        maxLength: 11
       rhEntEvlId__rhColNom:
-        description: Evaluator Nom
+        description: Evaluator Last name
         type: string
+        maxLength: 100
       rhEntURLCode:
         description: Code d'accès collab
         type: string
+        maxLength: 50
       rhEntURL:
         description: URL d'accès collab.
         type: string
+        maxLength: 255
       rhEntDuree:
         description: Duree
         type: integer
       rhEntCpgId__rhCpgDateFin:
         description: Campaign End date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhEntEvlId__rhColPrenom:
-        description: Evaluator Prénom
+        description: Evaluator First name
         type: string
+        maxLength: 100
       rhEntColId:
         description: Employee
         type: string
+        maxLength: 11
       rhEntColId__rhColMatricule:
         description: Employee Matricule
         type: string
+        maxLength: 20
       rhEntEvlId__rhColMatricule:
         description: Evaluator Matricule
         type: string
+        maxLength: 20
       rhEntEvlId:
         description: Evaluator
         type: string
+        maxLength: 11
       rhEntBilanCollaborateur:
-        description: Conslusion du collaborateur
+        description: Employee's conclusion
         type: string
+        maxLength: 50000
       rhEntColId__rhColPrenom:
-        description: Employee Prénom
+        description: Employee First name
         type: string
+        maxLength: 100
       rhEntColId__rhColSrvId__rhSrvLibelle:
         description: Employee Department Label
         type: string
+        maxLength: 50
       rhEntDate:
         description: Date
         type: string
+        maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
       rhEntColId__rhColSrvId:
         description: Employee Department
         type: string
+        maxLength: 11
       rhEntCpgId__rhCpgDateDebut:
         description: Campaign Start date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhEntColId__rhColSrvId__rhSrvCode:
         description: Employee Department Code
         type: string
+        maxLength: 20
       rhEntBilanEvaluateur:
-        description: Conclusion de l'évaluateur
+        description: Evaluator's conclusion
         type: string
+        maxLength: 50000
       rhEntEvaluation:
-        description: Evaluation globale
+        description: Global Evaluation
         type: string
+        maxLength: 3
         enum:
         - APP
         - AP
@@ -4904,11 +5083,13 @@ definitions:
         description: Campaign Year
         type: integer
       rhEntColId__rhColNom:
-        description: Employee Nom
+        description: Employee Last name
         type: string
+        maxLength: 100
       rhEntEtat:
         description: Etat
         type: string
+        maxLength: 2
         enum:
         - BR
         - CP
@@ -4917,22 +5098,27 @@ definitions:
       rhEntEvlId__rhColUsrId__usr_login:
         description: Login
         type: string
+        maxLength: 100
       rhEntColId__rhColTitre:
-        description: Employee Titre
+        description: Employee Title
         type: string
+        maxLength: 100
       rhEntCpgId:
         description: Campaign
         type: string
+        maxLength: 11
       rhEntColId__rhColCivilite:
-        description: Employee Civilité
+        description: Employee Civility
         type: string
+        maxLength: 10
         enum:
         - MLLE
         - MME
         - M
       rhEntEvlId__rhColCivilite:
-        description: Evaluator Civilité
+        description: Evaluator Civility
         type: string
+        maxLength: 10
         enum:
         - MLLE
         - MME
@@ -4940,10 +5126,12 @@ definitions:
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhEntSuivi:
-        description: Suivi spécifique
+        description: Specific follow-up
         type: boolean
   Error400:
+    description: Bad request
     type: object
     properties:
       error:
@@ -4955,6 +5143,7 @@ definitions:
         enum:
         - 400
   Error401:
+    description: Unauthorized
     type: object
     properties:
       error:
@@ -4966,6 +5155,7 @@ definitions:
         enum:
         - 401
   Error500:
+    description: Internal server error
     type: object
     properties:
       error:
@@ -4977,14 +5167,17 @@ definitions:
         enum:
         - 500
   ArrayOfRHDemandeFormationHistoric:
+    description: List of Training request (hist.)
     type: array
     items:
       $ref: '#/definitions/RHDemandeFormationHistoric'
   ArrayOfRHService:
+    description: List of Departments
     type: array
     items:
       $ref: '#/definitions/RHService'
   Error403:
+    description: Forbidden
     type: object
     properties:
       error:
@@ -4996,40 +5189,50 @@ definitions:
         enum:
         - 403
   ArrayOfRHObjectifFutur:
+    description: List of Future objectives
     type: array
     items:
       $ref: '#/definitions/RHObjectifFutur'
   ArrayOfRHObjectifService:
+    description: List of Departement objectives
     type: array
     items:
       $ref: '#/definitions/RHObjectifService'
   RHService:
+    description: Department
     type: object
     properties:
       rhSrvDescription:
         description: Description
         type: string
+        maxLength: 50000
       rhSrvLibelle:
         description: Label
         type: string
+        maxLength: 50
       rhSrvLogo:
         description: Logo
         type: object
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhSrvCode:
         description: Code
         type: string
+        maxLength: 20
   RHCollaborateurCompetence:
+    description: Employee skill
     type: object
     properties:
       rhColCmpColId__rhColNom:
-        description: Employee Nom
+        description: Employee Last name
         type: string
+        maxLength: 100
       rhColCmpCmpId__rhCmpType:
         description: Skill Type
         type: string
+        maxLength: 3
         enum:
         - TEC
         - FON
@@ -5042,21 +5245,27 @@ definitions:
       rhColCmpColId__rhColSrvId:
         description: Employee Department
         type: string
+        maxLength: 11
       rhColCmpCmpId:
         description: Skill
         type: string
+        maxLength: 11
       rhColCmpColId__rhColSrvId__rhSrvLibelle:
         description: Employee Department Label
         type: string
+        maxLength: 50
       rhColCmpCommentaires:
         description: Commentaires
         type: string
+        maxLength: 50000
       rhColCmpColId:
         description: Employee
         type: string
+        maxLength: 11
       rhColCmpColId__rhColCivilite:
-        description: Employee Civilité
+        description: Employee Civility
         type: string
+        maxLength: 10
         enum:
         - MLLE
         - MME
@@ -5064,36 +5273,46 @@ definitions:
       rhColCmpColId__rhColSrvId__rhSrvCode:
         description: Employee Department Code
         type: string
+        maxLength: 20
       rhColCmpCmpId__rhCmpNom:
-        description: Skill Nom
+        description: Skill Name
         type: string
+        maxLength: 100
       rhColCmpColId__rhColMatricule:
         description: Employee Matricule
         type: string
+        maxLength: 20
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhColCmpColId__rhColPrenom:
-        description: Employee Prénom
+        description: Employee First name
         type: string
+        maxLength: 100
       rhColCmpColId__rhColTitre:
-        description: Employee Titre
+        description: Employee Title
         type: string
+        maxLength: 100
   ArrayOfRHFormationSuivie:
+    description: List of Attended trainings
     type: array
     items:
       $ref: '#/definitions/RHFormationSuivie'
   ArrayOfRHCompetence:
+    description: List of Skills
     type: array
     items:
       $ref: '#/definitions/RHCompetence'
   ActionResult:
+    description: Action result
     type: object
     properties:
       result:
         description: Action result
         type: string
   RHDemandeFormationHistoric:
+    description: Training request (hist.)
     type: object
     properties:
       row_idx:
@@ -5102,13 +5321,16 @@ definitions:
       created_dt_hist:
         description: Created date
         type: string
+        maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhDfrEtat:
         description: Etat
         type: string
+        maxLength: 1
         enum:
         - D
         - A
@@ -5116,9 +5338,11 @@ definitions:
       created_by_hist:
         description: Created by
         type: string
+        maxLength: 100
       row_ref_id:
         description: Record row ID
         type: string
+        maxLength: 11
   TreeviewData:
     type: object
     properties:
@@ -5126,80 +5350,105 @@ definitions:
         description: Object item with lists of linked objects' items
         type: object
   RHObjectifPasse:
+    description: Past objective
     type: object
     properties:
       rhOpaObjectif:
-        description: Objectif
+        description: Objective
         type: string
+        maxLength: 50000
       rhOpaEntId__rhEntColId:
         description: Interview Employee
         type: string
+        maxLength: 11
       rhOpaEntId:
         description: Interview
         type: string
+        maxLength: 11
       rhOpaEntId__rhEntColId__rhColMatricule:
         description: Interview Employee Matricule
         type: string
+        maxLength: 20
+      rhOpaEntId__rhEntColId__rhColSrvId:
+        description: Interview Employee Department
+        type: string
+        maxLength: 11
       rhOpaEntId__rhEntEtat:
         description: Interview Etat
         type: string
+        maxLength: 2
         enum:
         - BR
         - CP
         - VC
         - VE
       rhOpaEntId__rhEntColId__rhColPrenom:
-        description: Interview Employee Prénom
+        description: Interview Employee First name
         type: string
+        maxLength: 100
       rhOpaEntId__rhEntCpgId__rhCpgAnnee:
         description: Interview Campaign Year
         type: integer
       rhOpaNumero:
-        description: Numéro
+        description: Number
         type: integer
       rhOpaEntId__rhEntColId__rhColCivilite:
-        description: Interview Employee Civilité
+        description: Interview Employee Civility
         type: string
+        maxLength: 10
         enum:
         - MLLE
         - MME
         - M
       rhOpaEntId__rhEntColId__rhColNom:
-        description: Interview Employee Nom
+        description: Interview Employee Last name
         type: string
+        maxLength: 100
       rhOpaEntId__rhEntCpgId:
         description: Interview Campaign
         type: string
+        maxLength: 11
       rhOpaType:
         description: Type
         type: string
+        maxLength: 30
         enum:
         - SFA
         - SET
         - AUT
       rhOpaCommentaires:
-        description: Commentaires
+        description: Comments
         type: string
+        maxLength: 50000
       row_id:
         description: Unique technical row ID
         type: string
-      rhOpaNiveauAtteinte:
-        description: Niveau d'atteinte
+        maxLength: 11
+      rhOpaEntId__rhEntColId__rhColSrvId__rhSrvCode:
+        description: Interview Employee Department Code
         type: string
+        maxLength: 20
+      rhOpaNiveauAtteinte:
+        description: Achievement level
+        type: string
+        maxLength: 1
         enum:
         - '1'
         - '2'
         - '3'
         - '4'
   ArrayOfRHObjectifPasse:
+    description: List of Past objectives
     type: array
     items:
       $ref: '#/definitions/RHObjectifPasse'
   ArrayOfRHEntretien:
+    description: List of Interviews
     type: array
     items:
       $ref: '#/definitions/RHEntretien'
   RHCampagne:
+    description: Campaign
     type: object
     properties:
       rhCpgNotice:
@@ -5208,35 +5457,44 @@ definitions:
       rhCpgDescription:
         description: Description
         type: string
+        maxLength: 50000
       rhCpgAnnee:
         description: Year
         type: integer
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhCpgDateFin:
         description: End date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       rhCpgDateDebut:
         description: Start date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
   RHCompetence:
+    description: Skill
     type: object
     properties:
       rhCmpDescription:
         description: Description
         type: string
+        maxLength: 50000
       rhCmpNom:
-        description: Nom
+        description: Name
         type: string
+        maxLength: 100
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       rhCmpType:
         description: Type
         type: string
+        maxLength: 3
         enum:
         - TEC
         - FON
@@ -5244,6 +5502,7 @@ definitions:
         - LNG
         - AUT
   ArrayOfRHEntretienHistoric:
+    description: List of Interview (hist.)
     type: array
     items:
       $ref: '#/definitions/RHEntretienHistoric'

@@ -118,8 +118,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 | _Ref. `rhDfrColId.rhColNom`_                                 | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhDfrColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhDfrColId.rhColSrvId`_                               | _id_                                     |          |           |          | -                                                                                |
-| _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
 | _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
 | _Ref. `rhDfrColId.rhColTitre`_                               | _char(100)_                              |          |           |          | -                                                                                |
 | `rhDfrFrmId` link to **`RHFormation`**                       | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `rhDfrFrmId.rhFrmCode`_                                | _regexp(30)_                             |          |           |          | -                                                                                |
@@ -216,8 +216,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 | _Ref. `rhColUsrId.usr_login`_                                | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 | `rhEntBilanEvaluateur`                                       | html(50000)                              |          | yes       |          | -                                                                                |
 | `rhEntBilanCollaborateur`                                    | html(50000)                              |          |           |          | -                                                                                |
-| `rhEntSuivi`                                                 | boolean                                  |          | yes       |          | -                                                                                |
 | `rhEntEvaluation`                                            | enum(3) using `RH_ENT_EVALUATION` list   |          | yes       |          | -                                                                                |
+| `rhEntSuivi`                                                 | boolean                                  |          | yes       |          | -                                                                                |
 
 ### Lists
 
@@ -280,8 +280,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 | _Ref. `rhFrsColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhFrsColId.rhColSrvId`_                               | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
-| _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
 | _Ref. `rhFrsColId.rhColTitre`_                               | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvLibelle`_                             | _char(50)_                               |          |           |          | -                                                                                |
 | `rhFrsFrmId` link to **`RHFormation`**                       | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `rhFrsFrmId.rhFrmCode`_                                | _regexp(30)_                             |          |           |          | -                                                                                |
 | _Ref. `rhFrsFrmId.rhFrmType`_                                | _enum(3) using `RH_FRM_TYPE` list_       |          |           |          | -                                                                                |
@@ -371,9 +371,11 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 | _Ref. `rhOpaEntId.rhEntEtat`_                                | _enum(2) using `RH_ENT_ETAT` list_       |          |           |          | -                                                                                |
 | _Ref. `rhOpaEntId.rhEntColId`_                               | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `rhEntColId.rhColMatricule`_                           | _regexp(20)_                             |          |           |          | -                                                                                |
+| _Ref. `rhColSrvId.rhSrvCode`_                                | _regexp(20)_                             |          |           |          | -                                                                                |
 | _Ref. `rhEntColId.rhColCivilite`_                            | _enum(10) using `RH_CIVILITE` list_      |          |           |          | -                                                                                |
 | _Ref. `rhEntColId.rhColNom`_                                 | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `rhEntColId.rhColPrenom`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `rhEntColId.rhColSrvId`_                               | _id_                                     |          |           |          | -                                                                                |
 | `rhOpaNumero`                                                | int(11)                                  | yes*     |           |          | -                                                                                |
 | `rhOpaType`                                                  | enum(30) using `RH_OPA_OFU_TYPE` list    | yes      | yes       |          | -                                                                                |
 | `rhOpaObjectif`                                              | html(50000)                              |          | yes       |          | -                                                                                |
